@@ -16,27 +16,43 @@ Hi all，
 
 TBD.
 
-注意：由于人员规模限制，我们仅支持基于 Eclipse PDE 的插件开发，这个领域比较熟悉。
+注意：由于人员规模限制，我们只会做基于 Eclipse 平台的插件开发（做过几个项目，比较熟悉），不会从头开发一个新的。
 
 ## Toolchain, llvm
 
 TBD.
 
+这是我们目前的人力投入重点，稍微比GCC多一点。
+
 ## Toolchain, GNU GCC, Binutils
 
 TBD.
+
+这是我们的关注重点。
 
 ## Profilers, Performance Analysis Tools
 
 TBD.
 
+我们评估现有的开源工具已经可以满足大部分需要。
+
+跟特定芯片相关的愿望（以至于PLCT实现并开源之后的受益范围很小）请直接找对应厂商许愿，让他们来找PLCT委托开发（这是软广攻击）
+
 ## Eternal balance
 
 TBD.
 
+永恒天平是我们尝试在RISC-V工具领域建立统一标准的测评系统。
+
+Perf Talk 目前都还是自说自话（当然实际上有些领域十几年了还是自说自话）。我们希望能够将性能测评放在同一个天平中进行对比。
+
 ## GDB and other debuggers
 
 TBD.
+
+我们评估现有的开源工具已经可以满足大部分需要。
+
+跟特定芯片相关的愿望（以至于PLCT实现并开源之后的受益范围很小）请直接找对应厂商许愿，让他们来找PLCT委托开发（这是软广攻击）
 
 ## glibc, other system libs
 
