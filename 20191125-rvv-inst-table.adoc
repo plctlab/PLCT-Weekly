@@ -1,0 +1,472 @@
+.rvv-inst-table
+|===
+|opcodestr |unmasked(vm=1) |masked(vm=0) 
+
+3+|Configuration-Setting Instructions (no vm bit)
+|vsetvli 2+^|√ 
+|vsetvl  2+^|√ 
+
+3+|Vector Unit-Stride Instructions
+|vlb.v  ^|√ |
+|vlh.v  ^|√ |
+|vlw.v  ^|√ |
+|vlbu.v ^|√ |
+|vlhu.v ^|√ |
+|vlwu.v ^|√ |
+|vle.v  ^|√ |
+|vsb.v  ^|√ |
+|vsh.v  ^|√ |
+|vsw.v  ^|√ |
+|vse.v  ^|√ |
+
+3+|Vector Strided Instructions
+|vlsb.v  ^|√ |
+|vlsh.v  ^|√ |
+|vlsw.v  ^|√ |
+|vlsbu.v ^|√ |
+|vlshu.v ^|√ |
+|vlswu.v ^|√ |
+|vlse.v  ^|√ |
+|vssb.v  ^|√ |
+|vssh.v  ^|√ |
+|vssw.v  ^|√ |
+|vsse.v  ^|√ |
+
+3+|Vector Indexed Instructions
+|vlxb.v   ^|√ |
+|vlxh.v   ^|√ |
+|vlxw.v   ^|√ |
+|vlxbu.v  ^|√ |
+|vlxhu.v  ^|√ |
+|vlxwu.v  ^|√ |
+|vlxe.v   ^|√ |
+|vsxb.v   ^|√ |
+|vsxh.v   ^|√ |
+|vsxw.v   ^|√ |
+|vsxe.v   ^|√ |
+|vsuxb.v  ^|√ |
+|vsuxh.v  ^|√ |
+|vsuxw.v  ^|√ |
+|vsuxe.v  ^|√ |
+
+3+|Unit-stride Fault-Only-First Loads Instructions
+|vlbff.v  ^|√ |
+|vlhff.v  ^|√ |
+|vlwff.v  ^|√ |
+|vlbuff.v ^|√ |
+|vlhuff.v ^|√ |
+|vlwuff.v ^|√ |
+|vleff.v  ^|√ |
+
+3+|Vector Load/Store Segment Instructions
+3+|TODO
+
+3+|Vector AMO Operations
+3+|TODO
+
+3+|Vector Load/Store Whole Register Instructions (v-0.8 included)
+3+|TODO
+
+3+|Vector Single-Width Integer Add and Subtract Instructions
+|vadd.vv   ^|√ |
+|vadd.vx   ^|√ |
+|vadd.vi   ^|√ |
+|vsub.vv   ^|√ |
+|vsub.vx   ^|√ |
+|vrsub.vx  ^|√ |
+|vrsub.vi  ^|√ |
+
+3+|Vector Widening Integer Add and Subtract Instructions
+|vwaddu.vv   ^|√ |
+|vwaddu.vx   ^|√ |
+|vwsubu.vv   ^|√ |
+|vwsubu.vx   ^|√ |
+|vwadd.vv    ^|√ |
+|vwadd.vx    ^|√ |
+|vwsub.vv    ^|√ |
+|vwsub.vx    ^|√ |
+|vwaddu.wv   ^|√ |
+|vwaddu.wx   ^|√ |
+|vwsubu.wv   ^|√ |
+|vwsubu.wx   ^|√ |
+|vwadd.wv    ^|√ |
+|vwadd.wx    ^|√ |
+|vwsub.wv    ^|√ |
+|vwsub.wx    ^|√ |
+
+3+|Vector Integer Add-with-Carry / Subtract-with-Borrow Instructions
+|vadc.vvm  |reserved  ^|√ 
+|vadc.vxm  |reserved  ^|√ 
+|vadc.vim  |reserved  ^|√ 
+|vmadc.vv(m)  ^|√  ^|√ 
+|vmadc.vx(m)  ^|√  ^|√ 
+|vmadc.vi(m)  ^|√  ^|√ 
+|vsbc.vvm  |reserved  ^|√ 
+|vsbc.vxm  |reserved  ^|√ 
+|vmsbc.vv(m)  ^|√  ^|√ 
+|vmsbc.vx(m)  ^|√  ^|√ 
+
+3+|Vector Bitwise Logical Instructions
+|vand.vv   ^|√ |
+|vand.vx   ^|√ |
+|vand.vi   ^|√ |
+|vor.vv    ^|√ |
+|vor.vx    ^|√ |
+|vor.vi    ^|√ |
+|vxor.vv   ^|√ |
+|vxor.vx   ^|√ |
+|vxor.vi   ^|√ |
+
+3+|Vector Single-Width Bit Shift Instructions
+|vsll.vv   ^|√ |
+|vsll.vx   ^|√ |
+|vsll.vi   ^|√ |
+|vsrl.vv   ^|√ |
+|vsrl.vx   ^|√ |
+|vsrl.vi   ^|√ |
+|vsra.vv   ^|√ |
+|vsra.vx   ^|√ |
+|vsra.vi   ^|√ |
+
+3+|Vector Narrowing Integer Right Shift Instructions (v-0.8 suffix changed)
+|vnsrl.{v/w}v   ^|√ |
+|vnsrl.{v/w}x   ^|√ |
+|vnsrl.{v/w}i   ^|√ |
+|vnsra.{v/w}v   ^|√ |
+|vnsra.{v/w}x   ^|√ |
+|vnsra.{v/w}i   ^|√ |
+
+3+|Vector Integer Comparison Instructions
+|vmseq.vv   ^|√ |
+|vmseq.vx   ^|√ |
+|vmseq.vi   ^|√ |
+|vmsne.vv   ^|√ |
+|vmsne.vx   ^|√ |
+|vmsne.vi   ^|√ |
+|vmsltu.vv  ^|√ |
+|vmsltu.vx  ^|√ |
+|vmslt.vv   ^|√ |
+|vmslt.vx   ^|√ |
+|vmsleu.vv  ^|√ |
+|vmsleu.vx  ^|√ |
+|vmsleu.vi  ^|√ |
+|vmsle.vv   ^|√ |
+|vmsle.vx   ^|√ |
+|vmsle.vi   ^|√ |
+|vmsgtu.vx  ^|√ |
+|vmsgtu.vi  ^|√ |
+|vmsgt.vx   ^|√ |
+|vmsgt.vi   ^|√ |
+
+3+|Vector Integer Min/Max Instructions
+|vminu.vv   ^|√ |
+|vminu.vx   ^|√ |
+|vmin.vv    ^|√ |
+|vmin.vx    ^|√ |
+|vmaxu.vv   ^|√ |
+|vmaxu.vx   ^|√ |
+|vmax.vv    ^|√ |
+|vmax.vx    ^|√ |
+
+3+|Vector Single-Width Integer Multiply Instructions
+|vmul.vv      ^|√ |
+|vmul.vx      ^|√ |
+|vmulh.vv     ^|√ |
+|vmulh.vx     ^|√ |
+|vmulhu.vv    ^|√ |
+|vmulhu.vx    ^|√ |
+|vmulhsu.vv   ^|√ |
+|vmulhsu.vx   ^|√ |
+
+3+|Vector Integer Divide Instructions
+|vdivu.vv     ^|√ |
+|vdivu.vx     ^|√ |
+|vdiv.vv      ^|√ |
+|vdiv.vx      ^|√ |
+|vremu.vv     ^|√ |
+|vremu.vx     ^|√ |
+|vrem.vv      ^|√ |
+|vrem.vx      ^|√ |
+
+3+|Vector Widening Integer Multiply Instructions
+|vwmul.vv     ^|√ |
+|vwmul.vx     ^|√ |
+|vwmulu.vv    ^|√ |
+|vwmulu.vx    ^|√ |
+|vwmulsu.vv   ^|√ |
+|vwmulsu.vx   ^|√ |
+
+3+|Vector Single-Width Integer Multiply-Add Instructions
+|vmacc.vv    ^|√ |
+|vmacc.vx    ^|√ |
+|vnmsac.vv   ^|√ |
+|vnmsac.vx   ^|√ |
+|vmadd.vv    ^|√ |
+|vmadd.vx    ^|√ |
+|vnmsub.vv   ^|√ |
+|vnmsub.vx   ^|√ |
+
+3+|Vector Widening Integer Multiply-Add Instruction
+|vwmaccu.vv    ^|√ |
+|vwmaccu.vx    ^|√ |
+|vwmacc.vv     ^|√ |
+|vwmacc.vx     ^|√ |
+|vwmaccsu.vv   ^|√ |
+|vwmaccsu.vx   ^|√ |
+|vwmaccus.vx   ^|√ |
+
+3+|Vector Quad-Widening Integer Multiply-Add Instructions (v-0.8 included)
+3+|TODO
+
+3+|Vector Integer Merge and Move Instructions (share the encoding)
+|vector-vector     ^|vmv.v.v(√)  ^|vmerge.vvm(√) 
+|vector-scalar     ^|vmv.v.x(√)  ^|vmerge.vxm(√) 
+|vector-immediate  ^|vmv.v.i(√)  ^|vmerge.vim(√) 
+
+3+|Vector Single-Width Saturating Add and Subtract Instructions
+|vsaddu.vv   ^|√ |
+|vsaddu.vx   ^|√ |
+|vsaddu.vi   ^|√ |
+|vsadd.vv    ^|√ |
+|vsadd.vx    ^|√ |
+|vsadd.vi    ^|√ |
+|vssubu.vv   ^|√ |
+|vssubu.vx   ^|√ |
+|vssub.vv    ^|√ |
+|vssub.vx    ^|√ |
+
+3+|Vector Single-Width Averaging Add and Subtract Instructions (v-0.8 changed)
+|vaaddu.vv (v-0.8 included)    | |
+|vaaddu.vx (v-0.8 included)    | |
+|vaadd.vv    ^|√ |
+|vaadd.vx    ^|√ |
+|vaadd.vi (v-0.8 removed)    ^|√ |
+|vasubu.vv (v-0.8 included)    | |
+|vasubu.vx (v-0.8 included)    | |
+|vasub.vv    ^|√ |
+|vasub.vx    ^|√ |
+
+3+|Vector Single-Width Fractional Multiply Instructions with Rounding and Saturation
+|vsmul.vv   ^|√ |
+|vsmul.vx   ^|√ |
+
+3+|Vector Widening Saturating Scaled Multiply-Add Instructions (v-0.8 removed)
+|vwsmaccu.vv  (v-0.8 removed)    ^|√ |
+|vwsmaccu.vx  (v-0.8 removed)    ^|√ |
+|vwsmacc.vv   (v-0.8 removed)    ^|√ |
+|vwsmacc.vx   (v-0.8 removed)    ^|√ |
+|vwsmaccsu.vv (v-0.8 removed)    ^|√ |
+|vwsmaccsu.vx (v-0.8 removed)    ^|√ |
+|vwsmaccus.vx (v-0.8 removed)    ^|√ |
+
+3+|Vector Single-Width Scaling Shift Instructions
+|vssrl.vv   ^|√ |
+|vssrl.vx   ^|√ |
+|vssrl.vi   ^|√ |
+|vssra.vv   ^|√ |
+|vssra.vx   ^|√ |
+|vssra.vi   ^|√ |
+
+3+|Vector Narrowing Fixed-Point Clip Instructions (v-0.8 suffix changed)
+|vnclipu.{v/w}v   ^|√ |
+|vnclipu.{v/w}x   ^|√ |
+|vnclipu.{v/w}i   ^|√ |
+|vnclip.{v/w}v    ^|√ |
+|vnclip.{v/w}x    ^|√ |
+|vnclip.{v/w}i    ^|√ |
+
+3+|Vector Single-Width Floating-Point Add/Subtract Instructions
+|vfadd.vv   ^|√ |
+|vfadd.vf   ^|√ |
+|vfsub.vv   ^|√ |
+|vfsub.vf   ^|√ |
+|vfrsub.vf  ^|√ |
+
+3+|Vector Widening Floating-Point Add/Subtract Instructions
+|vfwadd.vv   ^|√ |
+|vfwadd.vf   ^|√ |
+|vfwsub.vv   ^|√ |
+|vfwsub.vf   ^|√ |
+|vfwadd.wv   ^|√ |
+|vfwadd.wf   ^|√ |
+|vfwsub.wv   ^|√ |
+|vfwsub.wf   ^|√ |
+
+3+|Vector Single-Width Floating-Point Multiply/Divide Instructions
+|vfmul.vv   ^|√ |
+|vfmul.vf   ^|√ |
+|vfdiv.vv   ^|√ |
+|vfdiv.vf   ^|√ |
+|vfrdiv.vf  ^|√ |
+
+3+|Vector Widening Floating-Point Multiply Instructions
+|vfwmul.vv   ^|√ |
+|vfwmul.vf   ^|√ |
+
+
+3+|Vector Single-Width Floating-Point Fused Multiply-Add Instructions
+|vfmacc.vv    ^|√ |
+|vfmacc.vf    ^|√ |
+|vfnmacc.vv   ^|√ |
+|vfnmacc.vf   ^|√ |
+|vfmsac.vv    ^|√ |
+|vfmsac.vf    ^|√ |
+|vfnmsac.vv   ^|√ |
+|vfnmsac.vf   ^|√ |
+|vfmadd.vv    ^|√ |
+|vfmadd.vf    ^|√ |
+|vfnmadd.vv   ^|√ |
+|vfnmadd.vf   ^|√ |
+|vfmsub.vv    ^|√ |
+|vfmsub.vf    ^|√ |
+|vfnmsub.vv   ^|√ |
+|vfnmsub.vf   ^|√ |
+
+3+|Vector Widening Floating-Point Fused Multiply-Add Instructions
+|vfwmacc.vv    ^|√ |
+|vfwmacc.vf    ^|√ |
+|vfwnmacc.vv   ^|√ |
+|vfwnmacc.vf   ^|√ |
+|vfwmsac.vv    ^|√ |
+|vfwmsac.vf    ^|√ |
+|vfwnmsac.vv   ^|√ |
+|vfwnmsac.vf   ^|√ |
+
+3+|Vector Floating-Point Square-Root Instruction
+|vfsqrt.v      ^|√ |
+
+3+|Vector Floating-Point MIN/MAX Instructions
+|vfmin.vv      ^|√ |
+|vfmin.vf      ^|√ |
+|vfmax.vv      ^|√ |
+|vfmax.vf      ^|√ |
+
+3+|Vector Floating-Point Sign-Injection Instructions
+|vfsgnj.vv     ^|√ |
+|vfsgnj.vf     ^|√ |
+|vfsgnjn.vv    ^|√ |
+|vfsgnjn.vf    ^|√ |
+|vfsgnjx.vv    ^|√ |
+|vfsgnjx.vf    ^|√ |
+
+3+|Vector Floating-Point Compare Instructions
+|vmfeq.vv     ^|√ |
+|vmfeq.vf     ^|√ |
+|vmfne.vv     ^|√ |
+|vmfne.vf     ^|√ |
+|vmflt.vv     ^|√ |
+|vmflt.vf     ^|√ |
+|vmfle.vv     ^|√ |
+|vmfle.vf     ^|√ |
+|vmfgt.vf     ^|√ |
+|vmfge.vf     ^|√ |
+|vmford.vv (v-0.8 removed)    ^|√ |
+|vmford.vf (v-0.8 removed)    ^|√ |
+
+3+|Vector Floating-Point Classify Instruction
+|vfclass.v    ^|√ |
+
+3+|Vector Floating-Point Merge and Move Instructions (share the encoding)
+|vector-scalar     ^|vfmv.v.x(√)  ^|vfmerge.vxm(√) 
+
+3+|Single-Width Floating-Point/Integer Type-Convert Instructions
+|vfcvt.xu.f.v     ^|√ |
+|vfcvt.x.f.v      ^|√ |
+|vfcvt.f.xu.v     ^|√ |
+|vfcvt.f.x.v      ^|√ |
+
+3+|Widening Floating-Point/Integer Type-Convert Instructions
+|vfwcvt.xu.f.v     ^|√ |
+|vfwcvt.x.f.v      ^|√ |
+|vfwcvt.f.xu.v     ^|√ |
+|vfwcvt.f.x.v      ^|√ |
+|vfwcvt.f.f.v      ^|√ |
+
+3+|Narrowing Floating-Point/Integer Type-Convert Instructions (v-0.8 suffix changed)
+|vfncvt.xu.f.{v/w}     ^|√ |
+|vfncvt.x.f.{v/w}      ^|√ |
+|vfncvt.f.xu.{v/w}     ^|√ |
+|vfncvt.f.x.{v/w}      ^|√ |
+|vfncvt.f.f.{v/w}      ^|√ |
+
+3+|Vector Single-Width Integer Reduction Instructions
+|vredsum.vs      ^|√ |
+|vredmaxu.vs     ^|√ |
+|vredmax.vs      ^|√ |
+|vredminu.vs     ^|√ |
+|vredmin.vs      ^|√ |
+|vredand.vs      ^|√ |
+|vredor.vs       ^|√ |
+|vredxor.vs      ^|√ |
+
+3+|Vector Widening Integer Reduction Instructions
+|vwredsumu.vs     ^|√ |
+|vwredsum.vs      ^|√ |
+
+3+|Vector Single-Width Floating-Point Reduction Instructions
+|vfredosum.vs    ^|√ |
+|vfredsum.vs     ^|√ |
+|vfredmax.vs     ^|√ |
+|vfredmin.vs     ^|√ |
+
+3+|Vector Widening Floating-Point Reduction Instructions
+|vfwredosum.vs    ^|√ |
+|vfwredsum.vs     ^|√ |
+
+3+|Vector Mask-Register Logical Instructions
+|vmand.mm       ^|√ |
+|vmnand.mm      ^|√ |
+|vmandnot.mm    ^|√ |
+|vmxor.mm       ^|√ |
+|vmor.mm        ^|√ |
+|vmnor.mm       ^|√ |
+|vmornot.mm     ^|√ |
+|vmxnor.mm      ^|√ |
+
+3+|Vector mask Instructions
+|v(m)popc.m  (v-0.8 changed)      ^|√ |
+|v(m)first.m (v-0.8 changed)      ^|√ |
+|vmsbf.m     (v-0.8 changed)      ^|√ |
+|vmsif.m     (v-0.8 changed)      ^|√ |
+|vmsof.m     (v-0.8 changed)      ^|√ |
+|viota.m       ^|√ |
+|vid.v         ^|√ |
+
+3+|Integer Extract Instruction
+|vext.x.v (v-0.8 removed)      ^|√ |
+
+3+|Integer Scalar Move Instructions
+|vmv.x.s (v-0.8 included)       |  |
+|vmv.s.x      ^|√ |
+
+3+|Floating-Point Scalar Move Instructions
+|vfmv.f.s      ^|√ |
+|vfmv.s.f      ^|√ |
+
+3+|Vector Slide Instructions
+|vslideup.vx     ^|√ |
+|vslideup.vi     ^|√ |
+|vslidedown.vx   ^|√ |
+|vslidedown.vi   ^|√ |
+|vslide1up.vx    ^|√ |
+|vslide1down.vx  ^|√ |
+
+3+|Vector Register Gather Instructions
+|vrgather.vv   ^|√ |
+|vrgather.vx   ^|√ |
+|vrgather.vi   ^|√ |
+
+3+|Vector Compress Instruction
+|vcompress.vm   ^|√ |reserved
+
+3+|Whole Vector Register Move (v-0.8 included)
+3+|TODO
+
+3+|Vector Integer Dot-Product Instructions
+|vdotu.vv   ^|√ |
+|vdot.vv    ^|√ |
+
+3+|Vector Floating-Point Dot-Product Instruction
+|vfdot.vv   ^|√ |
+
+|===
