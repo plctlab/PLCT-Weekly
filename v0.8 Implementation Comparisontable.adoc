@@ -1,0 +1,73 @@
+.v0.8 Implementation Comparison table
+
+|===
+|Instructions |SiFive |PLCT 
+
+|Configuration-Setting Instructions     |Zvediv is not included |√ 
+|Vector Unit-Stride Instructions        |√ |√ 
+|Vector Strided Instructions            |√ |√ 
+|Vector Indexed Instructions            |√ |√ 
+|Unit-stride Fault-Only-First Loads Instructions    |√ |√ 
+|Vector Load/Store Segment Instructions | |√ 
+|Vector Load/Store Whole Register Instructions |√ |
+|Vector AMO Operations | |√ 
+|Vector Single-Width Integer Add and Subtract Instructions|√ |√ 
+|Vector Widening Integer Add and Subtract Instructions |√ |√ 
+|Vector Integer Add-with-Carry / Subtract-with-Borrow Instructions |√ |√ 
+|Vector Bitwise Logical Instructions |√ |√ 
+|Vector Single-Width Bit Shift Instructions |√ |√ 
+|Vector Narrowing Integer Right Shift Instructions |√ |√ 
+|Vector Integer Comparison Instructions |√ |√ 
+|Vector Integer Min/Max Instructions |√ |√ 
+|Vector Single-Width Integer Multiply Instructions |√ |√ 
+|Vector Integer Divide Instructions |√ |√ 
+|Vector Widening Integer Multiply Instructions |√ |√ 
+|Vector Single-Width Integer Multiply-Add Instructions |√ |√ 
+|Vector Widening Integer Multiply-Add Instruction |√ |√ 
+|Vector Quad-Widening Integer Multiply-Add Instructions |√ |
+|Vector Integer Merge and Move Instructions |√ |√  
+|Vector Single-Width Saturating Add and Subtract Instructions |√ |√ 
+|Vector Single-Width Averaging Add and Subtract Instructions  |√ |√ 
+|Vector Single-Width Fractional Multiply Instructions with   Rounding and Saturation |√ |√
+|Vector Single-Width Scaling Shift Instructions |√ |√ 
+|Vector Narrowing Fixed-Point Clip Instructions |√ |√ 
+|Vector Single-Width Floating-Point Add/Subtract Instructions |√ |√ 
+|Vector Widening Floating-Point Add/Subtract Instructions |√ |√ 
+|Vector Single-Width Floating-Point Multiply/Divide Instructions |√ |√ 
+|Vector Widening Floating-Point Multiply Instructions |√ |√ 
+|Vector Single-Width Floating-Point Fused Multiply-Add Instructions |√ |√ 
+|Vector Widening Floating-Point Fused Multiply-Add Instructions |√ |√ 
+|Vector Floating-Point Square-Root Instruction |√ |√ 
+|Vector Floating-Point MIN/MAX Instructions |√ |√ 
+|Vector Floating-Point Sign-Injection Instructions |√ |√ 
+|Vector Floating-Point Compare Instructions |√ |√ 
+|Vector Floating-Point Classify Instruction |√ |√ 
+|Vector Floating-Point Merge and Move Instructions |√ |√ 
+|Single-Width Floating-Point/Integer Type-Convert Instructions |√ |√ 
+|Widening Floating-Point/Integer Type-Convert Instructions |√ |√ 
+|Narrowing Floating-Point/Integer Type-Convert Instructions |√ |√  
+|Vector Single-Width Integer Reduction Instructions |√ |√ 
+|Vector Widening Integer Reduction Instructions |√ |√ 
+|Vector Single-Width Floating-Point Reduction Instructions |√ |√ 
+|Vector Widening Floating-Point Reduction Instructions |√ |√ 
+|Vector Mask-Register Logical Instructions |√ |√ 
+|Vector mask Instructions |√ |√ 
+|Integer Extract Instruction |√ |√ 
+|Integer Scalar Move Instructions |√ |√ 
+|Floating-Point Scalar Move Instructions |√ |√ 
+|Vector Slide Instructions |√ |√ 
+|Vector Register Gather Instructions |√ |√ 
+|Vector Compress Instruction |√ |√ 
+|Whole Vector Register Move |√ |
+|Vector Integer Dot-Product Instructions | |√ 
+|Vector Floating-Point Dot-Product Instruction | |√ 
+|vsetvli Instruction immdiate operand alias | |√ 
+|Vector Unit-Stride Instructions alias        | |√ 
+|Vector Strided Instructions alias            | |√ 
+|Vector Indexed Instructions alias            | |√ 
+|Unit-stride Fault-Only-First Loads Instructions alias    | |√ 
+|Vector Load/Store Segment Instructions alias | |√ 
+|Vector AMO Operations alias | |√ 
+|10+ other Pseudo Instructions  | |√ 
+
+|===
