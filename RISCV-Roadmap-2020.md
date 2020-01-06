@@ -18,7 +18,7 @@ Hi all，
 
 今年将一个一个的填坑，将 Clang++/LLVM for RISC-V 逐步做到跟 GNU GCC/g++ 同等能力或超过。
 
-新指令集的支持，例如 rvv-llvm 等依然会继续，形成一个完整的开源实现。正确能够跟 Sifive 已经提交 Review 的 rvv WIP 实现一起进入 upstream。
+新指令集的支持，例如 rvv-llvm 等依然会继续，形成一个完整的开源实现。争取能够跟 Sifive 已经提交 Review 的 rvv WIP 实现一起进入 upstream。
 
 ## OpenCV for RISC-V
 
@@ -46,4 +46,4 @@ Sifive 基于 Eclipse 的 IDE 已经能够满足基本需求。更好用的IDE�
 
 ## 大量招募实习生
 
-如上，我们宏伟的计划已经在这里了。接下来我们需要大量有理想有干劲的同学（也就是你）的加入。来一起做点有意思的事情吧！戳 mingjie@iscas.ac.cn 发送简历。
+如上，我们宏伟的计划已经在这里了。接下来我们需要大量有理想有干劲的同学（也就是你）的加入。来一起做点有意思的事情吧！更新更新简历，写封自我推荐信，戳 mingjie@iscas.ac.cn 发给邢老师。
