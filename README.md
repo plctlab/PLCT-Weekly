@@ -24,7 +24,7 @@
 
 ## 知乎专栏发布渠道
 
-https://zhuanlan.zhihu.com/c_1179708202668752896
+https://zhuanlan.zhihu.com/plct-lab
 
 ## 微信公众号文章发布渠道
 
