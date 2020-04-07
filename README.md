@@ -2,6 +2,8 @@
 
 软件所PLCT实验室在开源领域的不定期简报
 
+[国内RISC-V厂商的QEMU支持计划](PLCT-QEMU-Support-Project-for-Domestic-RV-Vendors.md)
+
 ## 最新的 Weekly
 
 - [2020-03-30](2020-03-30.md)
