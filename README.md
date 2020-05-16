@@ -14,7 +14,7 @@ NOTICE：
 
 ## 当前刊号
 
-- [2020-05-16](2020-05-16.md)
+- [PLCT开源进展·第一期（2020-05-16）](2020-05-16.md)
 
 ## PLCT号外
 - [国内RISC-V厂商的QEMU支持计划](PLCT-QEMU-Support-Project-for-Domestic-RV-Vendors.md)
