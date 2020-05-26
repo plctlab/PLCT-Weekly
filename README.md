@@ -12,14 +12,18 @@ https://zhuanlan.zhihu.com/plct-lab
 NOTICE：
 自2020年3月起转入知乎专栏更新，不再通过HelloGCC公众号同步推送。请知悉。
 
-## 当前刊号
+## PLCT开源进展 当前刊号
 
 - [PLCT开源进展·第一期（2020-05-16）](2020-05-16.md)
 
 ## PLCT号外
 - [国内RISC-V厂商的QEMU支持计划](PLCT-QEMU-Support-Project-for-Domestic-RV-Vendors.md)
 - [PLCT实验室2020开源RISC-V工具支持路线图](RISCV-Roadmap-2020.md)
-- [招聘信息（2020年03月）](Jobs-2020-03.md)
+- [招聘信息（长期有效）](Jobs.md)
+
+## 往期 PLCT开源进展
+
+- [PLCT开源进展·第一期（2020-05-16）](2020-05-16.md)
 
 ## 往期 PLCT Weekly
 
