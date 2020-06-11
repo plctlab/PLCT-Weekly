@@ -60,6 +60,21 @@ PLCT全称是程序语言与编译技术实验室，隶属于中科院软件所�
 
 ## 开放实习生岗位
 
+### BJ31 OpenROAD 开发实习生（as 代码分析员）
+
+工作内容：
+
+1. PLCT实验室希望建立对EDA工具链OpenROAD进行维护、开发的能力，并成为OpenROAD活跃贡献者。目前OpenROAD工具链的英文资料质量有限，并且缺少中文资料。我们希望招募以为LV4级别的实习生，阅读OpenROAD代码，完善中英文资料，理解各个工具的作用，优化或开发新的工具。
+2. 输出分为编写文档和代码贡献。编写文档方面，通过理解OpenROAD源代码，优化OpenROAD英文文档，并且编写中文文档。代码贡献方面，根据源代码研究情况，选择OpenROAD开放项目进行开发工作。（开放项目参考： https://openroad.readthedocs.io/en/latest/contrib/getting-involved.html ）在编写文档和代码贡献的过程中，完成技术报告分享（公开技术报告形式可以参考 [PLCT OpenDay 2019](https://www.bilibili.com/video/BV1PJ41147Ek)）。
+3. 负责作为联络员在社区中观察社区动态、形成每周社区动态报告。在需要的时候代表PLCT通过英文邮件跟社区讨论。
+
+入职要求：
+
+0. 满足PLCT实习生共性要求，级别达到 LV4（也就是要求能够独立展开）。
+1. 成功构建 OpenROAD 工具链，并实现一种开源芯片的 RTL to GDS 全流程。观看过PLCT的OpenROAD[文章](https://zhuanlan.zhihu.com/p/141713099)及[报告](https://www.bilibili.com/video/BV17C4y1a7Pv/)。（利益相关：这不仅是PLCT的自卖自夸，作者也是你入职之后的直接伙伴，可以通过文章和报告看下风格是否相合。）
+2. 对计算机体系结构、芯片设计、EDA工具链的知识有一定了解。
+3. 熟练使用 C++，会 Verilog 程序设计语言。
+4. 有强烈的动机。
 
 ### BJ30 QEMU 代码分析员（1名）
 
