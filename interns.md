@@ -60,6 +60,14 @@ PLCT全称是程序语言与编译技术实验室，隶属于中科院软件所�
 
 ## 开放实习生岗位
 
+### BJ33 Firefox/Spidermonkey 开发实习生，porting to RISC-V
+
+工作内容：
+
+1. 就像将 V8 移植到 RISC-V 平台一样，将 Spidermonkey 移植到 RISC-V 平台。
+2. 在这个过程中，写文章普及 Spidermonkey 和 RISC-V 的知识，做技术分享。就像是PLCT一贯以来做的那样。
+3. 跟 mentor 一起跟 Mozilla 上游交流，将移植工作 upstream。
+
 ### BJ32 Dart for RISC-V 开发实习生
 
 工作内容：
