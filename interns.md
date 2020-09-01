@@ -1,6 +1,6 @@
 # PLCT实验室对实习生开放的岗位
 
-最后更新：2020年7月3日，有效期4周。
+最后更新：2020年7月17日，有效期4周。
 
 这里是实习生的岗位页面。全职校招及社招请前往 [Jobs.md](Jobs.md)。
 
@@ -59,6 +59,14 @@ PLCT全称是程序语言与编译技术实验室，隶属于中科院软件所�
 邮件必须附带简历。没有PDF格式简历的邮件不保证会收到回复。
 
 ## 开放实习生岗位
+
+### BJ33 Firefox/Spidermonkey 开发实习生，porting to RISC-V
+
+工作内容：
+
+1. 就像将 V8 移植到 RISC-V 平台一样，将 Spidermonkey 移植到 RISC-V 平台。
+2. 在这个过程中，写文章普及 Spidermonkey 和 RISC-V 的知识，做技术分享。就像是PLCT一贯以来做的那样。
+3. 跟 mentor 一起跟 Mozilla 上游交流，将移植工作 upstream。
 
 ### BJ32 Dart for RISC-V 开发实习生
 
