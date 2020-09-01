@@ -29,6 +29,27 @@
 
 ## 岗位介绍
 
+### NJ16: open source compiler engineer (senior)
+
+工作职责
+
+1. 代表 PLCT Lab (ISCAS) 参与 GNU GCC/Binutils/GDB/glibc 和/或 Clang/LLVM/MLIR 的开源软件维护，包括且不限于 RISC-V 后端的功能完善和各类优化。
+2. 作为 PLCT Lab staff 进行编译技术方面的公开技术培训和分享、GCC/LLVM 等开源软件的技术普及。
+3. 参与或主持 PLCT Lab 的商业交付项目提供设计、实现、文档、测试、培训等相关工作。
+
+招聘条件
+
+1. 要求有3年以上直接的编译器项目经验，对 GCC、 LLVM 的一种非常熟悉（天天修改打交道）。
+2. 熟悉 GCC 或 LLVM 某一个编译器架构的后端实现、熟悉 RISC-V 架构以及 Arm/X86/MIPS 架构中的一个。
+3. 活跃参与上述开源编译器社区， patch or email 都算。
+
+其他说明
+
+1. 此岗位是 senior 岗位，薪资面议。
+2. 所有 senior 默认 remote。绝对的实力至上主义和结果导向（外部可见交付物）
+3. 遵守 PLCT 交付班车，每个月 1 号、16 号进行交付物确认。
+4. 没有年终奖，没有13薪，没有股票。（好处是不开心随时可以换工作。）
+
 ### NJ01: 编译器和虚拟机开发C++工程师（2名）
 
 工作职责
