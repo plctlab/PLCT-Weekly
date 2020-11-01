@@ -1,5 +1,14 @@
 # PLCT开源基础软件进展（半月刊）
 
+我们在招聘！实习生，应届生，社会人，统统都招！
+
+- [实习生招聘信息（2020年11月1日更新，热乎的！）](interns.md)
+- [全职招聘信息（2020年11月1日更新，热乎的！）](Jobs.md)
+
+## PLCT开源进展 当前刊号
+
+- [PLCT开源进展·第12期（2020-11-01）](2020-11-01.md)
+
 从2020年5月1日开始，PLCT Weekly 升级为 **「PLCT开源基础软件进展（半月刊）」**。
 您可以通过 [本仓库](https://github.com/isrc-cas/plct-weekly)
 以及PLCT实验室的 [知乎专栏](https://zhuanlan.zhihu.com/plct-lab) 进行订阅，
@@ -12,18 +21,16 @@ https://zhuanlan.zhihu.com/plct-lab
 NOTICE：
 自2020年3月起转入知乎专栏更新，不再通过HelloGCC公众号同步推送。请知悉。
 
-## PLCT开源进展 当前刊号
-
-- [PLCT开源进展·第10期（2020-10-01）](2020-10-01.md)
-
 ## PLCT号外
-- [实习生招聘信息（长期有效）](interns.md)
+- [实习生招聘信息（2020年11月1日更新，热乎的）](interns.md)
 - [国内RISC-V厂商的QEMU支持计划](PLCT-QEMU-Support-Project-for-Domestic-RV-Vendors.md)
 - [PLCT实验室2020开源RISC-V工具支持路线图](RISCV-Roadmap-2020.md)
 - [全职招聘信息（长期有效）](Jobs.md)
 
 ## 往期 PLCT开源进展
 
+- [PLCT开源进展·第12期（2020-11-01）](2020-11-01.md)
+- [PLCT开源进展·第11期（2020-10-16）](2020-10-16.md)
 - [PLCT开源进展·第10期（2020-10-01）](2020-10-01.md)
 - [PLCT开源进展·第09期（2020-09-16）](2020-09-16.md)
 - [PLCT开源进展·第08期（2020-09-01）](2020-09-01.md)
