@@ -62,6 +62,15 @@ PLCT全称是程序语言与编译技术实验室，隶属于中科院软件所�
 
 ## 开放实习生岗位
 
+### BJ38 LuaJIT 开发实习生（1名）
+
+目标：将 LuaJIT 移植到 RV64G 平台。
+背景参考：https://github.com/plctlab/plctlab.github.io/issues/9
+
+入职要求：
+LV3+，能进行英语交流，对编译技术有基本了解。如果事先了解过ELF格式、RISC-V或其他指令集、相关ABI文档，那么都算是加分项。
+远程实习，不需要坐班。
+
 ### BJ37 GCC/Binutils/glibc/linker 开发实习生 （10名）
 
 最近PLCT实验室在参与RISC-V国际基金会的相关新指令扩展的工作，具体内容是为 unratified extensions （就是还在制定中的扩展指令集）进行 GNU Toolchain 的实现，用于验证草案本身在设计上是否存在遗漏缺失、是否在功能或性能上有改进的空间。目前面向大学生及研究生招募开发者，以PLCT实验室实习生的身份，直接参与到RISC-V基金会管理下的GCC工具链开发中，并有可能后续直接将代码（patch）提交到上游（upstream）。最近开始有业界一线的大佬指导和review实习生的代码，是非常难得的学习机会。
