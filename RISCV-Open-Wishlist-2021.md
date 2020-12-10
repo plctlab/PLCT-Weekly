@@ -29,29 +29,45 @@ Hi all，
 
 如果有想要看到中文版的RISC-V相关或者编译器、虚拟机、模拟器相关的技术类书籍，也可以许愿翻译。PLCT会去找出版社商量，购买版权，翻译出版。
 
-### Toolchain, llvm
+目前不仅接受英文版本图书的提名，也非常欢迎日语图书的提名。近年来我们看到了不少来自日本作者的编译器、虚拟机、操作系统的著作，浅显易懂，非常适合自学和教学。欢迎在日本留学的小伙伴推荐。
 
-Pull Requests are welcome!
+### Toolchain: GNU Toolchain, Clang/LLVM, etc
 
-### Toolchain, GNU GCC, Binutils
+- Gold Linker 对于 RISC-V 后端的支持，以及常规性的维护。
 
-Pull Requests are welcome!
+- RISC-V Zfinx 扩展标准的 GNU/LLVM/QEMU/GDB 参考实现支持。
 
-### Profilers, Performance Analysis Tools
+- 欢迎添加
 
-Pull Requests are welcome!
+### 语言虚拟机：JVM、V8 等
 
-### Perf Tracking Infrastructure
+- LuaJIT RV64G porting
 
-Pull Requests are welcome!
+- 将RV64G上Java执行速度提升100倍，aka 启用和优化 JIT/AOT。
 
-### GDB and other debuggers
+- Spidermonkey RV64G porting
 
-Pull Requests are welcome!
+- 确保 Golang 在 RV64GC 上的功能性完整
 
-### glibc, other system libs
+- 确保 Rust 在 RV64GC 上运行的正确性
 
-Pull Requests are welcome!
+- 欢迎添加
+
+### 性能分析或调试工具类
+
+- DynamoRIO 移植到 RV64GC 平台
+
+- Valgrind
+
+### 基础库或应用框架类
+
+- OpenCV 在 RV64GCV 上的优化
+
+- OpenBLAS 在 RV64GCV 上的加速
+
+- AOSP 在 RV64G 上跑起来
+
+- Firefox 在 RV64GC 上跑起来
 
 # 英文版 Open Wishlist for RISC-V 2021
 
