@@ -4,7 +4,7 @@ Hi all，
 
 软件所PLCT实验室正在规划2021年在 RISC-V 开源开发工具上的布局。
 
-欢迎各位通过 Pull Requests 或 Issues 提供建议和帮助，将自己想要的 features / tools 发给我们。
+欢迎各位通过 [Pull Requests 或 Issues](https://github.com/isrc-cas/PLCT-Weekly/issues) 提供建议和帮助，将自己想要的 features / tools 发给我们。
 
 我们会根据关注和提到的用户数进行功能点的排序，在2021年1月1日确定好2021年路线图。
 
