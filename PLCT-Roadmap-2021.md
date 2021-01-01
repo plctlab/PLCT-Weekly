@@ -1,6 +1,8 @@
 # PLCT实验室在RISC-V开发工具方向上的2021规划
 
-最后更新：2021-1-1 v0.1 确定今年的目标
+更改历史：
+- 2021-1-1 v0.2 添加熊大的 wasm-micro-runtime 许愿
+- 2021-1-1 v0.1 确定今年的目标
 
 感谢大家在许愿池计划中的踊跃投稿，今年收到了比去年多得多的心愿和建议。根据目前的汇总和排序，我们将 PLCT Lab 在2021年的目标公开如下：
 
@@ -64,6 +66,15 @@ Mozilla Firefox 是自由软件领域非常重要的存在，不仅仅是一个�
 DynamoRIO 是一个比较重要的开发人员使用的性能跟踪和分析工具。在2021年，PLCT Lab 计划完成以下目标：
 
 - 让 DynamoRIO 及依赖的性能分析工具，能够运行在 RV64GC 平台，能够用于 RISC-V 系统或程序的性能跟踪和剖析。
+
+### wasm micro runtime for RISC-V
+
+感谢熊大的补充。在2021年，PLCT Lab 计划完成以下目标：
+
+- 在V8/SM大型引擎之外，移植更多的WASM运行时到RISC-V平台，包括RV32G和RV64G。
+
+https://github.com/bytecodealliance/wasm-micro-runtime
+
 
 ### OpenCV for RV64GCV
 
