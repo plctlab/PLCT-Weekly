@@ -17,7 +17,7 @@ PLCT全称是程序语言与编译技术实验室，隶属于中科院软件所�
 
 ### 所有PLCT实习生共性要求
 
-入职要求：
+开放岗位的入职要求（教学助理等非技术类的同学只需要满足前两条）：
 
 1. 良好的沟通理解能力、能够观察和感知他人的态度和观点。能够主动沟通、遇到计划外或坏消息能够大声的说出来。
 2. 知道如何陈述bugs/issues以及向其他人求助，如何不浪费同事的时间，将复现bug需要的信息提供完整。
@@ -31,9 +31,9 @@ PLCT全称是程序语言与编译技术实验室，隶属于中科院软件所�
 
 ### 实习结束后可以得到什么
 
-1. 变强。在开源技术社区积累自己的名望。
+1. 变强。在开源技术社区积累自己的名望。而且并不会变秃。
 1. offer。LV4+可以入职软件所PLCT实验室,并内推各大公司的编译器相关团队。
-1. 自信。PLCT是完全实力至上主义，凭自己的实力就可以得到肯定。
+1. 被认可。PLCT是完全实力至上主义，凭自己的实力就可以得到肯定。
 
 ### 如何正确的投递简历
 
@@ -58,6 +58,15 @@ PLCT全称是程序语言与编译技术实验室，隶属于中科院软件所�
 - [我们如何进行实习生招聘](https://github.com/lazyparser/weloveinterns/blob/master/how-do-we-interview-interns.md)
 - [我们如何对实习生进行能力评定和培养](https://github.com/lazyparser/weloveinterns/blob/master/how-do-we-rank-interns.md)
 - [实习生生存手册](https://github.com/lazyparser/survivial-manual-for-interns) 目前还在断断续续的撰写中，欢迎围观和贡献PR (Pull Requests)
+
+### BJ39 Web 前端开发实习生（1名）
+
+目标：开发和维护包括 [RISC-V 软件生态状态跟踪数据库](https://github.com/isrc-cas/riscv-ecosystem-tracking) 在内的 PLCT Lab 开发维护的各类 Web 页面。包括 HTML/CSS/JS。推荐和鼓励使用最新的前端框架。
+
+入职要求：
+LV2+
+
+远程实习，不需要坐班。遵循每个月1号和16号的外部可见交付物报告制度。
 
 ### BJ38 LuaJIT 开发实习生（1名）
 
