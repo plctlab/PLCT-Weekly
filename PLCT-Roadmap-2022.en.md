@@ -108,7 +108,7 @@ Firefox 的 RISC-V 适配由 Firefox 开发者 Makoto Kato 在 2021 年首先完
 
 ### Clang/LLVM
 
-- 作为 Development Partner 继续协助 RVI 提供各种草案标准的 GCC 实现。
+- 作为 Development Partner 继续协助 RVI 提供各种草案标准的 LLVM 实现。
 - 提供更多的CI基础设施，更加及时的发现破坏掉RISC-V平台的patchset并进行修复。
 - 将 Clang/LLVM 的速度和代码体积等性能指标纳入 PTS 进行跟踪。
 - 尝试实现和优化 Vector 和 P 扩展的自动向量化支持。
