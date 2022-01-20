@@ -79,7 +79,7 @@ In 2022, we hope to:
 - Continue to look for speed optimization opportunities for V8, combined with the new ratify ISA Specs at the end of 2021, to improve the code execution speed of JS by about 25%. The goal set last year was to increase N times, which was a bit hasty.
 - Incorporates the speed of the V8 into the PTS for tracking.
 
-###Node.js
+### Node.js
 
 With V8 upstream, the use of Node.js on RISC-V became possible.
 
@@ -106,7 +106,7 @@ In 2022, we hope to:
 - Incorporates Firefox performance into PTS for real-time tracking.
 - The Tarsier Project will ensure stable Firefox binaries are available on all popular Linux distributions.
 
-###GCC
+### GCC
 
 - Continue to assist RVI in providing GCC implementations of various draft standards as a Development Partner.
 - Establish dynamic CI based on mailing list, find patchsets that break the RISC-V platform in a timely manner and repair them.
