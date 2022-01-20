@@ -50,9 +50,9 @@ SimSoft项目组是在PLCT实验室培育的一个团队，其使命是为了中
 工作职责
 
 - 通过开发和搭建开发测试工具、框架、流程、环境，保障 Tarsier 项目组构建出的 Linux 发行版得到快速有效的测试。
-- 搭建一套自动化或半自动化的测试平台，能够针对构建出的 Fedora、Debian、Ubuntu、Gentoo、ArchLinux系统进行回归测试。
+- 搭建一套自动化或半自动化的测试平台，能够针对构建出的 Fedora、Debian、Ubuntu、Gentoo、Arch Linux 系统进行回归测试。
 - 搭建一个或一套硬件测试环境，不少于一千台 RISC-V 硬件，可以运行 Linux 发行版，进行性能评测。
-- 能够实现对 Fedora、Debian、Ubuntu、Gentoo、ArchLinux 发行版的每日构建和每日归回测试。
+- 能够实现对 Fedora、Debian、Ubuntu、Gentoo、Arch Linux 发行版的每日构建和每日归回测试。
 
 招聘条件
 
@@ -65,10 +65,10 @@ SimSoft项目组是在PLCT实验室培育的一个团队，其使命是为了中
 
 工作职责
 
-- 参与搭建一个集成构建环境，能够自动化的构建 Fedora、Debian、Ubuntu、Gentoo、ArchLinux 系统中的一个。
-- 参与搭建一套自动化或半自动化的测试平台，能够针对构建出的 Fedora、Debian、Ubuntu、Gentoo、ArchLinux 系统进行回归测试。
+- 参与搭建一个集成构建环境，能够自动化的构建 Fedora、Debian、Ubuntu、Gentoo、Arch Linux 系统中的一个。
+- 参与搭建一套自动化或半自动化的测试平台，能够针对构建出的 Fedora、Debian、Ubuntu、Gentoo、Arch Linux 系统进行回归测试。
 - 参与搭建一个或一套硬件测试环境，不少于一千台 RISC-V 硬件，可以运行 Linux 发行版，进行性能评测。
-- 参与实现对 Fedora、Debian、Ubuntu、Gentoo、ArchLinux 发行版的每日构建和每日归回测试。
+- 参与实现对 Fedora、Debian、Ubuntu、Gentoo、Arch Linux 发行版的每日构建和每日归回测试。
 
 招聘条件
 
