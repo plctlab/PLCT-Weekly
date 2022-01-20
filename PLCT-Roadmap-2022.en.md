@@ -1,6 +1,8 @@
 # PLCT Roadmap 2022
 
-Hello everyone, this is the roadmap of PLCT Lab's third year public lab in the RISC-V open source ecosystem.
+（This article was translated by Google Translate. Syntax & Semantic issue reporting are welcome.)
+
+Hello everyone, this is the roadmap of PLCT Lab for 2022.
 In 2022, we will continue to increase support for RISC-V on toolchains, virtual machines, and simulators.
 The investment in GCC, LLVM, V8, QEMU and other communities will continue to increase.
 At the same time, we are pleased to announce that Tarsier Team has completed its incubation and will begin to operate as an independent operating system team of ISRC.
@@ -15,13 +17,13 @@ In 2022 the PLCT Lab hopes to achieve the following key goals:
 
 ## Main project: Tarsier Project
 
-The Intelligent Software Research Center (ISRC) of the Institute of Software, Chinese Academy of Sciences (ISCAS) will incubate the Tarsier Project in 2021. The goal of the Tarsier Project is to promote support for the RISC-V platform in mainstream Linux distributions (including Debian/Ubuntu, Fedora, Arch Linux, Gentoo, openEuler, etc.) to match or exceed the level of support for the AArch64 platform. Specifically divided into the following different aspects:
+The Intelligent Software Research Center (ISRC) of the Institute of Software, Chinese Academy of Sciences (ISCAS) incubated the Tarsier Project in 2021. The goal of the Tarsier Project is to promote support for the RISC-V platform in mainstream Linux distributions (including Debian/Ubuntu, Fedora, Arch Linux, Gentoo, openEuler, etc.) to match or exceed the level of support for the AArch64 platform. Specifically divided into the following different aspects:
 
 ### Tarsier Team
 
 The Tarsier Team was established at the end of 2021 and undertakes various specific tasks required by the software institute Tarsier Project. The Tarsier team in 2022 will start from the integration and testing of open source operating systems, and form a testing team of more than 300 full-time, part-time, interns and volunteers to provide more comprehensive quality assurance for the RISC-V software ecosystem and the status quo.
 
-All those interested in RISC-V and open source work are welcome to join us. Feel free to send an email to "Wu Wei <wuwei2016@iscas.ac.cn>" to inquire. At the same time, it also recruits repair kits and developers, and there is no limit to the number of people.
+All those interested in RISC-V and open source work are welcome to join us. Feel free to send an email to "Wei Wu <wuwei2016@iscas.ac.cn>" to inquire. At the same time, it also recruits repair kits and developers, and there is no limit to the number of people.
 
 ### Operating systems and common software optimized for RISC-V laptops
 
