@@ -5,6 +5,14 @@
 在 GCC、LLVM、V8、QEMU 等社区的投入会继续加大。
 同时我们很高兴地宣布，Tarsier Team 完成了孵化，将会开始作为ISRC的一个独立的操作系统团队进行运作。
 
+## 关键目标
+
+在2022年PLCT实验室希望能够达到以下关键目标：
+
+1. 准备好RISC-V笔记本电脑需要的软件系统，使得流行的Linux发行版和常用的OA软件、开发工具可以流畅运行在RISC-V笔记本上。
+2. 完成一半以上「最后5%」的常用开源软件在 RISC-V 上的移植和适配工作。
+3. 通过 Tarsier Project 组建一支 RISC-V 软件测试队伍，为 RISC-V 生态中开源软件的稳定性和软件质量提供保证。
+
 ## 主体工程： Tarsier Project
 
 中科院软件所（ISCAS）智能软件研究中心（ISRC）在2021年开始孵化 Tarsier Project。 Tarsier Project 的目标是促进主流 Linux 发行版（包括 Debian/Ubuntu、Fedora、Arch Linux、Gentoo、openEuler 等）对于 RISC-V 平台的支持，达到或超过 AArch64 平台的支持程度。具体分成了以下几个不同的方面：
