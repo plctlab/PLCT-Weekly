@@ -151,7 +151,7 @@ Firefox 的 RISC-V 适配由 Firefox 开发者 Makoto Kato 在 2021 年首先完
 - herbceptions： 在2022年我们尝试熟悉 [herbceptions：](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0709r1.pdf) 并在RISC-V工具链中进行支持。感谢 [tearosccebe](https://github.com/tearosccebe) 的建议。
 - wasm GCC backend： 有趣的想法，我们会在2022年做一些尝试。感谢 [tearosccebe](https://github.com/tearosccebe) 的建议。
 - FPGA 优化的 RV64GC （最好 V）软核。感谢 [Icenowy](https://github.com/Icenowy) 的建议。虽然我们还不知道怎么做，但是会努力了。
-- 希望PLCT能出够写出关于讲解编译器GCC和QEMU原理的书籍，通过实战来进行分析。感谢 [bigmagic123](https://github.com/bigmagic123) 的建议。今年我们一定不拖了！
+- 希望PLCT能够写出关于讲解编译器GCC和QEMU原理的书籍，通过实战来进行分析。感谢 [bigmagic123](https://github.com/bigmagic123) 的建议。今年我们一定不拖了！
 - 希望PLCT能够在 RISC-V GCC 上投入精力更好的支持RVV，同时能够支持p扩展和v扩展的自动向量化。感谢 [bigmagic123](https://github.com/bigmagic123) 的建议。已经包含在GCC的年度计划中。
 - 希望早日用上GCC/LLVM的RISC-V全家桶版本，并且支持V/P扩展的自动向量化。感谢 [fanghuaqi](https://github.com/fanghuaqi) 的建议。已经包含在GCC的年度计划中。
 
