@@ -1,161 +1,169 @@
 # PLCT Roadmap 2022
 
-大家好，这是 PLCT Lab 第三年公开实验室在 RISC-V 开源生态系统中的 Roadmap。
-在 2022 年我们将会继续加大在工具链、虚拟机、模拟器上对 RISC-V 的支持力度。
-在 GCC、LLVM、V8、QEMU 等社区的投入会继续加大。
-同时我们很高兴地宣布，Tarsier Team 完成了孵化，将会开始作为ISRC的一个独立的操作系统团队进行运作。
+Hello everyone, this is the roadmap of PLCT Lab's third year public lab in the RISC-V open source ecosystem.
+In 2022, we will continue to increase support for RISC-V on toolchains, virtual machines, and simulators.
+The investment in GCC, LLVM, V8, QEMU and other communities will continue to increase.
+At the same time, we are pleased to announce that Tarsier Team has completed its incubation and will begin to operate as an independent operating system team of ISRC.
 
-## 主体工程： Tarsier Project
+## key goals
 
-中科院软件所（ISCAS）智能软件研究中心（ISRC）在2021年开始孵化 Tarsier Project。 Tarsier Project 的目标是促进主流 Linux 发行版（包括 Debian/Ubuntu、Fedora、Arch Linux、Gentoo、openEuler 等）对于 RISC-V 平台的支持，达到或超过 AArch64 平台的支持程度。具体分成了以下几个不同的方面：
+In 2022 the PLCT Lab hopes to achieve the following key goals:
+
+1. Prepare the software system required by RISC-V laptops, so that popular Linux distributions and commonly used OA software and development tools can run smoothly on RISC-V laptops.
+2. Complete the porting and adaptation of more than half of the "last 5%" common open source software on RISC-V.
+3. Set up a RISC-V software testing team through the Tarsier Project to ensure the stability and software quality of open source software in the RISC-V ecosystem.
+
+## Main project: Tarsier Project
+
+The Intelligent Software Research Center (ISRC) of the Institute of Software, Chinese Academy of Sciences (ISCAS) will incubate the Tarsier Project in 2021. The goal of the Tarsier Project is to promote support for the RISC-V platform in mainstream Linux distributions (including Debian/Ubuntu, Fedora, Arch Linux, Gentoo, openEuler, etc.) to match or exceed the level of support for the AArch64 platform. Specifically divided into the following different aspects:
 
 ### Tarsier Team
 
-眼镜猴团队（Tarsier Team）成立于2021年末，承担着软件所 Tarsier Project 所需的各项具体工作。2022年的眼镜猴团队将会从开源操作系统的集成和测试切入，组建超过300名全职、兼职、实习生和志愿者组成的测试小队，为 RISC-V 软件生态系统提供更为全面的质量保证和现状摸底。
+The Tarsier Team was established at the end of 2021 and undertakes various specific tasks required by the software institute Tarsier Project. The Tarsier team in 2022 will start from the integration and testing of open source operating systems, and form a testing team of more than 300 full-time, part-time, interns and volunteers to provide more comprehensive quality assurance for the RISC-V software ecosystem and the status quo.
 
-欢迎所有对 RISC-V 以及开源工作感兴趣的小伙伴加入我们。随时可以发邮件到 "吴伟 <wuwei2016@iscas.ac.cn>" 询问。同时也招聘修包和开发人员，没有人数限制。
+All those interested in RISC-V and open source work are welcome to join us. Feel free to send an email to "Wu Wei <wuwei2016@iscas.ac.cn>" to inquire. At the same time, it also recruits repair kits and developers, and there is no limit to the number of people.
 
-### 为 RISC-V 笔记本电脑优化的操作系统及常用软件
+### Operating systems and common software optimized for RISC-V laptops
 
-我们预期在2022年底有希望看到 RISC-V 笔记本电脑的问世。中科院软件所会在 RISC-V 软件生态上做好准备。 在2021年，Chromium 和 Firefox 两大开源浏览器已经完成了初步的支持，在2022年PLCT实验室将会与Tarsier团队通力合作，完成包括 LibreOffice 在内的常用软件及系统库的移植和优化工作。
+We expect to see RISC-V laptops coming out by the end of 2022. The Institute of Software, Chinese Academy of Sciences will prepare for the RISC-V software ecosystem. In 2021, two open source browsers, Chromium and Firefox, have completed initial support. In 2022, PLCT Lab will work with the Tarsier team to complete the porting and optimization of common software and system libraries including LibreOffice.
 
 ### RISC-V CI Infrastructure for Open Source Communities
 
-在2021年，PLCT Lab 与 RVI 合作，开始组建一个预期超过2000套 RISC-V 开发板的基础设施，并向所有 RISC-V 软件生态中所有的开源社区开放。在2022年，我们将继续完善 RISC-V Lab 的基础设施，完成对 RVI 企业及个人会员的免费开放，RVI 会员将能够直接登陆到哪吒D1开发板上使用RISC-V的软件。
+In 2021, PLCT Lab, in cooperation with RVI, begins to build an infrastructure expected to exceed 2,000 RISC-V development boards, open to all open source communities in all RISC-V software ecosystems. In 2022, we will continue to improve the infrastructure of RISC-V Lab and complete the free opening to RVI corporate and individual members. RVI members will be able to log in directly to the Nezha D1 development board to use RISC-V software.
 
-同时，在2022年， Performance Tracking System (PTS) 将会依托于 Tarsier Project 建立的基础设施，开始对 GCC、LLVM、V8、OpenJDK 等基础软件进行性能跟踪。
+At the same time, in 2022, the Performance Tracking System (PTS) will rely on the infrastructure established by the Tarsier Project to begin performance tracking of basic software such as GCC, LLVM, V8, and OpenJDK.
 
-## 从无到有：编译器和虚拟机的 RISC-V 适配
+## From scratch: RISC-V adaptation of compilers and virtual machines
 
 ### LibreOffice
 
-LibreOffice 是非常重要的办公软件，目前还没有能够在 RISC-V 上移植成功。在2022年我们希望能够在 RISC-V 笔记本上使用 LibreOffice 进行日常的OA办公。
+LibreOffice is a very important office software, and it has not been successfully transplanted on RISC-V. In 2022, we hope to be able to use LibreOffice on RISC-V notebooks for daily OA office work.
 
-- 让 LibreOffice 的 Writer、Calc、Impress 可以在 RISC-V 平台上稳定运行，并实验性支持 Draw、Math。
-- 通过 Tarsier Project 为各个 Linux 发行版用户提供预编译二进制包。
+- Make LibreOffice's Writer, Calc, and Impress run stably on the RISC-V platform, and experimentally support Draw and Math.
+- Provides precompiled binary packages for users of various Linux distributions through the Tarsier Project.
 
 ### Python Wheels for RISC-V
 
-仿照 [Python Wheels for the Raspberry Pi](https://piwheels.org/)，我们将在2022年尝试维护一个 for RISC-V 的 python 包仓库。感谢 [alexfanqi](https://github.com/alexfanqi) 的建议
+Following [Python Wheels for the Raspberry Pi](https://piwheels.org/), we will try to maintain a python package repository for RISC-V in 2022. Thanks to [alexfanqi](https://github.com/alexfanqi) for the suggestion
 
 ### DartVM
 
-Dart 语言正在某些领域变得越来越重要，DartVM 也是目前少数没有被移植到 RISC-V 平台的语言执行环境之一。我们希望在2022年完成 DartVM 的移植工作，为 RISC-V 社区带来一个新的软件生态。
+The Dart language is becoming more and more important in some areas, and DartVM is one of the few language execution environments that has not been ported to the RISC-V platform. We hope to complete the porting of DartVM in 2022, bringing a new software ecosystem to the RISC-V community.
 
 ### Valgrind
 
-我们在2021年低估了 Valgrind 的重要性，它被大量的应用软件依赖。我们希望在2022年完成 Valgrind 的移植工作，结束对依赖软件包的阻塞。
+We underestimated the importance of Valgrind in 2021, which is relied upon by a large number of applications. We hope to complete the porting of Valgrind in 2022, ending the blocking of dependent packages.
 
 ### Spidermonkey
 
-Spidermonkey 已经可以在 RISC-V 上通过解释器模式执行。在 2021 年我们与RVI合作开放了一个 Spidermonkey 的 JIT 开发实习岗位。有两名同学进行了开发，遗憾的是目前还没有完成开发工作，尚未运行起来 helloworld.js。在2022年我们预期完成 Baseline JIT 和 IonMonkey JIT 的适配工作，并能够获得超过10倍的性能提升。
+Spidermonkey can already be executed in interpreter mode on RISC-V. In 2021 we are opening a Spidermonkey JIT development internship in partnership with RVI. There are two students who have developed it. Unfortunately, the development work has not been completed yet, and helloworld.js has not been run yet. In 2022, we expect to complete the adaptation of Baseline JIT and IonMonkey JIT, and be able to achieve more than 10 times performance improvement.
 
 ### DynamoRIO
 
-我们在2021年提出希望完成 DynamoRIO 的移植工作。很遗憾在2021年没有完成。希望在2022年结束之前完成 DynamoRIO 的 RISC-V 移植并进入 upstream。
+We hope to complete the DynamoRIO port in 2021. It's a pity it wasn't done in 2021. It is hoped that DynamoRIO's RISC-V porting will be complete and upstream by the end of 2022.
 
 
 ### LuaJIT
 
-我们在2021年提出希望完成 LuaJIT 的移植工作。很遗憾在2021年没有完成。希望在2022年结束之前完成 LuaJIT 的 RISC-V 移植。
+We hope to complete the porting of LuaJIT in 2021. It's a pity it wasn't done in 2021. Hope to complete the RISC-V port of LuaJIT by the end of 2022.
 
-## 2022年的改进工作
+## Improvements for 2022
 
 ### V8
 
-2021年， 在 Brice Dobry 的带领下， V8 RISC-V 项目顺利的被 Google V8 上游接收，进入 upstream。 由于 RISC-V 目前还是 tier-3 支持平台，开发者新的提交随时有可能会破坏掉 RISC-V 后端， PLCT实验室建立一个独立的CI来检测 V8 最新代码在 RISC-V 平台上的可用性，并已经做到了在平均 1-2 个工作日内提交修复补丁。
+In 2021, under the leadership of Brice Dobry, the V8 RISC-V project was successfully accepted by Google V8 upstream and entered upstream. Since RISC-V is still a tier-3 support platform, new submissions by developers may break the RISC-V backend at any time. PLCT Labs established an independent CI to detect the availability of the latest V8 code on the RISC-V platform. , and have done so in an average of 1-2 business days to submit a fix.
 
-在 2022 年，我们希望：
-- 继续寻找 V8 的速度优化机会，结合2021年底新 ratify 的 ISA Specs，将 JS 的代码执行速度提升 25% 左右。去年设定的目标是提升N倍，有点草率了。
-- 将 V8 的速度纳入 PTS 进行跟踪。
+In 2022, we hope to:
+- Continue to look for speed optimization opportunities for V8, combined with the new ratify ISA Specs at the end of 2021, to improve the code execution speed of JS by about 25%. The goal set last year was to increase N times, which was a bit hasty.
+- Incorporates the speed of the V8 into the PTS for tracking.
 
-### Node.js
+###Node.js
 
-随着 V8 进入上游， Node.js 在 RISC-V 上的使用成为可能。
+With V8 upstream, the use of Node.js on RISC-V became possible.
 
-在 2022 年，我们希望：
-- 从 Node.js 16 LTS 开始，提供 RISC-V 的技术支持，确保 node.js LTS 版本在 RV64GC 上的正常运行。
-- 通过 Tariser 项目，帮助各大Linux发行版完成 node.js 依赖的 fix。
+In 2022, we hope to:
+- Starting from Node.js 16 LTS, provide technical support for RISC-V to ensure the normal operation of node.js LTS version on RV64GC.
+- Through the Tariser project, help major Linux distributions complete the fix of node.js dependencies.
 
 ### Chromium Browser
 
-Chromium Browser 的 RISC-V 适配由 SUSE 工程师 Andreas Schwab 在 2021 年首先完成，PLCT 实验室提供了 V8 方面的技术支持。 除了 openSUSE， Arch Linux、Gentoo Linux、Fedora 等都已经成功的运行起来了 Chromium。
+The RISC-V adaptation of Chromium Browser was first completed in 2021 by SUSE engineer Andreas Schwab, with technical support for V8 from PLCT Labs. In addition to openSUSE, Arch Linux, Gentoo Linux, Fedora, etc. have successfully run Chromium.
 
-在2022年，我们希望：
-- 协助所有 RISC-V 支持的patchset进入 Chromium 上游。
-- 将 Chromium 的性能纳入 PTS 进行实时跟踪。
-- Tarsier Project 将确保所有流行的 Linux 发行版上有稳定的 Chromium 二进制安装包。
+In 2022, we hope to:
+- Assist all RISC-V supported patchsets into Chromium upstream.
+- Incorporates Chromium performance into PTS for real-time tracking.
+- The Tarsier Project will ensure stable Chromium binaries are available on all popular Linux distributions.
 
 ### Firefox
 
-Firefox 的 RISC-V 适配由 Firefox 开发者 Makoto Kato 在 2021 年首先完成，PLCT 实验室的实习生同学将 patchset 成功 rebase 到最新版本并在 Arch Linux、Gentoo Linux、Fedora 等发行版上完成了打包，可以流畅的运行一些常见网页。由于 Spidermonkey 目前还是解释器执行，所以速度上与 V8 相比还有一个数量级的差距。
+The RISC-V adaptation of Firefox was first completed by Firefox developer Makoto Kato in 2021. The intern students in the PLCT lab successfully rebase the patchset to the latest version and package it on Arch Linux, Gentoo Linux, Fedora and other distributions. Can run some common web pages smoothly. Since Spidermonkey is currently executed by an interpreter, there is still an order of magnitude gap in speed compared with V8.
 
-在2022年，我们希望：
-- 完成 Spidermonkey 的 JIT 支持并集成进入 Firefox。
-- 协助所有 RISC-V 支持的patchset进入 Mozilla Firefox 上游。
-- 将 Firefox 的性能纳入 PTS 进行实时跟踪。
-- Tarsier Project 将确保所有流行的 Linux 发行版上有稳定的 Firefox 二进制安装包。
+In 2022, we hope to:
+- Completed Spidermonkey's JIT support and integrated into Firefox.
+- Assist all RISC-V supported patchsets into Mozilla Firefox upstream.
+- Incorporates Firefox performance into PTS for real-time tracking.
+- The Tarsier Project will ensure stable Firefox binaries are available on all popular Linux distributions.
 
-### GCC
+###GCC
 
-- 作为 Development Partner 继续协助 RVI 提供各种草案标准的 GCC 实现。
-- 建立基于邮件列表的动态CI，更加及时的发现破坏掉RISC-V平台的patchset并进行修复。
-- 将 GCC 的速度和代码体积等性能指标纳入 PTS 进行跟踪。
-- 尝试实现和优化 Vector 和 P 扩展的自动向量化支持。
-- 持续集成全家桶分支，确保功能可用。
-- 让 Gold Linker 可以支持 RISC-V。
-- 完善 GDB 中尚未支持的 RISC-V 功能并修复 GDB 中目前已知的所有 bugs。
+- Continue to assist RVI in providing GCC implementations of various draft standards as a Development Partner.
+- Establish dynamic CI based on mailing list, find patchsets that break the RISC-V platform in a timely manner and repair them.
+- Incorporate performance metrics such as GCC speed and code size into PTS for tracking.
+- Attempt to implement and optimize auto-vectorization support for Vector and P extensions.
+- Continuously integrate the whole family bucket branch to ensure that the function is available.
+- Enable Gold Linker to support RISC-V.
+- Improve RISC-V features not yet supported in GDB and fix all bugs currently known in GDB.
 
 ### Clang/LLVM
 
-- 作为 Development Partner 继续协助 RVI 提供各种草案标准的 LLVM 实现。
-- 提供更多的CI基础设施，更加及时的发现破坏掉RISC-V平台的patchset并进行修复。
-- 将 Clang/LLVM 的速度和代码体积等性能指标纳入 PTS 进行跟踪。
-- 尝试实现和优化 Vector 和 P 扩展的自动向量化支持。
-- 完善 LLVM 中 JITLink 中的 RISC-V 支持。
-- 完善 Flang 的 RISC-V 支持。
+- Continue to assist RVI in providing LLVM implementations of various draft standards as a Development Partner.
+- Provide more CI infrastructure, find and repair patchsets that break the RISC-V platform in a timely manner.
+- Incorporate performance metrics such as Clang/LLVM speed and code size into PTS for tracking.
+- Attempt to implement and optimize auto-vectorization support for Vector and P extensions.
+- Improve RISC-V support in JITLink in LLVM.
+- Improve Flang's RISC-V support.
 
 ### OpenJDK
 
-在 2021 年，华为BishengJDK团队和阿里云JVM团队开始向 OpenJDK 上游社区提交 RV64GC 的 patchset。 PLCT 实验室负责了 RV32GC 的适配开发任务。原计划半年的项目结果开发了一年多，终于在2022年的第一个星期完成 RV32GC 下 helloworld.class 的运行。在2022年，我们希望：
+In 2021, the Huawei BishengJDK team and the Alibaba Cloud JVM team began to submit the patchset of RV64GC to the OpenJDK upstream community. PLCT laboratory is responsible for the adaptation development task of RV32GC. The project that was originally planned for half a year has been developed for more than a year, and finally the operation of helloworld.class under RV32GC will be completed in the first week of 2022. In 2022, we hope to:
 
-- 完成 OpenJDK RV32GC 后端的 JIT （C1） 实现，并进行上游提交。
-- 跑通常见的 Java benchmarks 并寻找优化机会提高性能。
-- 将 OpenJDK for RV64GC 和 RV32GC 纳入 PTS 进行实时性能跟踪。
+- Complete the JIT (C1) implementation of the OpenJDK RV32GC backend and make an upstream commit.
+- Run common Java benchmarks and look for optimization opportunities to improve performance.
+- Incorporates OpenJDK for RV64GC and RV32GC into PTS for real-time performance tracking.
 
 ### Chisel
 
-- 改进 Chisel/FIRRTL 以及 Verilator 的执行速度，减少内存开销。使得 16GB 内存的笔记本也能构建香山开源处理器。感谢 []() 的建议。
+- Improve the execution speed of Chisel/FIRRTL and Verilator to reduce memory overhead. It enables notebooks with 16GB of memory to build Xiangshan open source processors. Thanks []() for the suggestion.
 
 ### OpenCV
 
-在 2022 年我们将继续支持 OpenCV 在 RISC-V 上的性能，使用包括 Vector、P扩展在内的扩展进行优化。
+In 2022 we will continue to support OpenCV performance on RISC-V, using extensions including Vector, P extensions for optimization.
 
 ### openEuler RISC-V
 
-作为 Tarsier Project 的一部分，我们将 openEuler RISC-V 的支持纳入到了 Tarsier Project 2022年的计划中。希望在 2022 年底的时候， openEuler 在 RISC-V 上能够做到 fedora 和 debian 同样的支持程度。
+As part of the Tarsier Project, we are incorporating openEuler RISC-V support into the Tarsier Project 2022 schedule. It is hoped that by the end of 2022, openEuler will be able to achieve the same level of support for fedora and debian on RISC-V.
 
-### 来自社区的更多建议
+### More suggestions from the community
 
-非常感谢所有评论者的建议！
+Many thanks to all the reviewers for their suggestions!
 
-- oreboot & rustSBI： 在2022年我们将会开始关注和提供对 oreboot & rustSBI 的支持。
-- herbceptions： 在2022年我们尝试熟悉 [herbceptions：](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0709r1.pdf) 并在RISC-V工具链中进行支持。感谢 [tearosccebe](https://github.com/tearosccebe) 的建议。
-- wasm GCC backend： 有趣的想法，我们会在2022年做一些尝试。感谢 [tearosccebe](https://github.com/tearosccebe) 的建议。
-- FPGA 优化的 RV64GC （最好 V）软核。感谢 [Icenowy](https://github.com/Icenowy) 的建议。虽然我们还不知道怎么做，但是会努力了。
-- 希望PLCT能出够写出关于讲解编译器GCC和QEMU原理的书籍，通过实战来进行分析。感谢 [bigmagic123](https://github.com/bigmagic123) 的建议。今年我们一定不拖了！
-- 希望PLCT能够在 RISC-V GCC 上投入精力更好的支持RVV，同时能够支持p扩展和v扩展的自动向量化。感谢 [bigmagic123](https://github.com/bigmagic123) 的建议。已经包含在GCC的年度计划中。
-- 希望早日用上GCC/LLVM的RISC-V全家桶版本，并且支持V/P扩展的自动向量化。感谢 [fanghuaqi](https://github.com/fanghuaqi) 的建议。已经包含在GCC的年度计划中。
+- oreboot & rustSBI: In 2022 we will start watching and providing support for oreboot & rustSBI.
+- herbceptions: In 2022 we try to get familiar with [herbceptions:](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0709r1.pdf) and in RISC-V toolchain support. Thanks to [tearosccebe](https://github.com/tearosccebe) for the suggestion.
+- wasm GCC backend: Interesting idea, we will try some in 2022. Thanks to [tearosccebe](https://github.com/tearosccebe) for the suggestion.
+- FPGA optimized RV64GC (preferably V) soft core. Thanks to [Icenowy](https://github.com/Icenowy) for the suggestion. We don't know how to do it yet, but we will try.
+- I hope PLCT can write a book on explaining the principles of compiler GCC and QEMU, and analyze it through actual combat. Thanks to [bigmagic123](https://github.com/bigmagic123) for the suggestion. We must not delay this year!
+- Hope PLCT can put more effort into RISC-V GCC to better support RVV, and at the same time can support auto-vectorization of p-extended and v-extended. Thanks to [bigmagic123](https://github.com/bigmagic123) for the suggestion. Already included in GCC's annual plan.
+- Hope to use the RISC-V family bucket version of GCC/LLVM as soon as possible, and support the automatic vectorization of V/P extension. Thanks to [fanghuaqi](https://github.com/fanghuaqi) for the suggestion. Already included in GCC's annual plan.
 
-## 教育、培训、出版物
+## Education, training, publications
 
-- 培养100名实习生，并在实习结束时达到LV2以上。
-- 策划出一个 RISC-V Linux hacks 系列，为爱好者上手 RISC-V 提供更加有趣的学习体验。
-- 完成一本 V8 相关的书籍撰写。
-- 完成一本 OpenJDK 相关的书籍的撰写。
-- 完成一本 QuickJS 相关的书籍的撰写。
-- 完成一本模拟器原理及开发的书籍。
+- Train 100 interns and reach LV2 or higher by the end of the internship.
+- Curated a series of RISC-V Linux hacks to provide a more interesting learning experience for enthusiasts to get started with RISC-V.
+- Complete a V8 related book writing.
+- Completed the writing of an OpenJDK related book.
+- Complete the writing of a QuickJS related book.
+- Complete a book on simulator principles and development.
 
-### 实习生、校招、社招 同时进行，欢迎咨询和投简历！
+### Interns, school recruitment, and social recruitment are carried out at the same time, welcome to consult and submit resumes!
 
-只要感兴趣就可以给我发邮件： "吴伟 <wuwei2016@iscas.ac.cn>"
+If you are interested, you can email me: "Wu Wei <wuwei2016@iscas.ac.cn>"
