@@ -2,7 +2,7 @@
 
 我们在招聘！实习生，应届生，社会人，外星人，统统都招！
 
-- [实习生招聘信息（长期有效，任何时候都是热乎的！）](interns.md)
+- [实习生招聘信息（长期有效，任何时候都是热乎的！）](https://github.com/plctlab/weloveinterns/blob/master/open-internships.md)
 - [全职招聘信息](Jobs.md)
 
 ## PLCT开源进展 当前刊号
