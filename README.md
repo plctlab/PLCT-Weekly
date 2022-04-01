@@ -7,11 +7,9 @@
 
 ## PLCT开源进展 当前刊号
 
-- [PLCT开源进展·第29期（2022-01-01）](2022/2022-01-01.md)
+- [PLCT开源进展·第32期（2022-04-01）](2022/2022-04-01.md)
 
-您可以通过 [本仓库](https://github.com/plctlab/plct-weekly)
-以及 [PLCT知乎专栏](https://zhuanlan.zhihu.com/plct-lab) 进行订阅，
-每个月都会更新PLCT实验室在开源领域的情报和分析，敬请期待 🎉
+您可以通过 [本仓库](https://github.com/plctlab/plct-weekly) 以及 [PLCT知乎专栏](https://zhuanlan.zhihu.com/plct-lab) 进行订阅，每个月都会更新PLCT实验室在开源领域的情报和分析，敬请期待 🎉
 
 **变更记录**：
 
