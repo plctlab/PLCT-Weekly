@@ -1,0 +1,164 @@
+# PLCT开源进展·第36期·2022年09月01日
+
+## 卷首语
+
+大家好。过去的一个月我们有了非常多的产出，很欣慰。遗憾的是我们开始放高温假了，一个星期。这次卷首语只能从简了。
+
+另外我们春节放两个星期。欢迎各位小伙伴加入我们。高温假之后见。
+
+## 本期亮点
+
+## V8 for RISC-V
+
+V8 常规更新
+3811139: [riscv64]  disable fp multiply and accumulate instructions | https://chromium-review.googlesource.com/c/v8/v8/+/3811139
+3813425: [riscv] Fix native build | https://chromium-review.googlesource.com/c/v8/v8/+/3813425
+3815774: [riscv] Fix asm atomic op test case failed | https://chromium-review.googlesource.com/c/v8/v8/+/3815774
+3815778: [riscv] Fix wasm/externref-globals-liftoff failed | https://chromium-review.googlesource.com/c/v8/v8/+/3815778
+3819043: [riscv][ext-code-space] Add InterpreterEntryTrampolineForProfiling builtin | https://chromium-review.googlesource.com/c/v8/v8/+/3819043
+3823859: [riscv][masm][cleanup] Refactor call related assembler options | https://chromium-review.googlesource.com/c/v8/v8/+/3823859
+3824663: [riscv32] fix wasm-spec-test/i64.js | https://chromium-review.googlesource.com/c/v8/v8/+/3824663
+3826517: [riscv][masm] Move tiering logic to macro-assembler | https://chromium-review.googlesource.com/c/v8/v8/+/3826517
+3830281: [riscv]Fix temporary register reuse | https://chromium-review.googlesource.com/c/v8/v8/+/3830281
+3822761: [riscv] Fix wasm/generic-wrapper test failed | https://chromium-review.googlesource.com/c/v8/v8/+/3822761
+3844663: [riscv64][wasm-relaxed-simd] Implement relaxed i16x8.q15mulr_s | https://chromium-review.googlesource.com/c/v8/v8/+/3844663
+3854435: [riscv] Port [heap] Add shared barrier to RecordWrite builtin | https://chromium-review.googlesource.com/c/v8/v8/+/3854435
+3854435: [riscv] Port [heap] Add shared barrier to RecordWrite builtin | https://chromium-review.googlesource.com/c/v8/v8/+/3854435
+
+## OpenJDK for RISC-V
+
+
+## OpenJDK main-line work (Mostly RV64-related)
+
+
+## Clang/LLVM for RISC-V 相关工作
+
+
+## gollvm 相关工作
+
+
+## mold 相关工作
+
+
+
+## GNU Toolchain for RISC-V 相关工作
+
+
+
+## AOSP for RISC-V
+
+
+
+## Arch Linux for RISC-V
+
+
+## Gentoo for RISC-V
+
+
+## Nixpkgs for RISC-V
+
+
+## Firefox on RV64GCV
+
+Start porting Spidermonky https://github.com/plctlab/gecko-dev-riscv/commits/riscv64-spidermonkey
+
+## Enable DynamoRIO running on RV64GC
+
+
+
+## OpenCV for RV64GCV
+
+
+## Experimental/simd in LIBCXX
+
+
+## LuaJIT RV64G porting
+
+
+
+## gem5
+
+
+
+## Spike
+
+
+
+## QEMU
+
+
+## Other Support for RISC-V International
+
+### SAIL/ACT
+
+
+
+
+## 在方舟开源编译器社区的工作
+
+
+
+
+## MLIR
+
+
+
+### OSPP Mentorship
+
+
+### Buddy Compiler
+
+**Buddy Compiler Website**
+- 主页地址 - https://buddy-compiler.github.io/
+
+**buddy-mlir**
+
+
+
+
+**buddy-benchmark**
+
+
+## Chisel / FIRRTL （CAAT小队）
+
+
+
+## coreboot for riscv
+
+本期没有新的进展
+
+## openocd
+
+本期没有新的进展
+
+## opensbi
+
+
+## u-boot
+
+本期没有新的进展
+
+## The Aya Theorem Prover
+
+## RISCV平台测试测评工作
+
+
+## RVLab相关工作
+
+
+
+## openEuler for RISC-V
+
+
+
+## Debian for RISC-V
+
+- 已经改为双周报形式，直接在 debian-riscv 邮件列表中发布。
+
+  ## 参考链接
+
+  - PLCT2022年开源路线图 https://github.com/plctlab/PLCT-Weekly/blob/master/PLCT-Roadmap-2022.md
+  - PLCT实验室的开放职位(社招) https://github.com/plctlab/PLCT-Weekly/blob/master/Jobs.md
+  - PLCT实验室的开放职位(实习生) https://github.com/plctlab/weloveinterns/blob/master/open-internships.md
+  - PLCT Weekly https://github.com/isrc-cas/PLCT-Weekly
+  - PLCT公开报告的Slides（部分） https://github.com/isrc-cas/PLCT-Open-Reports
