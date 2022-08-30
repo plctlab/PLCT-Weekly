@@ -60,6 +60,8 @@ V8 常规更新
 
 Start porting Spidermonky https://github.com/plctlab/gecko-dev-riscv/commits/riscv64-spidermonkey
 
+Test jit-test status: https://github.com/plctlab/gecko-dev-riscv/issues/27
+
 ## Enable DynamoRIO running on RV64GC
 
 
