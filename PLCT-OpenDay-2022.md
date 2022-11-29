@@ -9,7 +9,7 @@
 ## 地点或参会方式
 
 - 直播观看： https://live.bilibili.com/10339607
-- 腾讯会议： webinar 形式，需要报名。
+- 腾讯会议： 网络研讨会形式。报名链接： https://meeting.tencent.com/dw/7x6fX0K428py
 - Zoom会议： 无
 - 注册连接： 不需要注册
 
