@@ -43,35 +43,33 @@
 在2022年PLCT实验室希望能够达到以下关键目标：
 
 - 准备好RISC-V笔记本电脑需要的软件系统，使得流行的Linux发行版和常用的OA软件、开发工具可以流畅运行在RISC-V笔记本上。
-  结果：达到预期目标。 LibreOffice、 Chromium、 Firefox、 OpenJDK、 NodeJS 等都已经支持或进行了速度提升。
+  【结果：达到预期目标。 LibreOffice、 Chromium、 Firefox、 OpenJDK、 NodeJS 等都已经支持或进行了速度提升。】
 
 - 完成一半以上「最后5%」的常用开源软件在 RISC-V 上的移植和适配工作。
-  结果：WIP。 我承认在项目立项的时候对于「最后5%」的规模的评估体现了我对长尾现象的无知：随着工作的推进，我们遇到了更多之前未曾分析到的软件移植需求。新增的软件包需求都已经纳入到今年和后续的路线图中。
+  【结果：WIP。 我承认在项目立项的时候对于「最后5%」的规模的评估体现了我对长尾现象的无知：随着工作的推进，我们遇到了更多之前未曾分析到的软件移植需求。新增的软件包需求都已经纳入到今年和后续的路线图中。】
 
 - 通过 Tarsier Project 组建一支 RISC-V 软件测试队伍，为 RISC-V 生态中开源软件的稳定性和软件质量提供保证。
-  结果：达到预期目标。TARSIER伙伴们交出了一份出色的答卷。
+  【结果：达到预期目标。TARSIER伙伴们交出了一份出色的答卷。】
 
 **具体目标**
 
-- 为 RISC-V 笔记本电脑优化的操作系统及常用软件： 达到预期目标。
+- 为 RISC-V 笔记本电脑优化的操作系统及常用软件： 【达到预期目标。】
 
-- RISC-V CI Infrastructure for Open Source Communities： CI Farm 达到预期目标； PTS 将会继续 Delay 到 2023Q3 左右。
+- RISC-V CI Infrastructure for Open Source Communities： 【CI Farm 达到预期目标； PTS 将会继续 Delay 到 2023Q3 左右。】
 
-- LibreOffice：完成，已经 upstream。
+- LibreOffice：【完成，已经 upstream】。
 
-- Python Wheels for RISC-V： 未完成（未开始）。我们持续招募实习生完成此项任务，欢迎感兴趣的同学联系我们。
+- Python Wheels for RISC-V： 【未完成（未开始）。我们持续招募实习生完成此项任务，欢迎感兴趣的同学联系我们。】
 
-- DartVM： Google的Dart团队实现了对 RISC-V 的初步支持。
+- DartVM： 【Google的Dart团队实现了对 RISC-V 的初步支持。】
 
-- Valgrind： 推进中，尚未完全支持 RISC-V。
+- Valgrind： 【推进中，尚未完全支持 RISC-V。】
 
-- Spidermonkey： 达到预期目标，实现了 RV64GC 的 JIT 支持，并且已经被 Mozilla upstream 接收。
+- Spidermonkey： 【达到预期目标，实现了 RV64GC 的 JIT 支持，并且已经被 Mozilla upstream 接收。】
 
-- DynamoRIO： 推进中，较缓慢。与 RIVOS 协作。2023年需要加大力度。
+- DynamoRIO： 【推进中，较缓慢。与 RIVOS 协作。2023年需要加大力度。】
 
-- LuaJIT： 完成了解释器支持，JIT 的支持尚未完成。
-
-我们在2021年提出希望完成 LuaJIT 的移植工作。很遗憾在2021年没有完成。希望在2022年结束之前完成 LuaJIT 的 RISC-V 移植。
+- LuaJIT： 【完成了解释器支持，JIT 的支持尚未完成。】
 
 **2022年的改进工作**
 
