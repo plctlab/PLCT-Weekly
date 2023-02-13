@@ -1,6 +1,6 @@
 # PLCT Roadmap 2023
 
-大家好，这是 PLCT Lab 第三年公开实验室在 RISC-V 开源生态系统中的 Roadmap。
+大家好，这是 PLCT Lab 第四年公开实验室在 RISC-V 开源生态系统中的 Roadmap。
 在 2023 年我们将会继续加大在工具链、虚拟机、模拟器上对 RISC-V 的支持力度。
 在 GCC、LLVM、QEMU、Mozilla、AOSP、openEuler 等开源项目的投入会继续加大。
 同时我们很高兴地宣布，中科院软件所在2023年新立项了 RUYISDK 项目，目标是大大简化目前 RISC-V 开发人员在环境配置、开发、测试、调试、分发等过程的琐碎和痛苦的工作，将更多的精力聚焦在研发内容本身。
