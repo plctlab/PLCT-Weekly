@@ -10,7 +10,7 @@
 在2023年PLCT实验室（含TARSIER团队）希望能够达到以下关键目标：
 
 1. 设计开发 RUYISDK， 并围绕 RUYISDK 开源项目形成用户和开发者社区，为后续长期维护夯实基础。
-2. 准备好 RISC-V 超算集群所需要的各类软件栈；搭建超过 1024 计算核心的演示集群，为世界超算 TOP500 做第一步准备。
+2. 准备好 RISC-V 超算集群所需要的各类软件栈；搭建超过 1024 个计算核心的演示集群，为世界超算 TOP500 做第一步准备。
 3. 进一步扩大 RISC-V 架构上支持的软件规模；阶段性完成 dotNet/Mono、LuaJIT、Box64 等在 RISC-V 上的移植工作。
 
 ## 主体工程： RUYISDK
@@ -24,10 +24,10 @@
 
 ## 具体目标
 
-由于大部分目标都是2022年和2021年的遗留项目，详细的项目介绍略。感兴趣的读者请参考过去两年的路线图文档。
+由于大部分目标都是 [2022](https://github.com/plctlab/PLCT-Weekly/blob/master/PLCT-Roadmap-2022.md) 年和 [2021](https://github.com/plctlab/PLCT-Weekly/blob/master/PLCT-Roadmap-2021.md) 年的遗留项目，详细的项目介绍略。感兴趣的读者请参考过去两年的路线图文档。
 
-- dotNet/Mono： 完成带JIT的移植，达到可用。
-- Box64: 完成带有JIT的支持。 完成支持，集成进入 RUYISDK。
+- dotNet/Mono：完成带JIT的移植，达到可用状态。
+- Box64： 完成带有JIT的支持。 完成支持，集成进入 RUYISDK。
 - LuaJIT： 完成JIT支持，收尾。 完成支持，集成进入 RUYISDK。
 - OpenJDK/RV32G： 完成对C2的调试。
 - OpenJDK8/RV64GC： 完成 backporting。
@@ -58,7 +58,7 @@
 
 - RISC-V CI Infrastructure for Open Source Communities： 【CI Farm 达到预期目标； PTS 将会继续 Delay 到 2023Q3 左右。】
 
-- LibreOffice：【完成，已经 upstream】。
+- LibreOffice：【完成，已经 upstream。】
 
 - Python Wheels for RISC-V： 【未完成（未开始）。我们持续招募实习生完成此项任务，欢迎感兴趣的同学联系我们。】
 
