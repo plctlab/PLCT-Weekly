@@ -36,6 +36,7 @@
 - Valgrind： 完成支持，集成进入 RUYISDK。
 - GHC： 加速 RISC-V 的适配和 bug 修复。
 - Keystone Engine： 将其 vendor 的 LLVM 更新到支持 RISCV 的新版本。完成支持，集成进入 RUYISDK。
+- LLVM：增加 RISC-V PE/COFF writer 支持
 
 ## 2022年执行情况回顾
 
