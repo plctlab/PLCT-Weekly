@@ -100,4 +100,4 @@ https://www.bagevent.com/event/8043687
 
 ## 有问题？
 
-直接加负责人微信聊， fangzhang1024，添加时候请备注【姓名-TRSR】方便通过。
+直接加负责人微信聊， lazyparser，添加时候请备注【姓名-TRSR】方便通过。
