@@ -1,8 +1,7 @@
 # PLCT Roadmap 2023
 
-大家好，这是 PLCT Lab 第四年公开实验室在 RISC-V 开源生态系统中的 Roadmap。
-在 2023 年我们将会继续加大在工具链、虚拟机、模拟器上对 RISC-V 的支持力度。
-在 GCC、LLVM、QEMU、Mozilla、AOSP、openEuler 等开源项目的投入会继续加大。
+大家好，这是 PLCT Lab 第四年公开实验室在 RISC-V 开源生态系统中的 Roadmap。在 2023 年我们将会继续加大在工具链、虚拟机、模拟器上对 RISC-V 的支持力度。在 GCC、LLVM、QEMU、Mozilla、AOSP、openEuler 等开源项目的投入会继续加大。
+
 同时我们很高兴地宣布，中科院软件所在2023年新立项了 RUYISDK 项目，目标是大大简化目前 RISC-V 开发人员在环境配置、开发、测试、调试、分发等过程的琐碎和痛苦的工作，将更多的精力聚焦在研发内容本身。
 
 ## 关键目标
@@ -11,13 +10,13 @@
 
 1. 设计开发 RUYISDK， 并围绕 RUYISDK 开源项目形成用户和开发者社区，为后续长期维护夯实基础。
 2. 准备好 RISC-V 超算集群所需要的各类软件栈；搭建超过 1024 个计算核心的演示集群，为世界超算 TOP500 做第一步准备。
-3. 进一步扩大 RISC-V 架构上支持的软件规模；阶段性完成 dotNet/Mono、LuaJIT、Box64 等在 RISC-V 上的移植工作。
+3. 进一步扩大 RISC-V 架构上支持的软件规模；阶段性完成 .NET/Mono、LuaJIT、Box64 等在 RISC-V 上的移植工作。
 
 ## 主体工程： RUYISDK
 
 中科院软件所（ISCAS）从2022年下半年开始筹备 RUYISDK 的建设，目前已经完成了团队的初步组建，计划用三年时间为 RISC-V 开发者提供一个完整的、全家桶式的全功能开发环境。 RUYISDK 的目标有：
 1. 开发者购买了（几乎）任何一款 RISC-V 开发板或模组，都可以通过 RUYISDK 系统获得硬件资料说明、固件/软件更新、调试支持等。
-2. 开发者可以指定任何常用的 RISC-V 扩展指令集架构组合， 都可以通过 RUYISDK 系统生成客户所需的操作系统、工具链、语言执行环境（运行时或虚拟机）、计算库、应用框架等。尤其强调 RUYISDK 将完全支持 Vector 0.7.1 和 RVP 0.5.2 等已经大规模硅化的草案标准（or 厂商定制扩展）。
+2. 开发者可以指定任何常用的 RISC-V 扩展指令集架构组合， 都可以通过 RUYISDK 系统生成客户所需的操作系统、工具链、语言执行环境（运行时或虚拟机）、计算库、应用框架等。RUYISDK 将完全支持 Vector 0.7.1 和 RVP 0.5.2 等已经大规模硅化的草案标准（or 厂商定制扩展）。
 3. 培育运营一个活跃全面的开发者交流社区。
 
 欢迎所有对 RISC-V 以及开源工作感兴趣的小伙伴加入我们。随时可以发邮件到 "吴伟 <wuwei2016@iscas.ac.cn>" 询问。 同时也招聘修包和开发人员，没有人数限制。
@@ -26,7 +25,7 @@
 
 由于大部分目标都是 [2022](https://github.com/plctlab/PLCT-Weekly/blob/master/PLCT-Roadmap-2022.md) 年和 [2021](https://github.com/plctlab/PLCT-Weekly/blob/master/PLCT-Roadmap-2021.md) 年的遗留项目，详细的项目介绍略。感兴趣的读者请参考过去两年的路线图文档。
 
-- dotNet/Mono：完成带JIT的移植，达到可用状态。
+- .NET/Mono：完成带JIT的移植，达到可用状态。
 - Box64： 完成带有JIT的支持。 完成支持，集成进入 RUYISDK。
 - LuaJIT： 完成JIT支持，收尾。 完成支持，集成进入 RUYISDK。
 - OpenJDK/RV32G： 完成对C2的调试。
@@ -35,10 +34,10 @@
 - DynamoRIO： 完成支持，集成进入 RUYISDK。
 - Valgrind： 完成支持，集成进入 RUYISDK。
 - GHC： 加速 RISC-V 的适配和 bug 修复。
-- Keystone Engine： 将其 vendor 的 LLVM 更新到支持 RISCV 的新版本。完成支持，集成进入 RUYISDK。
+- Keystone Engine： 将其 vendor 的 LLVM 更新到支持 RISC-V 的新版本。完成支持，集成进入 RUYISDK。
 - LLVM：增加 RISC-V PE/COFF writer 支持
-- [SBCL(Steel Bank Common Lisp)](https://sourceforge.net/p/sbcl/sbcl/ci/master/tree/)(the dependency of ROS1)：增加 RISC-V支持
-- [Mimick](https://github.com/Snaipe/Mimick)(the dependency of ROS2)：增加 RISC-V支持
+- [SBCL (Steel Bank Common Lisp)](https://sourceforge.net/p/sbcl/sbcl/ci/master/tree/)，ROS1 依赖项：增加 RISC-V支持
+- [Mimick](https://github.com/Snaipe/Mimick)，ROS2 依赖项：增加 RISC-V支持
 
 ## 2022年执行情况回顾
 
@@ -69,7 +68,7 @@
 
 - Valgrind： 【推进中，尚未完全支持 RISC-V。】
 
-- Spidermonkey： 【达到预期目标，实现了 RV64GC 的 JIT 支持，并且已经被 Mozilla upstream 接收。】
+- SpiderMonkey： 【达到预期目标，实现了 RV64GC 的 JIT 支持，并且已经被 Mozilla upstream 接收。】
 
 - DynamoRIO： 【推进中，较缓慢。与 RIVOS 协作。2023年需要加大力度。】
 
