@@ -105,6 +105,17 @@ RuyiSDK 软件的打包与分发工作：目前您可以直接在 GitHub 上查�
 
 ## V8 / Chromium
 
+Chromium:
+
+- [sysroot_creator: add riscv64 support](https://chromium-review.googlesource.com/c/chromium/src/+/6574317)
+- [reversion_glibc: add riscv64 support](https://chromium-review.googlesource.com/c/chromium/src/+/6574441)
+- [\[Sysroot\] Build and upload riscv64 sysroot](https://chromium-review.googlesource.com/c/chromium/src/+/6603953)
+- [Add clang triple for riscv64 linux](https://chromium-review.googlesource.com/c/chromium/src/+/6585073)
+- [cpuinfo: enable for riscv64 linux](https://chromium-review.googlesource.com/c/chromium/src/+/6597694)
+- [xnnpack: enable riscv64 support](https://chromium-review.googlesource.com/c/chromium/src/+/6597834)
+- [highway: add riscv RVV to BROKEN_TARGETS](https://chromium-review.googlesource.com/c/chromium/src/+/6583376)
+- [Add riscv64 to GetCurrentCpuArchitecture](https://chromium-review.googlesource.com/c/chromium/src/+/6584974)
+
 ## Spidermonkey / Firefox
 
 一般都是风平浪静。欢迎对 Firefox 开发感兴趣的同学来实习。
