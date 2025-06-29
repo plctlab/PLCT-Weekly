@@ -16,6 +16,13 @@ PLCT实验室的亮点产出通过「RuyiSDK」微信公众号（ID：RuyiSDK）
 
 ## V8 / Chromium
 
+Chromium:
+
+- [\[Sysroot\] remove sys/hwprobe.h for riscv64](https://chromium-review.googlesource.com/c/chromium/src/+/6629552)
+- [Rebuild riscv64 sysroot](https://chromium-review.googlesource.com/c/chromium/src/+/6635209)
+- [\[Updater\] Use ProcessCPUArchitecture](https://chromium-review.googlesource.com/c/chromium/src/+/6634009)
+- [\[clang\] Build runtime libraries for riscv64 linux](https://chromium-review.googlesource.com/c/chromium/src/+/6633809)
+
 ## Spidermonkey / Firefox
 
 一般都是风平浪静。欢迎对 Firefox 开发感兴趣的同学来实习。
