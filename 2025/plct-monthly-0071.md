@@ -163,11 +163,59 @@ RuyiSDK 软件的打包与分发工作：目前您可以直接在 GitHub 上查�
 
 ## RT-Thread
 
+- [doxygen: group name all in lowcase][rtt-10432]
+- [bsp: k230: imprvove README][rtt-10424]
+- [doxygen: use layout to control the html display][rtt-10408]
+- [componnets: utest: fix case-name matching problem][rtt-10381]
+- [bsp: k230: support adc][rtt-10378]
+- [componnets: drivers: adc: remove build warnings and cppcheck error][rtt-10373]
+- [bsp: k230: add gpio driver][rtt-10372]
+- [bsp: k230: support pinctrl driver][rtt-10369]
+
+rttpkgtool:
+
+[README: add python package install requirement][rttpkgtool-10]
+
+Smart-Build:
+
+- [ignore downloaded bitbake and oe-core][rtt-smart-build-37]
+- [doc: add description so people how where to change the MACHINE][rtt-smart-build-36]
+
+2025 RT-Thread 全球技术大会报告，RT-Thread 内核仓库文档改进工作介绍:<https://www.bilibili.com/video/BV1DvMczoEzD>
+
+[rtt-10432]: https://github.com/RT-Thread/rt-thread/pull/10432
+[rtt-10424]: https://github.com/RT-Thread/rt-thread/pull/10424
+[rtt-10408]: https://github.com/RT-Thread/rt-thread/pull/10408
+[rtt-10381]: https://github.com/RT-Thread/rt-thread/pull/10381
+[rtt-10378]: https://github.com/RT-Thread/rt-thread/pull/10378
+[rtt-10373]: https://github.com/RT-Thread/rt-thread/pull/10373
+[rtt-10372]: https://github.com/RT-Thread/rt-thread/pull/10372
+[rtt-10369]: https://github.com/RT-Thread/rt-thread/pull/10369
+[rttpkgtool-10]: https://github.com/plctlab/rttpkgtool/pull/10
+[rtt-smart-build-37]:https://github.com/RT-Thread/smart-build/pull/37
+[rtt-smart-build-36]:https://github.com/RT-Thread/smart-build/pull/36
+
 ## PLCT罗云翔测试团队
 
 ## SG2042/SG2044 Upstream
 
+SG2042 Upstream
+
+- [[PATCH v3 0/4] spi: sophgo: Add SPI NOR controller for SG2042][sg2042-lk-1]: SPI NOR 控制器补丁 第 3 版。
+
+[sg2042-lk-1]:https://lore.kernel.org/linux-riscv/20250629-sfg-spifmc-v3-0-28db1f27e999@gmail.com/
+
 ## Milk-V Duo Upstream
+
+- [[PATCH 0/2] remoteproc: cv1800b: Add initial support for C906L processor][cv18xx-lk-1]: Remoteproc 驱动补丁第 1 版。
+
+[cv18xx-lk-1]:https://lore.kernel.org/linux-riscv/20250608-cv1800-rproc-v1-0-57cf66cdf6a3@pigmoral.tech/
+
+## K230 Upstream
+
+- [[PATCH v4 0/2] reset: canaan: add Kendryte K230 reset support][k230-lk-1]: Reset 补丁第 4 版，已经被 reset 仓库收录到 next 分支，期望合入 6.17。
+
+[k230-lk-1]:https://lore.kernel.org/linux-riscv/20250613-k230-reset-v4-0-e5266d2be440@pigmoral.tech/
 
 ## TPU-MLIR （甲辰计划 J123）
 
