@@ -151,11 +151,25 @@ RuyiSDK 软件的打包与分发工作：目前您可以直接在 GitHub 上查�
 
 ## coreboot for riscv
 
+本期没有新的进展。
+
 ## openocd
+
+本期没有新的进展。
 
 ## opensbi
 
+- 修正fdt\_parse\_aclint\_node中hartid不连续的问题。[1](https://lists.infradead.org/pipermail/opensbi/2025-June/008554.html)
+- 一些关于启动过程的改进，让non-coldboot执行更多的初始化，移除多核对称的假设。[1](https://lists.infradead.org/pipermail/opensbi/2025-June/008609.html)
+- 修正8255串口初始化代码，在读取RBR之前检测LSR确认RBR中有数据。[1](https://lists.infradead.org/pipermail/opensbi/2025-June/008586.html)
+- 改进堆内存的分配，管理堆内存节点的个数之前在初始化时是确定的，现在改成动态分配。[1](https://lists.infradead.org/pipermail/opensbi/2025-June/008593.html)
+- 添加一个宏用于安全的进行列表的遍列。[1](https://lists.infradead.org/pipermail/opensbi/2025-June/008600.html)
+- RPMI规格冻结，根据规格更新代码添加实现id和version。[1](https://lists.infradead.org/pipermail/opensbi/2025-June/008601.html)[2](https://lists.infradead.org/pipermail/opensbi/2025-June/008602.html)
+- 在test payload中添加shutdown ecall。[1](https://lists.infradead.org/pipermail/opensbi/2025-June/008620.html)
+
 ## u-boot
+
+本期没有新的进展。
 
 ## RevyOS (Debian for Xuantie)
 
