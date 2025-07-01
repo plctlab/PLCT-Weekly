@@ -136,6 +136,25 @@ RuyiSDK 软件的打包与分发工作：目前您可以直接在 GitHub 上查�
 ## GNU Toolchain
 
 ## LLVM Team
+1. Upstream llvm-project 合并的patch:
+- [SelectionDAG] Make `(a & x) | (~a & y) -> (a & (x ^ y)) ^ y` available for all targets [#143651](https://github.com/llvm/llvm-project/pull/143651) #137648 #137641
+- [clang][Parser] Fix crash on malformed using declaration in constexpr function [#144286](https://github.com/llvm/llvm-project/pull/144286)
+- [RISCV] Implement Feature Bit for Q [#145001](https://github.com/llvm/llvm-project/pull/145001)
+- [InstSimplify] Simplify 'x u>= 1' to true when x is known non-zero [#145204](https://github.com/llvm/llvm-project/pull/145204)
+- [SelectionDAG] Handle `fneg`/`fabs`/`fcopysign` in `SimplifyDemandedBits` [#139239](https://github.com/llvm/llvm-project/pull/139239)
+- [InstCombine] Fold `ceil(X / (2 ^ C)) == 0` -> `X == 0` [#143683](https://github.com/llvm/llvm-project/pull/143683)
+- [RISCV][MC] Support Base P non-GPR pair instructions https://github.com/llvm/llvm-project/pull/137927
+- [OpenMP][Flang]Fix omp_get_cancellation return type from integer to logical https://github.com/llvm/llvm-project/pull/142990
+
+2. Ruyisdk llvm-project合并的patch:
+- xtheadvector: [Clang][XTHeadVector] fix zvlsseg strided load/store: https://github.com/ruyisdk/llvm-project/pull/158
+- xtheadvector: [Clang][XTHeadVector] make zvlsseg compatible with RVV1.0: https://github.com/ruyisdk/llvm-project/pull/159
+- xtheadvector: [Clang][XTHeadVector] implement zvlsseg indexed load/store: https://github.com/ruyisdk/llvm-project/pull/160
+- xtheadvector: [Clang][XTHeadVector] fix compatibility of zvlsseg indexed load/store: https://github.com/ruyisdk/llvm-project/pull/161
+
+3. Upstream llvm-project开的issue:
+- [RISCV] 507.cactuBSSN_r regression after bidirectional scheduling/register pressure tracking https://github.com/llvm/llvm-project/issues/143005 
+
 
 ## MLIR
 
