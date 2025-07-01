@@ -134,6 +134,44 @@ RuyiSDK 软件的打包与分发工作：目前您可以直接在 GitHub 上查�
 ## OpenCV
 
 ## GNU Toolchain
+在RISC-V GCC后端添加了香山昆明湖架构支持:
+- https://patchwork.sourceware.org/project/gcc/patch/20250604095649.457763-1-jiawei@iscas.ac.cn/
+
+在GCC中添加了一系列RISC-V特权指令扩展支持，包括Sm/scsrind，Smrnmi，Ssccptr，Sscounterenw，Sstvala，Sstvecd，Ssu64xl，Svbare:
+- https://patchwork.sourceware.org/project/gcc/list/?series=48226&state=%2A&archive=both
+- https://patchwork.sourceware.org/project/gcc/patch/20250603012002.12274-1-chendongyan@isrc.iscas.ac.cn/
+
+更新了Smrnmi扩展在Binutils中的依赖关系:
+- https://patchwork.sourceware.org/project/binutils/patch/20250606025050.335183-1-jiawei@iscas.ac.cn/
+
+提交了XOR(AND(ROTATE(~1), A), ASHIFT(1, A))表达式在gcc SHIFT_COUNT_TRUNCATED后端的优化:
+- https://patchwork.sourceware.org/project/gcc/patch/20250611132047.34928-1-jiawei@iscas.ac.cn/
+
+更新了RVA23 Profiles中的展开:
+- https://patchwork.sourceware.org/project/gcc/patch/20250616032129.423078-1-jiawei@iscas.ac.cn/
+- https://patchwork.sourceware.org/project/binutils/patch/20250624110927.758118-1-jiawei@iscas.ac.cn/
+
+提交了RVA23S Profiles的支持:
+- https://patchwork.sourceware.org/project/gcc/patch/20250624093802.476871-1-jiawei@iscas.ac.cn/
+- https://patchwork.sourceware.org/project/binutils/patch/20250624131126.1494452-1-jiawei@iscas.ac.cn/
+
+修改了默认的branch cost以修复gcc中zicond优化：
+- https://gcc.gnu.org/pipermail/gcc-patches/2025-June/686893.html
+
+添加generic参数作为默认的-mtune=选项：
+- https://gcc.gnu.org/pipermail/gcc-patches/2025-June/686987.html
+
+将riscv-core.cc中定义的cpu进行分离，统一写入riscv-core.def中，方便管理与生成描述文档：
+- https://gcc.gnu.org/pipermail/gcc-patches/2025-June/687548.html
+
+更新了riscv-gnu-toolchain的configure：
+- https://github.com/riscv-collab/riscv-gnu-toolchain/pull/1735
+
+添加了ftarget-clones-table=traget_clones选项的支持：
+- https://inbox.sourceware.org/gcc-patches/tencent_815F8860AE36BFA3102E4ECC77C843231606@qq.com/
+
+提交了Compiler Explorer中Binutils的版本支持，升级至2.44:
+- https://github.com/compiler-explorer/compiler-explorer/pull/7814
 
 ## LLVM Team
 
