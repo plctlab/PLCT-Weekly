@@ -12,7 +12,7 @@ PLCT实验室的亮点产出通过「RuyiSDK」微信公众号（ID：RuyiSDK）
 
 ## RuyiSDK IDE
 
-1. 新增功能: Eclips插件中使用 ruyi venv 构建指定的程序（hello）
+1. 新增实验性功能: 新增新建项目向导，预置开发板项目模板和自定义构建器用于一键在ruyi虚拟环境内构建项目（hello & milkv duo 为例）
 
    - open:[feat:add new plugin: projectcreator](https://github.com/ruyisdk/ruyisdk-eclipse-plugins/pull/46)
 2. 新增功能：定制 Welcome 页面
