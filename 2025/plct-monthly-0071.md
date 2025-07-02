@@ -253,6 +253,34 @@ RuyiSDK 软件的打包与分发工作：目前您可以直接在 GitHub 上查�
 ## RevyOS (Debian for Xuantie)
 
 ### Debian
+本月主要开源进展:
+1. 升级 nj rvlab 的 debci 机器内核升级到 6.6.92
+2. 正在归一化面向社区的机器的网络配置，减少因为网络问题导致的测试失败
+3. 例行的包维护
+
+外部可见连接如下:
+
+* http://vimer.7766.org:63015/qt6-webengine/6.8.2/ [qt6-webengine/6.8.2]
+* https://www.eclipse.org/lists/epp-dev/msg07003.html [eclipse +1 2026 RC2]
+* https://lists.debian.org/debian-ci/2025/06/msg00005.html [debci update]
+* https://salsa.debian.org/vimerbf-guest/sail-ocaml/-/tree/debian/main?ref_type=heads [sail upgrade 0.19.1]
+* http://vimer.7766.org:63015/images/licheepi4a/ [licheepi4A debian image]
+* https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=1107826 [ping upload]
+* https://ci.debian.net/packages/b/breezy-debian/testing/riscv64//61888597/ [kernel6.6.92 debci]
+* http://vimer.7766.org:63015/nanhu/images/v3/images/
+* https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=1105410  [ftbfs fixed lem]
+* https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=1106993 [python-crypt-r done]
+* https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=1107305#49 [test mariadb on rv64]
+
+### RedleafOS
+
+Redleafos 本月继续针对 nanhu v3 进行深度适配:
+
+1. 重构 redleafos 对 v2 的系统 repo
+2. 目前已针对多核内核配置构建出 kernel/系统镜像[testing]
+3. 启动固件的适配正在进行中
+
+* http://vimer.7766.org:63015/nanhu/images/v3/images/ [v3 image]
 
 ## RT-Thread
 
