@@ -12,6 +12,28 @@ PLCT实验室的亮点产出通过「RuyiSDK」微信公众号（ID：RuyiSDK）
 
 ## RuyiSDK IDE
 
+1. 新增功能: Eclips插件中使用 ruyi venv 构建指定的程序（hello）
+
+   - open:[feat:add new plugin: projectcreator](https://github.com/ruyisdk/ruyisdk-eclipse-plugins/pull/46)
+2. 新增功能：定制 Welcome 页面
+
+   - [feat:add plugin for intro page](https://github.com/ruyisdk/ruyisdk-eclipse-plugins/pull/18)
+   - [Optimization:fix html cannot open in some environments](https://github.com/ruyisdk/ruyisdk-eclipse-plugins/pull/19)
+   - [fix: Fix the packaging problem of the third-party librar](https://github.com/ruyisdk/ruyisdk-eclipse-plugins/pull/24)
+3. 软件包资源管理代码完善：
+
+   - 解决软件包不能稳定呈现问题：
+     - [Fix:packaged resources cannot be loaded](https://github.com/ruyisdk/ruyisdk-eclipse-plugins/pull/31)
+   - 接入ruyi中的所有支持的开发板型号：
+     - [feat: automatically get the development board list from the server](https://github.com/ruyisdk/ruyisdk-eclipse-plugins/pull/25)
+     - [fix ui problem and add serach borad wiht no rse processing logic,add ruyisdk submenu in view list](https://github.com/ruyisdk/ruyisdk-eclipse-plugins/pull/40)
+   - 新增软件包卸载功能：
+     - [feat:Add uninstall package function](https://github.com/ruyisdk/ruyisdk-eclipse-plugins/pull/44)
+4. 按reviewer要求规范代码和修复安全性问题
+
+   - [Fix:fix potential security and locale-sensitive string handling issues](https://github.com/ruyisdk/ruyisdk-eclipse-plugins/pull/35)
+   - [fix:Change the new method execution to an absolute path and standardize the code](https://github.com/ruyisdk/ruyisdk-eclipse-plugins/pull/33)
+
 ## RuyiSDK 包管理器
 
 项目地址：https://github.com/ruyisdk/ruyi
