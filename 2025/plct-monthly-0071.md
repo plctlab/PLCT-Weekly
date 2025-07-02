@@ -1031,6 +1031,19 @@ SG2042 Upstream
 
 全实习生小队，独立宣传渠道。
 
+## Songsong Zhang
+
+1. Fedora
+   - [Backport fix cgo on riscv64 when building with gcc-15](https://src.fedoraproject.org/rpms/golang/pull-request/244)
+
+2. RuyiSDK
+   - [给 openEuler 和 Fedora 打包 RuyiSDK Package Manager](https://github.com/ruyisdk/ruyisdk/issues/43)
+      - [python-arpy](https://github.com/U2FsdGVkX1/ruyi-rpm/tree/main/python-arpy)
+      - [python-poetry-core](https://github.com/U2FsdGVkX1/ruyi-rpm/tree/main/python-poetry-core)
+      - [python-pygit2](https://github.com/U2FsdGVkX1/ruyi-rpm/tree/main/python-pygit2)
+      - [python-semver](https://github.com/U2FsdGVkX1/ruyi-rpm/tree/main/python-semver)
+      - [ruyi](https://github.com/U2FsdGVkX1/ruyi-rpm/tree/main/ruyi)
+
 ## 参考链接
 
 - [PLCT 实验室的开放职位（实习生）](https://github.com/plctlab/weloveinterns/blob/master/open-internships.md)
