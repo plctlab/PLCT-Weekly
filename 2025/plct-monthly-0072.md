@@ -90,6 +90,15 @@ PLCT实验室的亮点产出通过「RuyiSDK」微信公众号（ID：RuyiSDK）
 
 ## DynamoRIO
 
+## llama.cpp
+
+主要进展：完成了 ggml CPU 后端对七个主要架构的优化代码的重构，使得后续 RISC-V 支持的进一步开发和维护工作更加便利
+
+- xctan
+  - [ggml-cpu : split arch-specific implementations](https://github.com/ggml-org/llama.cpp/pull/13892)
+  - [ggml-cpu : rework weak alias on apple targets](https://github.com/ggml-org/llama.cpp/pull/14146)
+  - [ggml-cpu : remove the weak alias trick](https://github.com/ggml-org/llama.cpp/pull/14221)
+
 ## coreboot for riscv
 
 ## openocd
