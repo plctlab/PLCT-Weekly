@@ -304,6 +304,17 @@ RuyiSDK 软件的打包与分发工作：目前您可以直接在 GitHub 上查�
 - RPMI规格冻结，根据规格更新代码添加实现id和version。[1](https://lists.infradead.org/pipermail/opensbi/2025-June/008601.html)[2](https://lists.infradead.org/pipermail/opensbi/2025-June/008602.html)
 - 在test payload中添加shutdown ecall。[1](https://lists.infradead.org/pipermail/opensbi/2025-June/008620.html)
 
+## eunomia-bpf
+
+- bpftime 相关：
+  - userspace XDP 和另外一个相关的用例放了 [eBPF workshop](https://conferences.sigcomm.org/sigcomm/2025/workshop/ebpf/)
+  - [cuda-attach: support multiple cuda thread](https://github.com/eunomia-bpf/bpftime/pull/413)
+  - [WIP: support AMD GPU](https://github.com/eunomia-bpf/bpftime/pull/407)
+  - [test run XDP on GPU](https://github.com/eunomia-bpf/eBPF-on-GPU)
+- Tutorial:
+  - [cuda ebpf](https://github.com/eunomia-bpf/bpf-developer-tutorial/tree/main/src/47-cuda-events)
+  - [Energy Monitoring](https://github.com/eunomia-bpf/bpf-developer-tutorial/tree/main/src/48-energy)
+
 ## u-boot
 
 本期没有新的进展。
