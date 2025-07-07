@@ -315,6 +315,20 @@ RuyiSDK 软件的打包与分发工作：目前您可以直接在 GitHub 上查�
   - [cuda ebpf](https://github.com/eunomia-bpf/bpf-developer-tutorial/tree/main/src/47-cuda-events)
   - [Energy Monitoring](https://github.com/eunomia-bpf/bpf-developer-tutorial/tree/main/src/48-energy)
 
+## The Aya Theorem Prover
+
+这 2-3 个月主要进展为在 IDE 插件和 language server 中初步实现了补全功能。目前的实现还有诸多问题（比如一个完整的表达式的尾部没法提供正确的补全，因为从这个地方截取到的 AST 并不在它左侧表达式内部，而且括号也会影响补全信息，但我们的 concrete syntax 没有保留括号），但这个脚手架已经搭起来。
+
+[Watch Aya Prover](https://github.com/aya-prover/aya-dev)
+
++ [v0.39](https://github.com/aya-prover/aya-dev/milestone/31) Better Completion and some Test Resource [PR-1360](https://github.com/aya-prover/aya-dev/pull/1360) opened by [HoshinoTented](https://github.com/HoshinoTented)
++ [v0.39](https://github.com/aya-prover/aya-dev/milestone/31) Upgrade jline, gson, and upstream [PR-1359](https://github.com/aya-prover/aya-dev/pull/1359) opened by [ice1000](https://github.com/ice1000)
++ 上个月：#1352, #1353
+
+[Watch Aya Intellij Plugin](https://github.com/aya-prover/intellij-aya)
+
++ Fixing Multi-Threading Problem and Completion [PR-37](https://github.com/aya-prover/intellij-aya/pull/37) opened by [HoshinoTented](https://github.com/HoshinoTented)
+
 ## u-boot
 
 本期没有新的进展。
