@@ -15,6 +15,33 @@ PLCT实验室的亮点产出通过「RuyiSDK」微信公众号（ID：RuyiSDK）
 ## RuyiSDK 包管理器
 
 ## V8 / Chromium
+- 6702989: [riscv] Delete Unnecessary margin in liftoff | https://chromium-review.googlesource.com/c/v8/v8/+/6702989
+- 6702434: [riscv] Remove g_thread_in_wasm_code flag | https://chromium-review.googlesource.com/c/v8/v8/+/6702434
+- 6715698: [riscv][simulator][arm64] Add missing ProbeMemory calls | https://chromium-review.googlesource.com/c/v8/v8/+/6715698
+- 6715563: [riscv][builtins] Additional checks when computing baseline osr offsets | https://chromium-review.googlesource.com/c/v8/v8/+/6715563
+- 6718872: [riscv] Remove the zicond optimization in builtins | https://chromium-review.googlesource.com/c/v8/v8/+/6718872
+- 6726075: [risc-v] Use sign-extension (via `sext.w`) to replace `slliw` when the shift amount is zero (i.e., `slliw rd, rs, 0`). | https://chromium-review.googlesource.com/c/v8/v8/+/6726075
+- 6731441: [riscv][turbolev] Implement Math.sqrt turbolev | https://chromium-review.googlesource.com/c/v8/v8/+/6731441
+- 6731860: [riscv] Fix Smi to Word bitcast | https://chromium-review.googlesource.com/c/v8/v8/+/6731860
+- 6731441: [riscv][turbolev] Implement Math.sqrt turbolev | https://chromium-review.googlesource.com/c/v8/v8/+/6731441
+- 6734118: [riscv] Revert change-6605718 | https://chromium-review.googlesource.com/c/v8/v8/+/6734118
+- 优化sext.w的弹出 6774564: [riscv] Optimize SignExtend Opcode emit | https://chromium-review.googlesource.com/c/v8/v8/+/6774564
+- maglev中实现优化 6656979: [riscv][maglev] Add some peephole optimisations | https://chromium-review.googlesource.com/c/v8/v8/+/6656979
+- 开启wasm deopt测试用例 6652018: [riscv][deoptimizer][wasm] Enable wasm deopt tests | https://chromium-review.googlesource.com/c/v8/v8/+/6652018
+
+#### Reviewed:
+- 6700768: [riscv] Use `Emit(...)` instead of `this->Emit(...)` | https://chromium-review.googlesource.com/c/v8/v8/+/6700768
+- 6700767: [riscv] Remove incorrect debug check in riscv32 | https://chromium-review.googlesource.com/c/v8/v8/+/6700767
+- 6718414: [riscv] Avoid unnecessary register move in SmiToInt32(dst, src) | https://chromium-review.googlesource.com/c/v8/v8/+/6718414
+- 6731345: [riscv] Implement 'PatchInHeapNumberRequest' | https://chromium-review.googlesource.com/c/v8/v8/+/6731345
+- 6767336: [riscv] Fix test expectations for floating point operations | https://chromium-review.googlesource.com/c/v8/v8/+/6767336
+- 重构lane-size编码方式，直接在opcode中实现 6699489: [riscv] Refactor lane-size encoding | https://chromium-review.googlesource.com/c/v8/v8/+/6699489
+- 正确记录Call函数的pc_offset 
+6652837: [riscv] Use pc_offset_for_safepoint instead of blocking trampolines | https://chromium-review.googlesource.com/c/v8/v8/+/6652837
+- 为了避免DEBUG模式下，向量寄存器检查失败的问题，重构部分向量IR实现方式
+6668634: [riscv] Move F32x4 comp functions to code generator | https://chromium-review.googlesource.com/c/v8/v8/+/6668634
+- 在编译阶段增加对RVV寄存器限制的检查  6760110: [riscv] Add register constraints | https://chromium-review.googlesource.com/c/v8/v8/+/6760110
+
 
 ## Spidermonkey / Firefox
 
@@ -45,14 +72,6 @@ PLCT实验室的亮点产出通过「RuyiSDK」微信公众号（ID：RuyiSDK）
 - https://github.com/openjdk/jdk/pull/25221 (8356924: RISC-V: Clean up cost for vector instructions)
 
 ## Go
-1. Authored/Co-authored Go-mainline CLs:
-- 688635: cmd/internal/obj: enable got pcrel itype in fips140 for riscv64 | https://go-review.googlesource.com/c/go/+/688635 [merged]
-- x/build: gotip-freebsd-riscv64 builder is missing | https://github.com/golang/go/issues/73568 [resolved]
-2. Reviewed Go-mainline CLs:
-- 688975: runtime: fix asan wrapper for riscv64 | https://go-review.googlesource.com/c/go/+/688975 [merged]
-- cmd/compile: line number debug info regression in go1.25 around literal rewriting | https://github.com/golang/go/issues/74576
-- 665655: internal/buildcfg: add ability to get GORISCV64 variable in GOGOARCH | https://go-review.googlesource.com/c/go/+/665655 
-
 
 ## OpenCV
 
@@ -80,36 +99,11 @@ PLCT实验室的亮点产出通过「RuyiSDK」微信公众号（ID：RuyiSDK）
 
 ## opensbi
 
-## Aya Prover
-
-本月合入的 PR 都不是工作重心，主力在搞 <https://github.com/aya-prover/aya-dev/pull/1362>。
-
-[Watch Aya Prover](https://github.com/aya-prover/aya-dev)
-
-+ [v0.39](https://github.com/aya-prover/aya-dev/milestone/31) Cherry-pick context-related changes from psi-based-completion [PR-1365](https://github.com/aya-prover/aya-dev/pull/1365) opened by [ice1000](https://github.com/ice1000)
-+ [v0.39](https://github.com/aya-prover/aya-dev/milestone/31) Publish to maven portal instead [PR-1363](https://github.com/aya-prover/aya-dev/pull/1363) opened by [ice1000](https://github.com/ice1000)
-+ [v0.39](https://github.com/aya-prover/aya-dev/milestone/31) doc: add init project step in "Developing in IntelliJ IDEA" [PR-1364](https://github.com/aya-prover/aya-dev/pull/1364) opened by [illusory0x0](https://github.com/illusory0x0)
-
 ## u-boot
 
 ## RevyOS (Debian for Xuantie)
 
 ### Debian
-
-### FreeBSD
-- libunwind: https://github.com/libunwind/libunwind/issues/857
-- lang/go*,devel/go-perf: update default website to go.dev: https://reviews.freebsd.org/D50595
-- sqlite3@default：https://sqlite.org/forum/forumpost/a92e06fc8fa3ac99
-- devel/zapcc: RISC-V support? https://github.com/yrnkrn/zapcc/issues/53  
-- devel/cxxtools: build failure https://github.com/maekitalo/cxxtools/issues/36 
-- devel/hpx: can't link against boost-libs [WIP]
-- audio/vsound: Enable riscv64 build https://github.com/freebsd/freebsd-ports/pull/423 
-- devel/gn: enable riscv64 build https://github.com/freebsd/freebsd-ports/pull/421 
-- devel/critcl: enable riscv64 build https://github.com/freebsd/freebsd-ports/pull/420 
-- x11/virglrenderer: enable riscv64 build   https://github.com/freebsd/freebsd-ports/pull/418
-- chinese/ibus-table-chinese: Update to 1.8.13 https://github.com/freebsd/freebsd-ports/pull/419 [merged]
-- net/usockets: Enable riscv64 build https://reviews.freebsd.org/D51271 [merged]
-- irc/undernet-ircu: enable riscv64 build https://reviews.freebsd.org/D51270
 
 ## RT-Thread
 
