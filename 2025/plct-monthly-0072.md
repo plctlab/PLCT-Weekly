@@ -50,6 +50,16 @@ PLCT实验室的亮点产出通过「RuyiSDK」微信公众号（ID：RuyiSDK）
 
 ## opensbi
 
+## Aya Prover
+
+本月合入的 PR 都不是工作重心，主力在搞 <https://github.com/aya-prover/aya-dev/pull/1362>。
+
+[Watch Aya Prover](https://github.com/aya-prover/aya-dev)
+
++ [v0.39](https://github.com/aya-prover/aya-dev/milestone/31) Cherry-pick context-related changes from psi-based-completion [PR-1365](https://github.com/aya-prover/aya-dev/pull/1365) opened by [ice1000](https://github.com/ice1000)
++ [v0.39](https://github.com/aya-prover/aya-dev/milestone/31) Publish to maven portal instead [PR-1363](https://github.com/aya-prover/aya-dev/pull/1363) opened by [ice1000](https://github.com/ice1000)
++ [v0.39](https://github.com/aya-prover/aya-dev/milestone/31) doc: add init project step in "Developing in IntelliJ IDEA" [PR-1364](https://github.com/aya-prover/aya-dev/pull/1364) opened by [illusory0x0](https://github.com/illusory0x0)
+
 ## u-boot
 
 ## RevyOS (Debian for Xuantie)
