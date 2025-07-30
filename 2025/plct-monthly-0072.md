@@ -14,6 +14,65 @@ PLCT实验室的亮点产出通过「RuyiSDK」微信公众号（ID：RuyiSDK）
 
 ## RuyiSDK 包管理器
 
+项目地址：https://github.com/ruyisdk/ruyi
+
+7 月份 RuyiSDK 包管理器发布了 4 个新版本：0.37.0、0.37.1、0.38.0、0.38.1，对应
+RuyiSDK 整体的 0.37 与 0.38 两个正式版本。您可移步
+[GitHub Releases][GitHub Releases] 或 [ISCAS 镜像源][iscas]下载体验。
+
+[GitHub Releases]: https://github.com/ruyisdk/ruyi/releases/tag/0.38.1
+[iscas]: https://mirror.iscas.ac.cn/ruyisdk/ruyi/tags/0.38.1/
+
+本月的主要变更如下：
+
+Release Engineering 与工程化方面：
+
+* 重构了 `ruyi` 的捆绑资源处理方式，将其从虚拟环境机制中剥离了，以便后续捆绑其他非虚拟环境相关资源，如命令行自动补全脚本、多语言字符串文件等等。同时，也以 CI 方式确保了 `ruyi` 所含的压缩资源总与原始文件保持同步。
+* 新增了对于 OpenCloudOS 9.4、openEuler 24.03 LTS SP2、openEuler 25.03、openKylin 2.0 的支持情况。`ruyi` 的 Python 依赖包在这些发行版上均有少量缺失，但其余依赖包的版本满足要求，我们预计将在 2025 年 10 月完成对它们的支持。
+
+`ruyi` 包管理器命令行工具方面：
+
+* 新增了基本的命令行自动补全支持，初期支持 Bash 与 Zsh 两种 shells。感谢 [@wychlw] 的贡献！
+
+  要使用命令行自动补全功能，请在您的 shell profile（如 `.bashrc` 或 `.zshrc`）的合适位置引入
+  `ruyi` 的自动补全脚本：
+
+  ```sh
+  # zsh 用户请将 bash 字样替换为 zsh
+  eval "$(ruyi --output-completion-script=bash)"
+  ```
+
+  目前支持 `ruyi` 子命令与 `ruyi install` 等命令的软件包参数的自动补全。
+
+* 使用 `ruyi self clean` 清除本地数据时，如果新闻已读状态文件不存在，不会报错崩溃了。感谢 [@weilinfox] [报告][ruyi-issue319]问题！
+* 拉取远端 Git 仓库失败时，不会将 Python 错误信息暴露给用户了。
+* 只有在文件的下载 URL 协议为 FTP 时，才会为 `curl` 或 `wget` 启用 FTP 被动模式了。这修复了部分 RuyiSDK 用户由于[cURL 8.14.1 的 bug][curl-issue17545] 而无法下载任何文件的问题。感谢 [@weilinfox] 向 `ruyi` 项目[报告][ruyi-issue316]问题！
+* 为 RuyiSDK 设备安装器新增了 `ruyi device flash` 这一别名，以便理解记忆。感谢 RuyiSDK 社区论坛的 [@Sequel] 同学反馈！
+* 当 `ruyi` 需要调用某些外部命令但无法找到时，如果当前终端可以交互，会等待您安装以便重试了。您可以在另一个终端下安装所需命令，再回到 `ruyi` 所在终端按回车键继续。您也可以按 Ctrl+C 退出。感谢 RuyiSDK 社区论坛的 [@Sequel] 同学反馈！
+
+RuyiSDK 软件源方面：
+
+* 完善了设备支持：
+    * 更新了 Milk-V Duo（64 & 256M RAM）、Duo S（SD 存储）的 Buildroot SDK。感谢 [@Cyl18] 的贡献！
+    * 支持了 BananaPi BPI-F3 的 SD 存储型号，有 SpacemiT 提供的 Bianbu Desktop 与 Bianbu Minimal 两种系统供使用。感谢 [@wychlw] 的贡献！
+    * 新增了 Sipeed LicheePi 4A 的 RevyOS 的历史版本。感谢 [@Cyl18] 的贡献！
+    * 新增了 Milk-V Duo 的 Arduino 的 1.1.2 与 1.1.4 两个版本。感谢 [@Cyl18] 的贡献！
+* 实体数据库更新：
+    * 新增了 SpacemiT X60 微架构。
+    * 新增了 SpacemiT K1 处理器型号。
+    * 新增了 BananaPi BPI-F3 的 eMMC 与 SD 存储两种设备变体。
+
+欢迎试用或来上游围观；您的需求是我们迭代开发的目标和动力。您也可以亲自参与
+RuyiSDK 软件的打包与分发工作：目前您可以直接在 GitHub 上查看、修改我们的[部分打包脚本](https://github.com/ruyisdk/ruyici)与[软件源仓库](https://github.com/ruyisdk/packages-index)。今后，按照本年度的开发计划，我们也将支持有权的第三方贡献者通过程序化的方式上传软件包、系统镜像等分发文件，以便利打包工作。
+
+[@Cyl18]: https://github.com/Cyl18
+[@Sequel]: https://ruyisdk.cn/u/Sequel
+[@weilinfox]: https://github.com/weilinfox
+[@wychlw]: https://github.com/wychlw
+[curl-issue17545]: https://github.com/curl/curl/issues/17545
+[ruyi-issue316]: https://github.com/ruyisdk/ruyi/issues/316
+[ruyi-issue319]: https://github.com/ruyisdk/ruyi/issues/319
+
 ## V8 / Chromium
 
 ## Spidermonkey / Firefox
