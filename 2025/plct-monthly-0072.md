@@ -45,6 +45,14 @@ PLCT实验室的亮点产出通过「RuyiSDK」微信公众号（ID：RuyiSDK）
 - https://github.com/openjdk/jdk/pull/25221 (8356924: RISC-V: Clean up cost for vector instructions)
 
 ## Go
+1. Authored/Co-authored Go-mainline CLs:
+- 688635: cmd/internal/obj: enable got pcrel itype in fips140 for riscv64 | https://go-review.googlesource.com/c/go/+/688635 [merged]
+- x/build: gotip-freebsd-riscv64 builder is missing | https://github.com/golang/go/issues/73568 [resolved]
+2. Reviewed Go-mainline CLs:
+- 688975: runtime: fix asan wrapper for riscv64 | https://go-review.googlesource.com/c/go/+/688975 [merged]
+- cmd/compile: line number debug info regression in go1.25 around literal rewriting | https://github.com/golang/go/issues/74576
+- 665655: internal/buildcfg: add ability to get GORISCV64 variable in GOGOARCH | https://go-review.googlesource.com/c/go/+/665655 
+
 
 ## OpenCV
 
@@ -77,6 +85,21 @@ PLCT实验室的亮点产出通过「RuyiSDK」微信公众号（ID：RuyiSDK）
 ## RevyOS (Debian for Xuantie)
 
 ### Debian
+
+### FreeBSD
+- libunwind: https://github.com/libunwind/libunwind/issues/857
+- lang/go*,devel/go-perf: update default website to go.dev: https://reviews.freebsd.org/D50595
+- sqlite3@default：https://sqlite.org/forum/forumpost/a92e06fc8fa3ac99
+- devel/zapcc: RISC-V support? https://github.com/yrnkrn/zapcc/issues/53  
+- devel/cxxtools: build failure https://github.com/maekitalo/cxxtools/issues/36 
+- devel/hpx: can't link against boost-libs [WIP]
+- audio/vsound: Enable riscv64 build https://github.com/freebsd/freebsd-ports/pull/423 
+- devel/gn: enable riscv64 build https://github.com/freebsd/freebsd-ports/pull/421 
+- devel/critcl: enable riscv64 build https://github.com/freebsd/freebsd-ports/pull/420 
+- x11/virglrenderer: enable riscv64 build   https://github.com/freebsd/freebsd-ports/pull/418
+- chinese/ibus-table-chinese: Update to 1.8.13 https://github.com/freebsd/freebsd-ports/pull/419 [merged]
+- net/usockets: Enable riscv64 build https://reviews.freebsd.org/D51271 [merged]
+- irc/undernet-ircu: enable riscv64 build https://reviews.freebsd.org/D51270
 
 ## RT-Thread
 
