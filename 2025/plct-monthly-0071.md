@@ -355,6 +355,11 @@ RuyiSDK 软件的打包与分发工作：目前您可以直接在 GitHub 上查�
 * https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=1106993 [python-crypt-r done]
 * https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=1107305#49 [test mariadb on rv64]
 
+### FreeBSD
+- archivers/unarr: enable riscv64 build https://github.com/freebsd/freebsd-ports/pull/409 [已合入]
+- libunwind: https://github.com/libunwind/libunwind/issues/857
+- lang/go*,devel/go-perf: update default website to go.dev: https://reviews.freebsd.org/D50595
+
 ### RedleafOS
 
 Redleafos 本月继续针对 nanhu v3 进行深度适配:
