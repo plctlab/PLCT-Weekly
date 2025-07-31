@@ -172,11 +172,53 @@ RuyiSDK 软件的打包与分发工作：目前您可以直接在 GitHub 上查�
 
 ## RT-Thread
 
+- [MAINTAINER: standardize tag writing][rtt-10505]
+- [doxygen: group name all in lowcase (part 2)][rtt-10530]
+- [doxygen: fix duplicated defgroup for clock][rtt-10531]
+- [doxygen: promote object management to a separate page][rtt-10532]
+- [bsp: k230: add support for PWM driver][rtt-10556]
+
+mlibc:
+
+- [Fix ARM toolchain linking error and improve documentation][milbc-69]
+
+Articles:
+
+- [【嘉楠堪智K230开发板试用体验】开箱测评](https://bbs.elecfans.com/jishu_2494665_1_1.html)
+- [【嘉楠堪智K230开发板试用体验】手势识别](https://bbs.elecfans.com/jishu_2494970_1_1.html)
+- [【嘉楠堪智K230开发板试用体验】网络收发信息](https://bbs.elecfans.com/jishu_2494971_1_1.html)
+- [【嘉楠堪智K230开发板试用体验】基于RT-THREAD上的PWM驱动开发](https://bbs.elecfans.com/jishu_2496547_1_1.html)
+
+[rtt-10505]: https://github.com/RT-Thread/rt-thread/pull/10505
+[rtt-10530]: https://github.com/RT-Thread/rt-thread/pull/10530
+[rtt-10531]: https://github.com/RT-Thread/rt-thread/pull/10531
+[rtt-10532]: https://github.com/RT-Thread/rt-thread/pull/10532
+[rtt-10556]: https://github.com/RT-Thread/rt-thread/pull/10556
+[milbc-69]: https://github.com/plctlab/mlibc/pull/69
+
 ## PLCT罗云翔测试团队
 
 ## SG2042/SG2044 Upstream
 
+- [[PATCH v3 0/3] riscv: dts: sophgo: add more sg2042 isa extension support][lk-sg204x-3]
+- [[PATCH v3 0/3] Add Sophgo EVB V1/V2 Board support][lk-sg204x-2]
+- [[PATCH v4 0/4] spi: sophgo: Add SPI NOR controller for SG2042][lk-sg204x-1]
+
+[lk-sg204x-1]: https://lore.kernel.org/linux-riscv/20250720-sfg-spifmc-v4-0-033188ad801e@gmail.com/
+[lk-sg204x-2]: https://lore.kernel.org/linux-riscv/cover.1751700954.git.rabenda.cn@gmail.com/
+[lk-sg204x-3]: https://lore.kernel.org/linux-riscv/cover.1751698574.git.rabenda.cn@gmail.com/
+
 ## Milk-V Duo Upstream
+
+- [[PATCH v2 0/2] remoteproc: cv1800b: Add initial support for C906L processor][lk-cv18xx-1]
+
+[lk-cv18xx-1]: https://lore.kernel.org/linux-riscv/20250728-cv1800-rproc-v2-0-5bbee4abe9dc@pigmoral.tech/
+
+## Canaan K230 Upstream
+
+- [[PATCH v7 0/3] riscv: canaan: Add support for K230 clock][lk-k230-1]
+
+[lk-k230-1]: https://lore.kernel.org/linux-riscv/20250730-b4-k230-clk-v7-0-c57d3bb593d3@zohomail.com/
 
 ## TPU-MLIR （甲辰计划 J123）
 
