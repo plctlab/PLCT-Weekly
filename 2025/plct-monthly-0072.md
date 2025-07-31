@@ -116,6 +116,18 @@ RuyiSDK 软件的打包与分发工作：目前您可以直接在 GitHub 上查�
 ## OpenCV
 
 ## GNU Toolchain
+实现了p扩展最新草案015版本在Binutils上的支持：
+- https://github.com/ruyisdk/riscv-binutils/tree/p-dev
+
+拟定了p扩展intrinsic文档草案，正在进行GCC部分的开发中：
+- https://github.com/pz9115/rvp-intrinsic-doc/blob/main/source/simd.md
+
+Rebase了p扩展0.9.11版本的GCC与Bintuils支持：
+- https://github.com/ruyisdk/riscv-gcc/pull/5
+- https://github.com/ruyisdk/riscv-binutils/pull/6
+
+更新了riscv-gnu-toolchain configure文件中关于--with-tune的配置
+- https://github.com/riscv-collab/riscv-gnu-toolchain/pull/1735
 
 ## LLVM Team
 
