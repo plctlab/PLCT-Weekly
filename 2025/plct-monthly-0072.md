@@ -152,9 +152,33 @@ Rebase了p扩展0.9.11版本的GCC与Bintuils支持：
 
 ## coreboot for riscv
 
+本期没有新的进展。
+
 ## openocd
 
+本期没有新的进展。
+
 ## opensbi
+
+- 修复宏传参的问题，参数为自增表达式时被多次展开。 [1](https://lists.infradead.org/pipermail/opensbi/2025-July/008631.html)
+- 修正fdt中ranges中ranges解析的问题，父节点的地址和子节点的地址宽度可以不同。[1](https://lists.infradead.org/pipermail/opensbi/2025-July/008646.html)
+- 修正openpiton_early_init中局部变量未初始化的问题，随机值会影响之后的初始化。[1](https://lists.infradead.org/pipermail/opensbi/2025-July/008647.html)
+- 修正K210上编译dts的问题，llvm预处理不会移除编译器指令。[1](https://lists.infradead.org/pipermail/opensbi/2025-July/008654.html)
+- 修正重定位代码的符号名，修正的是Relocation addend，从rel改为rela。[1](https://lists.infradead.org/pipermail/opensbi/2025-July/008658.html)
+- 重定位代码中的便宜量从寄存器宽度修改为\_\_SIZEOF\_LONG\_\_，防止机器字长和ABI不一样。[1](https://lists.infradead.org/pipermail/opensbi/2025-July/008656.html)
+- 改进sbi_trap_regs中通用寄存器的定义，方便在获取寄存器时使用索引。[1](https://lists.infradead.org/pipermail/opensbi/2025-July/008655.html)
+- 改进p8700次要核心热启动，直接跳转到opensbi的热启动入口。[1](https://lists.infradead.org/pipermail/opensbi/2025-July/008693.html)
+- 改进pmu_ctr_find_hw，在查找到定时器后跳出循环。[1](https://lists.infradead.org/pipermail/opensbi/2025-July/008679.html)
+- openpiton添加pmu支持。[1](https://lists.infradead.org/pipermail/opensbi/2025-July/008680.html)
+- 修正fdt_open_into扩展内存后可能包含未初始化内存的问题。[1](https://lists.infradead.org/pipermail/opensbi/2025-July/008688.html)
+- dbtr添加指令计数器类型的trigger支持。[1](https://lists.infradead.org/pipermail/opensbi/2025-July/008694.html)
+- 添加PSCI支持，这些代码包装了原先的电源相关的操作，并且没有被使用，应该不会被接受。[1](https://lists.infradead.org/pipermail/opensbi/2025-July/008696.html)
+- 一些关于版权许可的修改。[1](https://lists.infradead.org/pipermail/opensbi/2025-July/008704.html)
+- 关于sbi_debug_read_triggers文档的改进。[1](https://lists.infradead.org/pipermail/opensbi/2025-July/008705.html)
+
+## u-boot
+
+本期没有新的进展。
 
 ## Aya Prover
 
@@ -165,8 +189,6 @@ Rebase了p扩展0.9.11版本的GCC与Bintuils支持：
 + [v0.39](https://github.com/aya-prover/aya-dev/milestone/31) Cherry-pick context-related changes from psi-based-completion [PR-1365](https://github.com/aya-prover/aya-dev/pull/1365) opened by [ice1000](https://github.com/ice1000)
 + [v0.39](https://github.com/aya-prover/aya-dev/milestone/31) Publish to maven portal instead [PR-1363](https://github.com/aya-prover/aya-dev/pull/1363) opened by [ice1000](https://github.com/ice1000)
 + [v0.39](https://github.com/aya-prover/aya-dev/milestone/31) doc: add init project step in "Developing in IntelliJ IDEA" [PR-1364](https://github.com/aya-prover/aya-dev/pull/1364) opened by [illusory0x0](https://github.com/illusory0x0)
-
-## u-boot
 
 ## RevyOS (Debian for Xuantie)
 
