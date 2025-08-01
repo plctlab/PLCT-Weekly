@@ -130,6 +130,11 @@ Rebase了p扩展0.9.11版本的GCC与Bintuils支持：
 - https://github.com/riscv-collab/riscv-gnu-toolchain/pull/1735
 
 ## LLVM Team
+1. Upstream llvm-project 合并的patch:
+- [[RISCV] AddEdge between mask producer and user of V0](https://github.com/llvm/llvm-project/pull/148566)
+
+2. Ruyisdk llvm-project合并的patch:
+- [[LLVM][XTHeadVector] xtheadvector implies zfh by default](https://github.com/ruyisdk/llvm-project/pull/162)
 
 ## MLIR
 
