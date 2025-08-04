@@ -140,9 +140,18 @@ Rebase了p扩展0.9.11版本的GCC与Bintuils支持：
 
 ### Buddy Compiler
 
+- Buddy Compiler 主页地址 - https://buddy-compiler.github.io/
+- Buddy Compiler As A Service (Buddy CAAS) - https://buddy.isrc.ac.cn/
+- Buddy Compiler 开源之夏 2025 - https://summer-ospp.ac.cn/org/orgdetail/8d995d4c-b188-4690-9a53-c022dc7c19e3?lang=zh
+
 **buddy-mlir**
 
-**buddy-benchmark**
+- [LLVM] Bump LLVM version to 21.0.0git
+- [Examples] Add f16 support for DeepSeekR1.
+- [RVV] Update RVVEnvironment.md and fix RVVDialect example.
+- [Torch] Add torch dynamo and triton based backend inductor docs and example.
+- [Docs] Add tutorial for optimization pass in the midend.
+- [Docs] Add Introduction to PyTorch Runtime.
 
 ## Box64
 
