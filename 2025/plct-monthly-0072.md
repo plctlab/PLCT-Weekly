@@ -155,6 +155,16 @@ Rebase了p扩展0.9.11版本的GCC与Bintuils支持：
 
 ## Box64
 
+- [\[RV64_DYNAREC\] Fixed a typo](https://github.com/ptitSeb/box64/pull/2865)
+- [Minor improvements to trace logging](https://github.com/ptitSeb/box64/pull/2861)
+- [\[RV64_DYNAREC\] Added MMX handling to `fpu_{push,pop}cache` for vector](https://github.com/ptitSeb/box64/pull/2858)
+- [\[RV64\]\[LA64\] Added partial FLUSHTO0 support](https://github.com/ptitSeb/box64/pull/2855)
+- [\[RV64_DYNAREC\]\[LA64_DYNAREC\] Simplified defered flags handling and limited case where UpdateFlags is actualy called](https://github.com/ptitSeb/box64/pull/2844)
+- [\[BOX32\] Enable personality setting for RV64 and LA64](https://github.com/ptitSeb/box64/pull/2841)
+- [\[DYNACACHE\]\[LA64\] Enabled dynacache for LA64](https://github.com/ptitSeb/box64/pull/2836)
+- [\[LA64_DYNAREC\] Optimized PMADDUBSW opcodes](https://github.com/ptitSeb/box64/pull/2817)
+- [\[LA64_DYNAREC\] Optimized some SSE shift opcodes](https://github.com/ptitSeb/box64/pull/2813)
+
 ## DynamoRIO
 
 ## llama.cpp
