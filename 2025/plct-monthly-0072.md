@@ -213,6 +213,30 @@ Rebase了p扩展0.9.11版本的GCC与Bintuils支持：
 
 ### Debian
 
+本月主要的任务是参加 Debconf25[0], 同时将 RVI sail 打包 task 的最后一个依赖上传至 Debian 官方仓库; 其他的如 Debian riscv64 基础设施例行维护.
+
+[0]: https://debconf25.debconf.org/talks/213-risc-v-bof/
+
+以下是外部可见 links:
+
+* https://salsa.debian.org/vimerbf-guest/sail-ocaml/-/tree/debian/main?ref_type=heads [sail update]
+* https://tracker.debian.org/news/1650488/accepted-linksem-08dfsg3-2-source-into-unstable/ [linksem upload]
+* https://debconf25.debconf.org/talks/213-risc-v-bof/ [debconf25 riscv64 bof]
+* https://github.com/rems-project/sail/pull/1405 [fix typo in sail]
+* https://lists.debian.org/debian-ocaml-maint/2025/07/msg00007.html [sail-ocaml upload]
+* https://tracker.debian.org/news/1651930/accepted-strace-615ds-1-source-into-experimental/ [strace upload]
+* http://vimer.7766.org:63015/chromium/138/ [chromium]
+* https://lists.debian.org/debian-cloud/2025/07/msg00042.html [Debian cloud image for riscv64]
+* https://salsa.debian.org/lintian/lintian/-/merge_requests/596 [MR for lintian]
+* https://www.eclipse.org/lists/epp-dev/msg07014.html [eclipse +1 testing]
+
+### RedleafOS
+
+Redleafos 本月继续针对 nanhu v3 进行深度适配:
+
+启动固件针对 multi cores 的代码梳理完成， 下一步适配不同介质及kernel.
+
+
 ### FreeBSD
 - libunwind: https://github.com/libunwind/libunwind/issues/857
 - lang/go*,devel/go-perf: update default website to go.dev: https://reviews.freebsd.org/D50595
