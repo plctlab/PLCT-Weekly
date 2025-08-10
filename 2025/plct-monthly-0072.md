@@ -11,6 +11,17 @@ PLCT实验室的亮点产出通过「RuyiSDK」微信公众号（ID：RuyiSDK）
 为了减少冗余工作量，已经在微信公众号推送的中文信息默认不再搬运。
 
 ## RuyiSDK IDE
+1. 文档：提交仓库Java 代码规范：https://github.com/ruyisdk/ruyisdk-eclipse-plugins/pull/53
+  - 基于 google style 的 Eclipse Formatter 配置文件；
+  - 基于 google style 的 Eclipse Code Templates 配置文件；
+  - 配套的 Checkstyle 配置文件；
+  - 代码风格指南与配置说明；
+  - 开发者贡献指南；
+
+2. IDE插件：新增了自定义统一日志和Console管理功能
+  - 统一日志管理：集成控制台输出、文件日志和Eclipse日志系统
+  - 多级日志输出：支持DEBUG/INFO/WARN/ERROR分级输出
+  - 日志存储：日志文件存储路径兼容XDG规范，默认存储于标准目录（~/.local/state/ruyisdkide/logs）
 
 ## RuyiSDK 包管理器
 
