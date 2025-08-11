@@ -151,7 +151,6 @@ RuyiSDK 软件的打包与分发工作：目前您可以直接在 GitHub 上查�
 - 665655: internal/buildcfg: add ability to get GORISCV64 variable in GOGOARCH | https://go-review.googlesource.com/c/go/+/665655 
 
 
-
 ## OpenCV
 
 ## GNU Toolchain
