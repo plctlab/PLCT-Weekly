@@ -85,6 +85,33 @@ RuyiSDK 软件的打包与分发工作：目前您可以直接在 GitHub 上查�
 [ruyi-issue319]: https://github.com/ruyisdk/ruyi/issues/319
 
 ## V8 / Chromium
+- 6702989: [riscv] Delete Unnecessary margin in liftoff | https://chromium-review.googlesource.com/c/v8/v8/+/6702989
+- 6702434: [riscv] Remove g_thread_in_wasm_code flag | https://chromium-review.googlesource.com/c/v8/v8/+/6702434
+- 6715698: [riscv][simulator][arm64] Add missing ProbeMemory calls | https://chromium-review.googlesource.com/c/v8/v8/+/6715698
+- 6715563: [riscv][builtins] Additional checks when computing baseline osr offsets | https://chromium-review.googlesource.com/c/v8/v8/+/6715563
+- 6718872: [riscv] Remove the zicond optimization in builtins | https://chromium-review.googlesource.com/c/v8/v8/+/6718872
+- 6726075: [risc-v] Use sign-extension (via `sext.w`) to replace `slliw` when the shift amount is zero (i.e., `slliw rd, rs, 0`). | https://chromium-review.googlesource.com/c/v8/v8/+/6726075
+- 6731441: [riscv][turbolev] Implement Math.sqrt turbolev | https://chromium-review.googlesource.com/c/v8/v8/+/6731441
+- 6731860: [riscv] Fix Smi to Word bitcast | https://chromium-review.googlesource.com/c/v8/v8/+/6731860
+- 6731441: [riscv][turbolev] Implement Math.sqrt turbolev | https://chromium-review.googlesource.com/c/v8/v8/+/6731441
+- 6734118: [riscv] Revert change-6605718 | https://chromium-review.googlesource.com/c/v8/v8/+/6734118
+- 优化sext.w的弹出 6774564: [riscv] Optimize SignExtend Opcode emit | https://chromium-review.googlesource.com/c/v8/v8/+/6774564
+- maglev中实现优化 6656979: [riscv][maglev] Add some peephole optimisations | https://chromium-review.googlesource.com/c/v8/v8/+/6656979
+- 开启wasm deopt测试用例 6652018: [riscv][deoptimizer][wasm] Enable wasm deopt tests | https://chromium-review.googlesource.com/c/v8/v8/+/6652018
+
+#### Reviewed:
+- 6700768: [riscv] Use `Emit(...)` instead of `this->Emit(...)` | https://chromium-review.googlesource.com/c/v8/v8/+/6700768
+- 6700767: [riscv] Remove incorrect debug check in riscv32 | https://chromium-review.googlesource.com/c/v8/v8/+/6700767
+- 6718414: [riscv] Avoid unnecessary register move in SmiToInt32(dst, src) | https://chromium-review.googlesource.com/c/v8/v8/+/6718414
+- 6731345: [riscv] Implement 'PatchInHeapNumberRequest' | https://chromium-review.googlesource.com/c/v8/v8/+/6731345
+- 6767336: [riscv] Fix test expectations for floating point operations | https://chromium-review.googlesource.com/c/v8/v8/+/6767336
+- 重构lane-size编码方式，直接在opcode中实现 6699489: [riscv] Refactor lane-size encoding | https://chromium-review.googlesource.com/c/v8/v8/+/6699489
+- 正确记录Call函数的pc_offset 
+6652837: [riscv] Use pc_offset_for_safepoint instead of blocking trampolines | https://chromium-review.googlesource.com/c/v8/v8/+/6652837
+- 为了避免DEBUG模式下，向量寄存器检查失败的问题，重构部分向量IR实现方式
+6668634: [riscv] Move F32x4 comp functions to code generator | https://chromium-review.googlesource.com/c/v8/v8/+/6668634
+- 在编译阶段增加对RVV寄存器限制的检查  6760110: [riscv] Add register constraints | https://chromium-review.googlesource.com/c/v8/v8/+/6760110
+
 
 ## Spidermonkey / Firefox
 
