@@ -148,8 +148,8 @@ RuyiSDK 软件的打包与分发工作：目前您可以直接在 GitHub 上查�
 2. Reviewed Go-mainline CLs:
 - 688975: runtime: fix asan wrapper for riscv64 | https://go-review.googlesource.com/c/go/+/688975 [merged]
 - cmd/compile: line number debug info regression in go1.25 around literal rewriting | https://github.com/golang/go/issues/74576
-- 665655: internal/buildcfg: add ability to get GORISCV64 variable in GOGOARCH | https://go-review.googlesource.com/c/go/+/665655 
-
+- 665655: internal/buildcfg: add ability to get GORISCV64 variable in GOGOARCH | https://go-review.googlesource.com/c/go/+/665655
+  
 ## OpenCV
 
 ## GNU Toolchain
@@ -245,7 +245,6 @@ Rebase了p扩展0.9.11版本的GCC与Bintuils支持：
 + [v0.39](https://github.com/aya-prover/aya-dev/milestone/31) Cherry-pick context-related changes from psi-based-completion [PR-1365](https://github.com/aya-prover/aya-dev/pull/1365) opened by [ice1000](https://github.com/ice1000)
 + [v0.39](https://github.com/aya-prover/aya-dev/milestone/31) Publish to maven portal instead [PR-1363](https://github.com/aya-prover/aya-dev/pull/1363) opened by [ice1000](https://github.com/ice1000)
 + [v0.39](https://github.com/aya-prover/aya-dev/milestone/31) doc: add init project step in "Developing in IntelliJ IDEA" [PR-1364](https://github.com/aya-prover/aya-dev/pull/1364) opened by [illusory0x0](https://github.com/illusory0x0)
-
 
 ## RevyOS (Debian for Xuantie)
 
