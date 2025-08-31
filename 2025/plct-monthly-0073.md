@@ -91,9 +91,26 @@ PLCT实验室的亮点产出通过「RuyiSDK」微信公众号（ID：RuyiSDK）
 
 ### Buddy Compiler
 
+- Buddy Compiler 主页地址 - https://buddy-compiler.github.io/
+- Buddy Compiler As A Service (Buddy CAAS) - https://buddy.isrc.ac.cn/
+- Buddy Compiler 开源之夏 2025 - https://summer-ospp.ac.cn/org/orgdetail/8d995d4c-b188-4690-9a53-c022dc7c19e3?lang=zh
+
 **buddy-mlir**
 
-**buddy-benchmark**
+- [Examples] Add f16 support for DeepSeekR1.
+- [RVV] Update RVVEnvironment.md and sync to LLVM 21.0.0git
+- [examples] Update E2E models pass pipeline to LLVM 21.0.0git
+- [Torch] Add torch dynamo and triton based backend inductor docs and example.
+- [Docs] Add introduction to PyTorch runtime.
+- [VIR] Add dynamic vector type.
+- [VIR] Add memory, basic, and arith operations.
+- [VIR] Add lowering pass for set_vl and memory operations.
+- [VIR] Add fma, constant, and broadcast operations conversion.
+- [midend] Fixed multi-core computing capability of batchmatmul.
+- [frontend] Update the matmul operator.
+- [examples] Add fixed/scalable/vp SAXPY for evaluation.
+- [examples] Add evaluation script for fixed SIMD and RVV.
+- [examples] Add macOS support for VIR eval script.
 
 ## Box64
 
