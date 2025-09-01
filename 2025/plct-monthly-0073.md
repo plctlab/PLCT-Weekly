@@ -86,6 +86,25 @@ PLCT实验室的亮点产出通过「RuyiSDK」微信公众号（ID：RuyiSDK）
   - https://github.com/ruyisdk/riscv-gcc/commit/f1eda2ebd2c0a72474950df34ce5433612cc779f
 
 ## LLVM Team
+- 1. Upstream llvm-project 合并的patch:
+  - [X86] SimplifyDemandedBitsForTargetNode - add handling for VPMADD52L/VPMADD52H https://github.com/llvm/llvm-project/pull/155494
+  - [DAG] Constant fold ISD::FSHL/FSHR nodes https://github.com/llvm/llvm-project/pull/154480
+  - [FuncSpec] Skip SCCP on blocks of dead functions and poison their callsites https://github.com/llvm/llvm-project/pull/154668
+  - [SCCP][FuncSpec] Poison unreachable constant global variable user https://github.com/llvm/llvm-project/pull/155753
+  - [RISCV][NFC] Fix typo v32 -> v31 in document https://github.com/llvm/llvm-project/pull/155389
+  - [RISCV] Support Remaining P Extension Instructions for RV32/64 https://github.com/llvm/llvm-project/pull/150379
+  - [#151682](https://github.com/llvm/llvm-project/pull/151682) [static analyzer] Fix crash on parenthesized expression in assume attribute
+  - [#151790](https://github.com/llvm/llvm-project/pull/151790) [clang][diagnostics] Fix fix-it hint parenthesis placement for fold expressions
+  - [#151981](https://github.com/llvm/llvm-project/pull/151981) [RISCV] Create disjoint or in RISCVGatherScatterLowering
+  - [#153362](https://github.com/llvm/llvm-project/pull/153362) [CIR] Add InlineAsmOp
+  - [#153387](https://github.com/llvm/llvm-project/pull/153387) [CIR] Add InlineAsmOp lowering to LLVM
+  - [#153546](https://github.com/llvm/llvm-project/pull/153546) [CIR] Implement codegen for inline assembly without input and output operands 
+  - [#152294](https://github.com/llvm/llvm-project/pull/152294) [clang] constexpr integer __builtin_elementwise_{max,min}
+
+- 2. plctlab llvm-project合并的patch:
+  - https://github.com/plctlab/llvm-project/pull/71 Add some p-ext intrinsic support 
+  - https://github.com/plctlab/llvm-project/pull/72 [RISCV] Add P-ext intrinsic
+  - https://github.com/plctlab/llvm-project/pull/73 add llvm intrinsic support for cmix,rdov 
 
 ## MLIR
 
