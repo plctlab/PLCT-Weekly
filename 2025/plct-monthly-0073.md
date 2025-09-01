@@ -217,6 +217,27 @@ Merged PRs:
 
 ## u-boot
 
+## eunomia-bpf
+
+- [Zero instrucment LLM and AI agent observability in eBPF](https://github.com/eunomia-bpf/agentsight) ([Arxiv](https://www.arxiv.org/abs/2508.02736), will be presented at PACMI'25)
+- [xpu-perf: eBPF wall clock profiler for CPU & GPU](https://github.com/eunomia-bpf/xpu-perf)
+- [MCP Server for Linux Scheduler Management](https://github.com/eunomia-bpf/schedcp)
+- [MCPtrace](https://github.com/eunomia-bpf/MCPtrace) MCP server: using eBPF to tracing your kernel
+- bpftime:
+  - [**GPU: support per-thread GPU ringbuffer**](https://github.com/eunomia-bpf/bpftime/pull/425)
+    #425 merged 3 days ago
+  - [**fix: cleanup when reattach**](https://github.com/eunomia-bpf/bpftime/pull/439)
+    #439 merged last week
+  - [**fix a race condition and improve performance in userspace ringbuf reservation**](https://github.com/eunomia-bpf/bpftime/pull/430)
+    #430 merged last week
+  - [**feat: Enhance file descriptor management and environment variable par…**](https://github.com/eunomia-bpf/bpftime/pull/438)
+    #438 merged last week
+  - [**feat: Add ARM64 Docker support and build test script**](https://github.com/eunomia-bpf/bpftime/pull/437)
+    #437 merged last week
+  - [**fix: Resolve compilation failure on AArch64**](https://github.com/eunomia-bpf/bpftime/pull/432)
+    #432 merged 2 weeks ago
+- Minor update to documents and tutorials
+
 ## RevyOS (Debian for Xuantie)
 
 ### Debian
