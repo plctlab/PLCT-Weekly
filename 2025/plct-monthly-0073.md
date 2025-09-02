@@ -48,6 +48,33 @@ PLCT实验室的亮点产出通过「RuyiSDK」微信公众号（ID：RuyiSDK）
 一般都是风平浪静。欢迎对 Firefox 开发感兴趣的同学来实习。
 
 ## OpenJDK
+1. Authored/Co-authored JDK-mainline PRs:
+- https://github.com/openjdk/jdk/pull/25765 (8359270: C2: alignment check should consider base offset when emitting arraycopy runtime call)
+- https://github.com/openjdk/jdk/pull/25696 (8358892: RISC-V: jvm crash when running dacapo sunflow after JDK-8352504)
+
+2. Reviewed JDK-mainline PRs:
+- https://github.com/openjdk/jdk/pull/25578 (8358310: ZGC: riscv, ppc ZPlatformAddressOffsetBits may return a too large value)
+- https://github.com/openjdk/jdk/pull/25438 (8357695: RISC-V: Move vector intrinsic condition checks into match_rule_supported_vector)
+- https://github.com/openjdk/jdk/pull/25412 (8357626: RISCV: Tighten up template interpreter method entry code)
+- https://github.com/openjdk/jdk/pull/25502 (8357968: RISC-V: Interpreter volatile reference stores with G1 are not sequentially consistent)
+- https://github.com/openjdk/jdk/pull/25520 (8358105: RISC-V: Optimize interpreter profile updates)
+- https://github.com/openjdk/jdk/pull/25652 (8358634: RISC-V: Fix several broken documentation web-links)
+- https://github.com/openjdk/jdk/pull/25743 (8359218: RISC-V: Only enable CRC32 intrinsic when AvoidUnalignedAccess == false)
+- https://github.com/openjdk/jdk/pull/25709 (8359105: RISC-V: No need for acquire fence in safepoint poll during JNI calls)
+- https://github.com/openjdk/jdk/pull/25848 (8359801: RISC-V: Simplify Interpreter::profile_taken_branch)
+- https://github.com/openjdk/jdk/pull/25923 (8360179: RISC-V: Only enable BigInteger intrinsics when AvoidUnalignedAccess == false)
+- https://github.com/openjdk/jdk/pull/25924 (8360169: Problem list CodeInvalidationReasonTest.java on linux-riscv64 until JDK-8360168 is fixed)
+- https://github.com/openjdk/jdk/pull/25976 (8360520: RISC-V: C1: Fix primitive array clone intrinsic regression after JDK-8333154)
+- https://github.com/openjdk/jdk/pull/26004 (8360707: Globally enumerate all blobs, stubs and entries)
+
+3. Reviewed JDK-21u/17u mainline PRs:
+- https://github.com/openjdk/jdk21u-dev/pull/1845 (8358310: ZGC: riscv, ppc ZPlatformAddressOffsetBits may return a too large value)
+- https://github.com/openjdk/jdk17u-dev/pull/3678 (8357968: RISC-V: Interpreter volatile reference stores with G1 are not sequentially consistent)
+
+4. Proposed JDK-25u mainline PRs:
+- https://github.com/openjdk/jdk25u/pull/4 (8359218: RISC-V: Only enable CRC32 intrinsic when AvoidUnalignedAccess == false)
+- https://github.com/openjdk/jdk25u/pull/5 (8360179: RISC-V: Only enable BigInteger intrinsics when AvoidUnalignedAccess == false)
+- https://github.com/openjdk/jdk25u/pull/6 (8359270: C2: alignment check should consider base offset when emitting arraycopy runtime call)
 
 ## Go
 
