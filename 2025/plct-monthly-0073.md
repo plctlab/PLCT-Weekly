@@ -48,6 +48,33 @@ PLCT实验室的亮点产出通过「RuyiSDK」微信公众号（ID：RuyiSDK）
 一般都是风平浪静。欢迎对 Firefox 开发感兴趣的同学来实习。
 
 ## OpenJDK
+1. Authored/Co-authored JDK-mainline PRs:
+- https://github.com/openjdk/jdk/pull/25765 (8359270: C2: alignment check should consider base offset when emitting arraycopy runtime call)
+- https://github.com/openjdk/jdk/pull/25696 (8358892: RISC-V: jvm crash when running dacapo sunflow after JDK-8352504)
+
+2. Reviewed JDK-mainline PRs:
+- https://github.com/openjdk/jdk/pull/25578 (8358310: ZGC: riscv, ppc ZPlatformAddressOffsetBits may return a too large value)
+- https://github.com/openjdk/jdk/pull/25438 (8357695: RISC-V: Move vector intrinsic condition checks into match_rule_supported_vector)
+- https://github.com/openjdk/jdk/pull/25412 (8357626: RISCV: Tighten up template interpreter method entry code)
+- https://github.com/openjdk/jdk/pull/25502 (8357968: RISC-V: Interpreter volatile reference stores with G1 are not sequentially consistent)
+- https://github.com/openjdk/jdk/pull/25520 (8358105: RISC-V: Optimize interpreter profile updates)
+- https://github.com/openjdk/jdk/pull/25652 (8358634: RISC-V: Fix several broken documentation web-links)
+- https://github.com/openjdk/jdk/pull/25743 (8359218: RISC-V: Only enable CRC32 intrinsic when AvoidUnalignedAccess == false)
+- https://github.com/openjdk/jdk/pull/25709 (8359105: RISC-V: No need for acquire fence in safepoint poll during JNI calls)
+- https://github.com/openjdk/jdk/pull/25848 (8359801: RISC-V: Simplify Interpreter::profile_taken_branch)
+- https://github.com/openjdk/jdk/pull/25923 (8360179: RISC-V: Only enable BigInteger intrinsics when AvoidUnalignedAccess == false)
+- https://github.com/openjdk/jdk/pull/25924 (8360169: Problem list CodeInvalidationReasonTest.java on linux-riscv64 until JDK-8360168 is fixed)
+- https://github.com/openjdk/jdk/pull/25976 (8360520: RISC-V: C1: Fix primitive array clone intrinsic regression after JDK-8333154)
+- https://github.com/openjdk/jdk/pull/26004 (8360707: Globally enumerate all blobs, stubs and entries)
+
+3. Reviewed JDK-21u/17u mainline PRs:
+- https://github.com/openjdk/jdk21u-dev/pull/1845 (8358310: ZGC: riscv, ppc ZPlatformAddressOffsetBits may return a too large value)
+- https://github.com/openjdk/jdk17u-dev/pull/3678 (8357968: RISC-V: Interpreter volatile reference stores with G1 are not sequentially consistent)
+
+4. Proposed JDK-25u mainline PRs:
+- https://github.com/openjdk/jdk25u/pull/4 (8359218: RISC-V: Only enable CRC32 intrinsic when AvoidUnalignedAccess == false)
+- https://github.com/openjdk/jdk25u/pull/5 (8360179: RISC-V: Only enable BigInteger intrinsics when AvoidUnalignedAccess == false)
+- https://github.com/openjdk/jdk25u/pull/6 (8359270: C2: alignment check should consider base offset when emitting arraycopy runtime call)
 
 ## Go
 
@@ -86,6 +113,25 @@ PLCT实验室的亮点产出通过「RuyiSDK」微信公众号（ID：RuyiSDK）
   - https://github.com/ruyisdk/riscv-gcc/commit/f1eda2ebd2c0a72474950df34ce5433612cc779f
 
 ## LLVM Team
+- 1. Upstream llvm-project 合并的patch:
+  - [X86] SimplifyDemandedBitsForTargetNode - add handling for VPMADD52L/VPMADD52H https://github.com/llvm/llvm-project/pull/155494
+  - [DAG] Constant fold ISD::FSHL/FSHR nodes https://github.com/llvm/llvm-project/pull/154480
+  - [FuncSpec] Skip SCCP on blocks of dead functions and poison their callsites https://github.com/llvm/llvm-project/pull/154668
+  - [SCCP][FuncSpec] Poison unreachable constant global variable user https://github.com/llvm/llvm-project/pull/155753
+  - [RISCV][NFC] Fix typo v32 -> v31 in document https://github.com/llvm/llvm-project/pull/155389
+  - [RISCV] Support Remaining P Extension Instructions for RV32/64 https://github.com/llvm/llvm-project/pull/150379
+  - [#151682](https://github.com/llvm/llvm-project/pull/151682) [static analyzer] Fix crash on parenthesized expression in assume attribute
+  - [#151790](https://github.com/llvm/llvm-project/pull/151790) [clang][diagnostics] Fix fix-it hint parenthesis placement for fold expressions
+  - [#151981](https://github.com/llvm/llvm-project/pull/151981) [RISCV] Create disjoint or in RISCVGatherScatterLowering
+  - [#153362](https://github.com/llvm/llvm-project/pull/153362) [CIR] Add InlineAsmOp
+  - [#153387](https://github.com/llvm/llvm-project/pull/153387) [CIR] Add InlineAsmOp lowering to LLVM
+  - [#153546](https://github.com/llvm/llvm-project/pull/153546) [CIR] Implement codegen for inline assembly without input and output operands 
+  - [#152294](https://github.com/llvm/llvm-project/pull/152294) [clang] constexpr integer __builtin_elementwise_{max,min}
+
+- 2. plctlab llvm-project合并的patch:
+  - https://github.com/plctlab/llvm-project/pull/71 Add some p-ext intrinsic support 
+  - https://github.com/plctlab/llvm-project/pull/72 [RISCV] Add P-ext intrinsic
+  - https://github.com/plctlab/llvm-project/pull/73 add llvm intrinsic support for cmix,rdov 
 
 ## MLIR
 
@@ -96,6 +142,95 @@ PLCT实验室的亮点产出通过「RuyiSDK」微信公众号（ID：RuyiSDK）
 **buddy-benchmark**
 
 ## Box64
+
+Highlights:
+
+Linux Steam 启动！AVX/AVX2 标量实现绝赞支持中，进度 50%！
+
+Merged PRs:
+
+1. [\[WRAPPER\] Wrapped 2 more symbols for libfreetype](https://github.com/ptitSeb/box64/pull/2984)
+1. [\[WRAPPER\] Wrapped mallinfo2 for libc](https://github.com/ptitSeb/box64/pull/2983)
+1. [Fixed a misguarded box32 endif](https://github.com/ptitSeb/box64/pull/2982)
+1. [\[WRAPPER\] Wrapped more symbols for libresolv](https://github.com/ptitSeb/box64/pull/2981)
+1. [\[RV64_DYNAREC\] Added more scalar avx opcodes](https://github.com/ptitSeb/box64/pull/2980)
+1. [\[LA64_DYNAREC\] Fixed AVX VCVT[T]PS2DQ fastround path](https://github.com/ptitSeb/box64/pull/2979)
+1. [\[RV64_DYNAREC\] Added more scalar avx opcodes](https://github.com/ptitSeb/box64/pull/2978)
+1. [\[RV64_DYNAREC\] Added more scalar avx opcodes](https://github.com/ptitSeb/box64/pull/2975)
+1. [\[RV64_DYNAREC\] Added more scalar avx opcodes](https://github.com/ptitSeb/box64/pull/2974)
+1. [\[RV64_DYNAREC\] Added more scalar avx opcodes](https://github.com/ptitSeb/box64/pull/2973)
+1. [\[RV64_DYNAREC\] Added more scalar avx opcodes](https://github.com/ptitSeb/box64/pull/2971)
+1. [\[RV64_DYNAREC\] Added more scalar avx opcodes](https://github.com/ptitSeb/box64/pull/2970)
+1. [\[RV64_DYNAREC\] Added YMM0 placeholder for later optim](https://github.com/ptitSeb/box64/pull/2968)
+1. [\[RV64_DYNAREC\] Fixed scalar avx VCMPPD non-ymm case](https://github.com/ptitSeb/box64/pull/2966)
+1. [\[RV64_DYNAREC\] Added more scalar avx opcodes](https://github.com/ptitSeb/box64/pull/2965)
+1. [\[ARM64_DYNAREC\] Fixed an inst name typo](https://github.com/ptitSeb/box64/pull/2964)
+1. [\[RV64_DYNAREC\] Added scalar SSE 66 0F 3A 60/61/62 opcodes](https://github.com/ptitSeb/box64/pull/2963)
+1. [\[RV64_DYNAREC\] Added more scalar avx opcodes](https://github.com/ptitSeb/box64/pull/2961)
+1. [\[RV64_DYNAREC\] Added more scalar avx 66 0F opcodes](https://github.com/ptitSeb/box64/pull/2960)
+1. [\[RV64_DYNAREC\] Fixed more scalar avx opcodes](https://github.com/ptitSeb/box64/pull/2959)
+1. [\[CORE\] Better trace_file logging](https://github.com/ptitSeb/box64/pull/2958)
+1. [\[COSIM\] Better memory diff printing](https://github.com/ptitSeb/box64/pull/2957)
+1. [\[RV64_DYNAREC\] Fixed some scalar avx opcodes](https://github.com/ptitSeb/box64/pull/2956)
+1. [\[RV64_DYNAREC\] Added more scalar avx 66 0F3A opcodes](https://github.com/ptitSeb/box64/pull/2955)
+1. [\[RV64_DYNAREC\] Added more scalar avx 66 0F38 opcodes](https://github.com/ptitSeb/box64/pull/2954)
+1. [\[RV64_DYNAREC\] Added more scalar avx opcodes](https://github.com/ptitSeb/box64/pull/2952)
+1. [\[RV64_DYNAREC\] Added more scalar avx opcodes](https://github.com/ptitSeb/box64/pull/2951)
+1. [\[RV64_DYNAREC\] Added more avx scalar 66 0F38 opcodes](https://github.com/ptitSeb/box64/pull/2950)
+1. [\[RV64_DYNAREC\] Added a few more scalar AVX 66 0F38 opcodes](https://github.com/ptitSeb/box64/pull/2949)
+1. [\[RV64_DYNAREC\] Added scalar AVX VMOVDQA opcodes](https://github.com/ptitSeb/box64/pull/2948)
+1. [\[DYNAREC\] Bump ARCH_VERSION](https://github.com/ptitSeb/box64/pull/2947)
+1. [\[LA64_DYNAREC\] Enable AVX/AVX2 by default](https://github.com/ptitSeb/box64/pull/2946)
+1. [\[RV64_DYNAREC\] Added more scalar AVX opcodes](https://github.com/ptitSeb/box64/pull/2945)
+1. [\[RV64_DYNAREC\] Added more scalar AVX opcodes](https://github.com/ptitSeb/box64/pull/2943)
+1. [\[RV64_DYNAREC\] Added more scalar AVX VMOV opcodes](https://github.com/ptitSeb/box64/pull/2942)
+1. [\[RV64_DYNAREC\] Added scalar AVX VMOVSS opcodes](https://github.com/ptitSeb/box64/pull/2941)
+1. [\[BOX32\] Fixed sign-extend issue when calling RunFunctionFmt with a pointer](https://github.com/ptitSeb/box64/pull/2938)
+1. [\[RV64_DYNAREC\] Fixed OF2 handling](https://github.com/ptitSeb/box64/pull/2937)
+1. [\[DYNAREC\] Fixed reading emu->df](https://github.com/ptitSeb/box64/pull/2936)
+1. [\[RV64_DYNAREC\] Removed a dispensable line from dump](https://github.com/ptitSeb/box64/pull/2932)
+1. [\[LA64_DYNAREC\] Fixed a typo in CMPXCHG8B opcode](https://github.com/ptitSeb/box64/pull/2931)
+1. [\[DYNAREC\] Rearranged arch-specific AVX infra code](https://github.com/ptitSeb/box64/pull/2930)
+1. [\[RV64_DYNAREC\] Added F0 08 LOCK OR opcode](https://github.com/ptitSeb/box64/pull/2928)
+1. [\[RV64_DYNAREC\] Fixed F0 10 LOCK ADC opcode](https://github.com/ptitSeb/box64/pull/2927)
+1. [\[RV64_DYNAREC\][\LA64_DYNAREC] Fixed missing zeroup in geted_32()](https://github.com/ptitSeb/box64/pull/2921)
+1. [\[LA64_DYNAREC\] Fixed AVX VPMOVMSKB opcode](https://github.com/ptitSeb/box64/pull/2920)
+1. [\[LA64_DYNAREC\] Fixed AVX VPERM2F128/VPERM2I128 opcodes](https://github.com/ptitSeb/box64/pull/2919)
+1. [\[LA64_DYNAREC\] Fixed AVX VMASKMOVDQU opcode](https://github.com/ptitSeb/box64/pull/2918)
+1. [\[LA64_DYNAREC\] Fixed AVX VPBLENDW opcodes](https://github.com/ptitSeb/box64/pull/2917)
+1. [\[LA64_DYNAREC\] Fixed AVX VMOVMSKPS/VMOVMSKPD opcodes](https://github.com/ptitSeb/box64/pull/2916)
+1. [\[LA64_DYNAREC\] Fixed AVX VMOVSS opcode](https://github.com/ptitSeb/box64/pull/2915)
+1. [\[LA64_DYNAREC\] Fixed AVX VCMPSS/VCMPSD opcodes](https://github.com/ptitSeb/box64/pull/2914)
+1. [\[LA64_DYNAREC\] Fixed some AVX scalar MIN/MAX opcodes](https://github.com/ptitSeb/box64/pull/2913)
+1. [\[LA64_DYNAREC\] Refined F3 0F 5D/5F MINSS/MAXSS opcodes](https://github.com/ptitSeb/box64/pull/2912)
+1. [\[BOX32\] Enlarge xcb connects size for Linux Steam](https://github.com/ptitSeb/box64/pull/2910)
+1. [\[ARM64_DYNAREC\] Fixed AVX VMOVMSKPD opcode](https://github.com/ptitSeb/box64/pull/2909)
+1. [\[ARM64_DYNAREC\] Fixed AVX VMOVSS opcode](https://github.com/ptitSeb/box64/pull/2908)
+1. [\[ARM64_DYNAREC\][INTERP] Fixed AVX VPERM2F128/VPERM2I128 opcodes ](https://github.com/ptitSeb/box64/pull/2907)
+1. [\[LA64_DYNAREC\] Fixed 66 0F 3A 16 PEXTRD opcode](https://github.com/ptitSeb/box64/pull/2906)
+1. [\[LA64_DYNAREC\] Fixed 66 F3 0F B8 POPCNT opcode](https://github.com/ptitSeb/box64/pull/2905)
+1. [\[RV64_DYNAREC\] Added 1 more opcode](https://github.com/ptitSeb/box64/pull/2903)
+1. [\[LA64_DYNAREC\] Added more opcodes](https://github.com/ptitSeb/box64/pull/2902)
+1. [\[LA64_DYNAREC\] Fixed 66 0F 3A 0F PALIGNR for case where dst==src](https://github.com/ptitSeb/box64/pull/2894)
+1. [\[LA64_DYNAREC\] Fixed 66 0F 38 06 PHSUBD opcode](https://github.com/ptitSeb/box64/pull/2893)
+1. [\[LA64_DYNAREC\] Fixed F3 0F 53 RCPSS opcode](https://github.com/ptitSeb/box64/pull/2892)
+1. [\[LA64_DYNAREC\] Fixed 66 0F 3A 21 INSERTPS opcode](https://github.com/ptitSeb/box64/pull/2891)
+1. [\[LA64_DYNAREC\] Added and optimized more fastround=0 cases](https://github.com/ptitSeb/box64/pull/2890)
+1. [\[LA64_DYNAREC\] Fixed 66 0F 38 14 BLENDVPS opcode](https://github.com/ptitSeb/box64/pull/2888)
+1. [\[LA64_DYNAREC\] Fixed 66 0F 3A 0C/0D BLENDPS/D opcodes](https://github.com/ptitSeb/box64/pull/2887)
+1. [\[LA64_DYNAREC\] Fixed a few GETEX usage](https://github.com/ptitSeb/box64/pull/2886)
+1. [\[LA64_DYNAREC\] Fixed 0F E2 PSRAD opcode](https://github.com/ptitSeb/box64/pull/2885)
+1. [\[LA64_DYNAREC\] Fixed 0F E3 PAVGW opcode](https://github.com/ptitSeb/box64/pull/2884)
+1. [\[RV64_DYNAREC\] Fixed scalar version of 66 0F 3A 21 INSERTPS opcode](https://github.com/ptitSeb/box64/pull/2881)
+1. [\[RV64_DYNAREC\] Fixed scalar and vector versions of mmx PSRAW/PSRAD](https://github.com/ptitSeb/box64/pull/2880)
+1. [\[RV64_DYNAREC\] Fixed some mmx opcodes](https://github.com/ptitSeb/box64/pull/2879)
+1. [\[INTERP\] Fixed 16bit version POPCNT](https://github.com/ptitSeb/box64/pull/2877)
+1. [\[ARM64_DYNAREC\] Fixed PCMPESTRI fastpath SF flag computation](https://github.com/ptitSeb/box64/pull/2876)
+1. [\[ARM64_DYNAREC\] Fixed a typo](https://github.com/ptitSeb/box64/pull/2875)
+1. [\[ARM64_DYNAREC\] Fixed some edge cases for mmx PSRLQ](https://github.com/ptitSeb/box64/pull/2874)
+1. [\[INTERP\] Added 66 F0 0F BA BTS opcode](https://github.com/ptitSeb/box64/pull/2872)
+1. [\[TRACE\] Minor improvements to trace logging](https://github.com/ptitSeb/box64/pull/2871)
+1. [\[WRAPPED\] Wrapped more functions for libc](https://github.com/ptitSeb/box64/pull/2870)
 
 ## DynamoRIO
 
@@ -125,6 +260,27 @@ PLCT实验室的亮点产出通过「RuyiSDK」微信公众号（ID：RuyiSDK）
 ## u-boot
 
 本期没有新的进展。
+
+## eunomia-bpf
+
+- [Zero instrucment LLM and AI agent observability in eBPF](https://github.com/eunomia-bpf/agentsight) ([Arxiv](https://www.arxiv.org/abs/2508.02736), will be presented at PACMI'25)
+- [xpu-perf: eBPF wall clock profiler for CPU & GPU](https://github.com/eunomia-bpf/xpu-perf)
+- [MCP Server for Linux Scheduler Management](https://github.com/eunomia-bpf/schedcp)
+- [MCPtrace](https://github.com/eunomia-bpf/MCPtrace) MCP server: using eBPF to tracing your kernel
+- bpftime:
+  - [**GPU: support per-thread GPU ringbuffer**](https://github.com/eunomia-bpf/bpftime/pull/425)
+    #425 merged 3 days ago
+  - [**fix: cleanup when reattach**](https://github.com/eunomia-bpf/bpftime/pull/439)
+    #439 merged last week
+  - [**fix a race condition and improve performance in userspace ringbuf reservation**](https://github.com/eunomia-bpf/bpftime/pull/430)
+    #430 merged last week
+  - [**feat: Enhance file descriptor management and environment variable par…**](https://github.com/eunomia-bpf/bpftime/pull/438)
+    #438 merged last week
+  - [**feat: Add ARM64 Docker support and build test script**](https://github.com/eunomia-bpf/bpftime/pull/437)
+    #437 merged last week
+  - [**fix: Resolve compilation failure on AArch64**](https://github.com/eunomia-bpf/bpftime/pull/432)
+    #432 merged 2 weeks ago
+- Minor update to documents and tutorials
 
 ## RevyOS (Debian for Xuantie)
 
