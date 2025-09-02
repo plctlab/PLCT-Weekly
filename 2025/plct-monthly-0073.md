@@ -238,11 +238,28 @@ Merged PRs:
 
 ## coreboot for riscv
 
+本期没有新的进展。
+
 ## openocd
+
+本期没有新的进展。
 
 ## opensbi
 
+- 修正sbi_dbtr_read_trig从真实的csr读取。[1](https://lists.infradead.org/pipermail/opensbi/2025-August/008723.html)
+- 添加1024个核心支持。[1](https://lists.infradead.org/pipermail/opensbi/2025-August/008715.html)
+- 修正msiaddrcfgh中的lock机制，lock位只存在于mmsiaddrcfg中smsiaddrcfg中没有。[1](https://lists.infradead.org/pipermail/opensbi/2025-August/008721.html)
+- 添加CVA6平台支持。[1](https://lists.infradead.org/pipermail/opensbi/2025-August/008727.html)
+- 把openpiton移动到通用平台。[1](https://lists.infradead.org/pipermail/opensbi/2025-August/008734.html)
+- 添加QiLai SoC支持。[1](https://lists.infradead.org/pipermail/opensbi/2025-August/008735.html)
+- 简化fdt_parse_isa_extensions， 减少scratch内存占用。[1](https://lists.infradead.org/pipermail/opensbi/2025-August/008747.html)
+- SmePMP改进。[1](https://lists.infradead.org/pipermail/opensbi/2025-August/008736.html)
+- 扩展保留PMP条目。[1](https://lists.infradead.org/pipermail/opensbi/2025-August/008749.html)
+- 添加 SiFive TMC0、SMC0驱动。[1](https://lists.infradead.org/pipermail/opensbi/2025-August/008757.html)
+
 ## u-boot
+
+本期没有新的进展。
 
 ## eunomia-bpf
 
