@@ -190,6 +190,13 @@ Articles:
 
 全实习生小队，独立宣传渠道。
 
+## Songsong Zhang
+
+- [博客双周报合并为新闻](https://github.com/ruyisdk/ruyisdk-website/issues/145)
+  - [chore: add Prettier configuration and plugins to project](https://github.com/ruyisdk/ruyisdk-website/pull/169)
+  - [feat: add UnoCSS integration](https://github.com/ruyisdk/ruyisdk-website/pull/208)
+  - [merge blog and biweekly into news](https://github.com/ruyisdk/ruyisdk-website/pull/213)
+
 ## 参考链接
 
 - [PLCT 实验室的开放职位（实习生）](https://github.com/plctlab/weloveinterns/blob/master/open-internships.md)
