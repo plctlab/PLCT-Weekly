@@ -326,6 +326,701 @@ Articles:
 
 ## PLCT罗云翔测试团队
 
+（包含 SAIL 和 ACT 测试部分）
+
+1. RuyiSDK 多版本测试与生态完善
+- 完成 RuyiSDK v0.39 版本全面测试，覆盖 LicheePi4A、RevyOS、ArchLinux、Debian、Deepin、Fedora、Ubuntu、openEuler 等多个操作系统和架构（x86_64、riscv64、aarch64），提交详细测试报告。
+- 开发与测试工具持续增强：
+  - 在 `ruyi-packaging` 提交10个PR，支持新包生成、Armbian适配、版本降级等功能。
+  - 在 `packages-index` 提交8个PR，修复manifest问题并新增多个板卡镜像支持。
+- 网站与文档优化：
+  - 网站前端实现多语言Sitemap、主题系统优化、响应式布局改进、数据统计页面增强。
+  - 规范代码块格式和术语使用。
+
+2. 操作系统支持矩阵
+- 新增多款开发板与系统支持，包括DC-ROMA系列、OrangePi-R2S/RV、PineTab-V等，更新Fedora、Debian、Irradium等系统测试报告。
+- 元数据系统重构与前端优化
+  - 实现`vendor`字段标准化，清理冗余测试数据。
+  - 前端支持多语言Sitemap、响应式布局和测试报告筛选功能。
+- 镜像检查工具开发：
+  - 开发`image-checker`工具，提升镜像发布可靠性。
+- 社区内容建设：
+  - 在`ruyisdk.cn`发布多篇RISC-V MCU技术文章，丰富操作系统支持矩阵内容。
+
+3. Sail/ACT
+- Sail模型功能增强：
+  - 实现Hypervisor扩展（VU/VS特权级）、ELF动态加载、本地中断处理等核心功能。
+  - 开发JSON配置验证工具，提升配置可靠性。
+- 测试框架优化：
+  - 修复Zfinx测试用例，同步RISCOF插件，提升验证覆盖率。
+- 推进Pydrofoil与XiangShan的diff测试支持。
+  - 在ACT中修复Zdinx等ISA错误，更新多个压缩指令测试用例。
+
+4. RISC-V教育推广
+- 制作《LicheePi 4A ROS2实战》《K230 AI应用开发》等多部技术视频。
+  - 提交玄铁课程《在LicheePi4A运行Deepseek》。
+
+- 参加北京 World RISC-V Days，展示RuyiSDK在南湖笔记本上的应用
+- 参加深圳 Elexcon 2025，展示PLCT Lab和RuyiSDK在RISC-V工具链、操作系统等方面的研发成果。
+  
+### 1. RuyiSDK
+
+#### 1.1 RuyiSDK测试
+
+- [RuyiSDK 测试策略和测试报告](https://gitee.com/yunxiangluo/ruyisdk-test/blob/master/README.md)
+  - [RuyiSDK v0.39测试报告](https://gitee.com/yunxiangluo/ruyisdk-test/tree/master/20250818/README.md)
+    - [LPi4A openEuler 23.09 测试报告](https://gitee.com/yunxiangluo/ruyisdk-test/tree/master/20250818/RUYI_包管理_LicheePi4A_openEuler23.09_riscv64_测试结果.md)
+    - [LPi4A openEuler 24.03 测试报告](https://gitee.com/yunxiangluo/ruyisdk-test/blob/master/20250818/RUYI_%E5%8C%85%E7%AE%A1%E7%90%86_LicheePi4A_openEuler24.03_riscv64_%E6%B5%8B%E8%AF%95%E7%BB%93%E6%9E%9C.md)
+    - [LPi4A RevyOS 测试报告](https://gitee.com/yunxiangluo/ruyisdk-test/tree/master/20250818/RUYI_包管理_LicheePi4A_RevyOS_riscv64_测试结果.md)
+    - [RevyOS riscv64 测试结果](https://gitee.com/yunxiangluo/ruyisdk-test/tree/master/20250818/RUYI_包管理_RevyOS_riscv64_测试结果.md)
+    - [Archlinux riscv64 测试结果](https://gitee.com/yunxiangluo/ruyisdk-test/tree/master/20250818/RUYI_包管理_Archlinux_riscv64_测试结果.md)
+    - [Archlinux x86\_64 测试结果](https://gitee.com/yunxiangluo/ruyisdk-test/tree/master/20250818/RUYI_包管理_Archlinux_x86_64_测试结果.md)
+    - [Debian sid riscv64 测试结果](https://gitee.com/yunxiangluo/ruyisdk-test/tree/master/20250818/RUYI_包管理_Debiansid_riscv64_测试结果.md)
+    - [Deepin23 x86\_64 测试报告](https://gitee.com/yunxiangluo/ruyisdk-test/tree/master/20250818/RUYI_包管理_Deepin23_x86_64_测试结果.md)
+    - [Deepin23 riscv64 测试报告](https://gitee.com/yunxiangluo/ruyisdk-test/tree/master/20250818/RUYI_包管理_Deepin23_riscv64_测试结果.md)
+    - [Fedora41 x86\_64 测试报告](https://gitee.com/yunxiangluo/ruyisdk-test/tree/master/20250818/RUYI_包管理_Fedora41_x86_64_测试结果.md)
+    - [Fedora42 x86\_64 测试结果](https://gitee.com/yunxiangluo/ruyisdk-test/blob/master/20250818/RUYI_%E5%8C%85%E7%AE%A1%E7%90%86_Fedora42_x86_64_%E6%B5%8B%E8%AF%95%E7%BB%93%E6%9E%9C.md)
+    - [Ubuntu22.04 x86\_64 测试报告](https://gitee.com/yunxiangluo/ruyisdk-test/tree/master/20250818/RUYI_包管理_Ubuntu22.04_x86_64_测试结果.md)
+    - [Ubuntu24.04 x86\_64 测试报告](https://gitee.com/yunxiangluo/ruyisdk-test/tree/master/20250818/RUYI_包管理_Ubuntu24.04_x86_64_测试结果.md)
+    - [Ubuntu24.04 riscv64 测试结果](https://gitee.com/yunxiangluo/ruyisdk-test/tree/master/20250818/RUYI_包管理_Ubuntu24.04_riscv64_测试结果.md)
+    - [openEuler24.03 riscv64 测试报告](https://gitee.com/yunxiangluo/ruyisdk-test/tree/master/20250818/RUYI_包管理_openEuler24.03_riscv64_测试结果.md)
+    - [openEuler24.03 x86\_64 测试结果](https://gitee.com/yunxiangluo/ruyisdk-test/tree/master/20250818/RUYI_包管理_openEuler24.03_x86_64_测试结果.md)
+    - [openEuler25.03 x86\_64 测试结果](https://gitee.com/yunxiangluo/ruyisdk-test/tree/master/20250818/RUYI_包管理_openEuler25.03_x86_64_测试结果.md)
+    - [Debian12 aarch64 测试结果](https://gitee.com/yunxiangluo/ruyisdk-test/tree/master/20250818/RUYI_包管理_Debian12_aarch64_测试结果.md)
+    - [Debian12 x86\_64 测试结果](https://gitee.com/yunxiangluo/ruyisdk-test/tree/master/20250818/RUYI_包管理_Debian12_x86_64_测试结果.md)
+    - [Gentoo Linux x86\_64 测试结果](https://gitee.com/yunxiangluo/ruyisdk-test/tree/master/20250818/RUYI_包管理_Gentoo_x86_64_测试结果.md)
+
+    - 缺陷：
+      0.39.0 版本 packages-index 新增 1 个 issue:
+      - [BananaPi BPI-F3 eMMC storage variant did not refer to any combo #101](https://github.com/ruyisdk/packages-index/issues/101)
+      - RuyiSDK Eclipse Plugins 0.0.5 版本遗留 issue 如下：
+        - 未配置 PATH 导致无法轻松访问 ruyi [ruyisdk/ruyisdk-eclipse-plugins#38](https://github.com/ruyisdk/ruyisdk-eclipse-plugins/issues/38)
+      - 下载完成不够明显 [ruyisdk/ruyisdk-eclipse-plugins#39](https://github.com/ruyisdk/ruyisdk-eclipse-plugins/issues/39)
+
+    - 资源
+      - [本版本 litester 测试程序](https://github.com/weilinfox/ruyi-litester/tree/c918eeb6c1fa9e40eb8c52fb76e443b9815486e9)
+      - [本版本自动化调度程序](https://github.com/weilinfox/ruyi-reimu/tree/6094edd22648e2084a2367633401fc569b92cc16)
+
+- ruyi 仓库提交两个 Feature Request
+    - [[Feature Request] check mounted partition before ruyi device provision dd block device #345](https://github.com/ruyisdk/ruyi/issues/345)
+    - [[Feature Request] a command line interface as an alternative to device provision wizard #346](https://github.com/ruyisdk/ruyi/issues/346)
+
+#### 1.2 RuyiSDK 开发和测试工具开发
+
+- ruyi-packaging 仓库提交 10 个 pr
+  - [riko: subcommand manifests to generate new tomls #26](https://github.com/ruyisdk/ruyi-packaging/pull/26)
+  - [riko: fix unexpected behaviour when generating buildroot-sdk-sipeed-licheervnano tomls #27](https://github.com/ruyisdk/ruyi-packaging/pull/27)
+  - [riko: raise exception when provisionable strategy not supported #28](https://github.com/ruyisdk/ruyi-packaging/pull/28)
+  - [riko: add armbian riko.py #29](https://github.com/ruyisdk/ruyi-packaging/pull/29)
+  - [riko: skip armbian #30](https://github.com/ruyisdk/ruyi-packaging/pull/30)
+  - [riko: add support for nvchecker source regex and new policies config #31](https://github.com/ruyisdk/ruyi-packaging/pull/31)
+  - [riko: better regex source support for new package revyos-lpi4a #32](https://github.com/ruyisdk/ruyi-packaging/pull/32)
+  - [ruyi_packaging: new packages revyos-{meles,lcon4a} #33](https://github.com/ruyisdk/ruyi-packaging/pull/33)
+  - [riko: allow generating downgrade manifests #34](https://github.com/ruyisdk/ruyi-packaging/pull/34)
+  - [New package mars-buildroot-sdk and make riko easier to use #35](https://github.com/ruyisdk/ruyi-packaging/pull/35)
+- packages-index 仓库提交 2 个 issue
+  - [BananaPi BPI-F3 eMMC storage variant did not refer to any combo #101](https://github.com/ruyisdk/packages-index/issues/101)
+  - [Jupiter and Megrez missing for MilkV product line support #104](https://github.com/ruyisdk/packages-index/issues/104)
+- packages-index 仓库提交 8 个 pr
+  - [board-image/buildroot-sdk-sipeed-licheervnano: add missing versions #95](https://github.com/ruyisdk/packages-index/pull/95)
+  - [board-image/revyos-sipeed-lpi4a: new version 0.20250729.0 #96](https://github.com/ruyisdk/packages-index/pull/96)
+  - [board-image/revyos-sipeed-lcon4a: new versions 0.20240720.0 and 0.20250729.0 #97](https://github.com/ruyisdk/packages-index/pull/97)
+  - [board-image/revyos-milkv-meles: new version 1.20250729.0 #98](https://github.com/ruyisdk/packages-index/pull/98)
+  - [Fix broken bianbu-bpi-f3 manifest and unify bianbu upstream_version format #99](https://github.com/ruyisdk/packages-index/pull/99)
+  - [board-image/bianbu-{desktop,minimal}-spacemit-k1-sd: new versions from v2.0.0 to v3.0.0 #100](https://github.com/ruyisdk/packages-index/pull/100)
+  - [Update board-image/bianbu-{desktop,minimal}-spacemit-k1-sd manifests #102](https://github.com/ruyisdk/packages-index/pull/102)
+  - [board-image/debian-desktop-sdk-milkv-mars-cm-sd: add old version 1.0.5+3.6.1 #103](https://github.com/ruyisdk/packages-index/pull/103)
+
+- 新的 ruyi deb 包下载源 [launchpad.net](https://launchpad.net/~ruyisdk-test/+archive/ubuntu/ruyi)
+
+#### 1.3 RuyiSDK网站
+
+- [docs: update case1 English version #189](https://github.com/ruyisdk/ruyisdk-website/pull/189)
+- [Optimize the copy button showing strategy and fix the code highlight cutoff #190](https://github.com/ruyisdk/ruyisdk-website/pull/190)（修复长代码行，灰底只渲染一次导致滚动后没有底色的问题，但测试感觉没有解决问题）
+- [Update RuyiInLive for more data and a clear indicator to stats page #192](https://github.com/ruyisdk/ruyisdk-website/pull/192)
+- [Feat/newscase auto switch #193](https://github.com/ruyisdk/ruyisdk-website/pull/193)
+- [NewsShowcase with better visuals #194](https://github.com/ruyisdk/ruyisdk-website/pull/194) 优化了鼠标移上去时的图片放大圆角
+- [Improved image spacing for popups #195](https://github.com/ruyisdk/ruyisdk-website/pull/195)
+- [deleted some code #198](https://github.com/ruyisdk/ruyisdk-website/pull/198)
+- [Synchronize ruyisdk biweekly #202](https://github.com/ruyisdk/ruyisdk-website/pull/202)
+- [docs: Shorten titles to improve typography #206](https://github.com/ruyisdk/ruyisdk-website/pull/206)
+- [Feat/bar chart #199](https://github.com/ruyisdk/ruyisdk-website/pull/199)
+- [Feat/newscase auto switch #200](https://github.com/ruyisdk/ruyisdk-website/pull/200)
+- [Re-patch for codeblock update #201](https://github.com/ruyisdk/ruyisdk-website/pull/201)
+- [feat: add UnoCSS integration #208](https://github.com/ruyisdk/ruyisdk-website/pull/208)
+- [Feat/add slide #209](https://github.com/ruyisdk/ruyisdk-website/pull/209)
+- [Update/newscase #210](https://github.com/ruyisdk/ruyisdk-website/pull/210)
+- [Optimize stats page colouring #211](https://github.com/ruyisdk/ruyisdk-website/pull/211)
+- [Update stats page's colouring to ensure visibility #212](https://github.com/ruyisdk/ruyisdk-website/pull/212)
+- [pages: modify statistical data page text #196](https://github.com/ruyisdk/ruyisdk-website/pull/196)
+- 210 [ruyisdk/ruyisdk-website#210](https://github.com/ruyisdk/ruyisdk-website/pull/210)
+- Pull 209 [ruyisdk/ruyisdk-website#209](https://github.com/ruyisdk/ruyisdk-website/pull/209)
+  On the document page, added a smooth sliding positioning function to the navigation bar
+- Pull 204 [ruyisdk/ruyisdk-website#204](https://github.com/ruyisdk/ruyisdk-website/pull/204)
+- Pull 203 [ruyisdk/ruyisdk-website#203](https://github.com/ruyisdk/ruyisdk-website/pull/203)
+  - added blogs:
+    2025-05-13-ruyi-0.33.md
+    2025-05-27-ruyi-0.34.md
+    2025-06-10-ruyi-0.35.md
+    2025-06-24-ruyi-0.36.md
+    2025-07-08-ruyi-0.37.md
+    2025-07-22-ruyi-0.38.md
+    2025-08-12-ruyi-0.39.md
+
+- Pull 200 [ruyisdk/ruyisdk-website#200](https://github.com/ruyisdk/ruyisdk-website/pull/200)
+  - Added auto-switching function
+  - add the ability of switching since the newscase model in the vision 
+- Pull 199 [ruyisdk/ruyisdk-website#199](https://github.com/ruyisdk/ruyisdk-website/pull/199)
+  - optimized the position of barchart;
+  - changed the height of card;
+  - shortened the distance between label and bar
+- Pull 198 [ruyisdk/ruyisdk-website#198](https://github.com/ruyisdk/ruyisdk-website/pull/198)
+  - deleted some commented model
+- Pull 187 [ruyisdk/ruyisdk-website#187](https://github.com/ruyisdk/ruyisdk-website/pull/187)
+  - updated the static:
+    Optimized language version;
+    Corrected FlipCounter flip direction and remove double-line display issue
+    optimized both the mobile and pc style of static page
+- Pull 185 [ruyisdk/ruyisdk-website#185](https://github.com/ruyisdk/ruyisdk-website/pull/185)
+  - Updated News on Jul 30
+- Pull 183 [ruyisdk/ruyisdk-website#183](https://github.com/ruyisdk/ruyisdk-website/pull/183)
+  - Optimize project architecture
+- Pull 180 [ruyisdk/ruyisdk-website#180](https://github.com/ruyisdk/ruyisdk-website/pull/180)
+  - custumed footer style
+  - Moved QR code to better align with visual layout
+  - Applied changes for both "en" and "de" localized footers
+- Pull 179 [ruyisdk/ruyisdk-website#179](https://github.com/ruyisdk/ruyisdk-website/pull/179)
+  - Adjusted the redirect address of the revyos link, and the Chinese interface will be redirected to zh, and the English and German interfaces will be redirected to en
+- Pull 177 [ruyisdk/ruyisdk-website#177](https://github.com/ruyisdk/ruyisdk-website/pull/177)
+  - Adjusted WeChat QR code dimensions for better layout consistency
+  - Updated QQGroup component styling to match light theme
+  - Improved overall visual harmony on the contact page
+- Pull 184 https://github.com/ruyisdk/ruyisdk-website/pull/184
+  - Allow using prop "showTitleCopyButton" to control the toggle of main copy button.
+- Pull 190 https://github.com/ruyisdk/ruyisdk-website/pull/190
+- Pull 201 https://github.com/ruyisdk/ruyisdk-website/pull/201
+  - Optimize the copy button showing strategy
+  - Fix the code highlight cutoff
+- Pull 192 https://github.com/ruyisdk/ruyisdk-website/pull/192
+  - Now RuyiInLive display the data including active users, download and installation count.
+  - Update for a clear indiactor to new Stats page.
+  - Add translations to new strings
+- Pull 194 https://github.com/ruyisdk/ruyisdk-website/pull/194
+  - Update NewsShowcase for avoid cropping in hovering effects.
+- Pull 195 https://github.com/ruyisdk/ruyisdk-website/pull/195
+  - Improving the placing and cropping strategy to make sure center part of image displayed to user.
+- Pull 211 https://github.com/ruyisdk/ruyisdk-website/pull/211
+- Pull 212 https://github.com/ruyisdk/ruyisdk-website/pull/212
+  - Adapt the Ruyi accent colours to the new stats page.
+  - Adapt mobile colouring
+- Pull 214 https://github.com/ruyisdk/ruyisdk-website/pull/214
+  - Add automatic stripping for CodeBlock, for better documentation formats.
+
+#### 1.4 RuyiSDK文档
+
+- docs 仓库提交 4 个 issue
+  - [文档代码块格式不统一 #93](https://github.com/ruyisdk/docs/issues/93)
+  - [链接中的 RuyiSDK 大小写问题 #94](https://github.com/ruyisdk/docs/issues/94)
+  - [关于 fastboot 的文档提示 #95](https://github.com/ruyisdk/docs/issues/95)
+  - [关于使用 pip 安装 ruyi 的文档提示 #96](https://github.com/ruyisdk/docs/issues/96)
+
+#### 1.5 RuyiSDK会议和技术分享
+
+- 08/08 北京 World RISC-V Days 2025 参会和演示
+- 08/26 深圳 Elexcon 参展（ruyisdk展台）
+- [VSCode RISC-V 插件技术+AI辅助变成能力边界+理想的 RISC-V 开发环境构想](https://www.bilibili.com/video/BV1GyePzBEpw/?spm_id_from=333.337.search-card.all.click&vd_source=de633d4318be770bdffc3275f1e20c2c)
+
+- [RISCV插件技术技术分享PPT](https://github.com/ddsfda99/vscode-riscv-plugin-dev/blob/main/presentations/RISCV插件技术报告-2025-08-13.pptx)
+
+- [RuyiSDK 工具链学习、安装与使用b站技术分享视频](https://www.bilibili.com/video/BV14heGzJEgQ)
+
+- [RuyiSDK使用方法技术分享PPT](https://github.com/ddsfda99/vscode-riscv-plugin-dev/blob/main/presentations/RuyiSDK使用方法-2025-08-20.pptx)
+
+- [RuyiSDK安装与使用文档](https://github.com/ddsfda99/vscode-riscv-plugin-dev/blob/main/docs/RuyiSDK安装与使用-2025-08-20.md)
+
+- [Milk-V Duo 开发板实践：安装Alpine系统和配置并使用RuyiSDK
+b站技术分享视频](https://www.bilibili.com/video/BV1X8hRzuEBh)
+
+- [在 Milk-V Duo 上跑通 Alpine 与 RuyiSDK 的完整实践PPT](https://github.com/ddsfda99/vscode-riscv-plugin-dev/blob/main/presentations/在 Milk-V Duo 上跑通 Alpine 与 RuyiSDK 的完整实践-2025-08-27.pptx)
+
+- [在 Milk-V Duo 上跑通 Alpine 与 RuyiSDK 的完整实践文档](https://github.com/ddsfda99/vscode-riscv-plugin-dev/blob/main/docs/在 Milk-V Duo 上跑通 Alpine 与 RuyiSDK 的完整实践-2025-08-27.md)
+
+#### 1.6 RuyiSDK 实习生面试
+
+- 实习生面试考核题 [J162](https://gitlab.inuyasha.love/weilinfox/plct-working/-/blob/master/Done/Month26/jy.md)
+
+#### 1.7 RuyiSDK测试服务器设备维护
+
+- 安装RuyiSDK测试服务器，2台Pioneerbox+RevyOS
+
+### 2. 操作系统支持矩阵
+
+#### 2.1 开发板操作系统支持测试
+
+- [Add new boards, support status,test reports,documents and CI updates ](https://github.com/ruyisdk/support-matrix/pull/350)
+- [docs(treewide): unify case of distro names & fix typo](https://github.com/ruyisdk/support-matrix/pull/351)
+- [LiP3A: Add irradium test report (good).](https://github.com/ruyisdk/support-matrix/pull/352)
+- [OrangePi RV2: Add BredOS test report (good).](https://github.com/ruyisdk/support-matrix/pull/354)
+- [LiP4A: Bump Fedora Version to 42](https://github.com/ruyisdk/support-matrix/pull/356)
+- [OrangePi RV2: Add Debian Trixie test report (basic).](https://github.com/ruyisdk/support-matrix/pull/357)
+- [docs: Replace device names with placeholders](https://github.com/ruyisdk/support-matrix/pull/359)
+- [docs: Correct sys_ver in LicheePi4A RevyOS README](https://github.com/ruyisdk/support-matrix/pull/360)
+- [Duo: Bump Buildroot to v2.0.1](https://github.com/ruyisdk/support-matrix/pull/363)
+- [EIC7700X Board information supplement](https://github.com/ruyisdk/support-matrix/pull/364)
+- [Update for LPi3A & MUSE Pi Pro](https://github.com/ruyisdk/support-matrix/pull/355)
+- [VF2: fix link typo](https://github.com/ruyisdk/support-matrix/pull/361)
+- [[Image Check] Pine64 Star64 images disappeared on armbian community release 353](https://github.com/ruyisdk/support-matrix/issues/353)
+- [EIC7700 信息补全](https://github.com/ruyisdk/support-matrix/pull/364)
+- [Arch Linux @ Duo S](https://github.com/ruyisdk/support-matrix/pull/365)
+- [litmus-tests-riscv K1 测试报告](https://github.com/QA-Team-lo/litmus-tests/commit/4febdc7be881c011d169697452e5282452d9ab55)
+- [Add new boards, support status,test reports,documents and CI updates ](https://github.com/ruyisdk/support-matrix/pull/350)
+  - New Boards
+    DC-ROMA Laptop2, DC-ROMA_Mainboard, DC-ROMA_Mainboard2, DC-ROMA_PAD2, DP1000-EVB, EBC77, MUSE BOOK, OrangePi-R2S, OrangePi-RV, PineTab-V, Taurus, Titan
+  - New Support Status (by Operating System)
+    - Android: DC-ROMA_PAD2
+    - Bianbu: Jupiter (2), LP3A (2), MUSE Book (3),
+    - Bredos: Bit-Brick K1
+    - Debian: OrangePi-R2S, OrangePi-RV, PineTab-V
+    - Deepin: DP1000-EVB, Jupiter, LP3A, MUSE Book, Titan
+    - Fedora: BPI-F3 (3), BeagleV-Ahead (2), DC-ROMA_Mainboard, DC-ROMA_Mainboard2 (3), DP1000-EVB, Jupiter (3), LP3A, LP4A (2), MUSE Book (3), Mars (2), Megrez (3), Meles, P550 (4), Taurus, Titan, VF2 (2)
+    - Gentoo: PineTab-V
+    - Irradium: BPI-F3, Jupiter, LP3A, NeZha, OrangePi-RV, Megrez
+    - OpenCloudOS: DP1000-EVB
+    - OpenKylin: Megrez
+    - OpenWrt: OrangePi-R2S
+    - Pmos: BPI-F3, DC-ROMA_PAD2, VF2
+    - RHEL: P550
+    - RockOS: P550
+    - Ubuntu: DC-ROMA_Laptop2, DC-ROMA_Mainboard (2), DC-ROMA_Mainboard2, DC-ROMA_PAD2,
+    - Yocto: PineTab-V
+  - New Test Reports
+    Good
+    - Bit-Brick K1: Bianbu 3.0 Desktop Lite
+    - Bit-Brick K1: Bianbu 3.0 Desktop
+    - Bit-Brick K1: Bianbu Star 2.1.5
+    - Bit-Brick K1: Bredos
+    Basic
+    - Bit-Brick K1: Bianbu 3.0 Minimal
+    - Jupiter: Bianbu 3.0 Minimal (tested by @KevinMX)
+    - Megrez: OpenCloudOS (tested by @KevinMX)
+    CFT
+    - EBC77: ubuntu
+  - Metadata Updates
+    - `sys`: Changed from `LiteOS` to `liteos` (lowercase).
+    - New Frontmatter Field: `provider`. This field will be added to reports where the image originates from a vendor customization, a community, or is not directly from Dirtro.
+  - Document Changes
+    - `CONTRIBUTING`: Removed documentation for deleted scripts, updated to use the current frontmatter format and file structure, and added more support status information.
+    - `report-template`: Updated to use the new, simplified report structure.
+  - CI Updates
+    - Deleted unused script: `package-index-sync`.
+    - Transferred existing CI tasks (`table`, `metadata`) to use `uv`.
+  - [Delete metadata no longer use, add nuttx](https://github.com/apr3vau/support-matrix/pull/1)
+- 补充 TH1520 开发板信息，更正 LPi4A RevyOS 系统版本，将存储设备名替换成占位符（避免误操作），Orange Pi RV2 Debian，Orange Pi RV2 BredOS，LPi4A Fedora 42，LPi3A Irradium，Duo buildroot v2.0.1
+  - https://github.com/ruyisdk/support-matrix/pull/352
+  - https://github.com/ruyisdk/support-matrix/pull/354
+  - https://github.com/ruyisdk/support-matrix/pull/356
+  - https://github.com/ruyisdk/support-matrix/pull/357
+  - https://github.com/ruyisdk/support-matrix/pull/359
+  - https://github.com/ruyisdk/support-matrix/pull/360
+  - https://github.com/ruyisdk/support-matrix/pull/362
+  - https://github.com/ruyisdk/support-matrix/pull/363
+  
+#### 2.2 操作系统支持矩阵Web UI
+
+入口：https://github.com/QA-Team-lo/support-matrix-frontend
+
+- 修改组件文件结构
+- 重新设计测试报告数据结构,分离原始支持矩阵测试报告的文件结构,分为原始开发板,原始测试报告,单开发板,单系统,全站数据
+- 重构数据获取与处理代码,分离工具函数,增加数据检查与统计函数
+- 使用新数据结构更新测试报告页,更新 UI,增加按处理器和时间筛选和多选功能,调整列表展示数据与宽度
+- 更新 i18n,更新 astro 等
+
+#### 2.3 ruyisdk.cn操作系统支持矩阵板块
+
+- [RISC-V MCU 漫游 (3)：博流传奇之 BL602](https://ruyisdk.cn/t/topic/1032)
+- [RISC-V MCU 漫游 (4)：博流传奇之 BL70x 系列（上）](https://ruyisdk.cn/t/topic/1040)
+- [RISC-V MCU 漫游 (5)：博流传奇之 BL70x 系列（下）](https://ruyisdk.cn/t/topic/1264)
+- [RISC-V MCU 漫游 (6)：黄紫色的 ESP32 之 ESP32-S3 系列](https://ruyisdk.cn/t/topic/1296)
+- https://ruyisdk.cn/t/topic/957
+- https://ruyisdk.cn/t/topic/1054
+- https://ruyisdk.cn/t/topic/1182
+- https://ruyisdk.cn/t/topic/1239
+- https://ruyisdk.cn/t/topic/942
+- https://ruyisdk.cn/t/topic/1087
+- https://ruyisdk.cn/t/topic/1192
+  
+#### 2.4 会议和技术分享
+
+- 深圳 Elexcon 2025（RuyiSDK 展台）
+    - https://mp.weixin.qq.com/s/XvIFFTCuAGyKHVP8irzIXw
+    - 展出物：Milk-V Meles + [RuyiSDK 介绍视频](https://www.bilibili.com/video/av664932287/) + PPSSPP / 洞窟物语 Demo
+    - [展位布置](https://github.com/user-attachments/assets/af21fc0c-e17e-45cb-9260-4512900f00c2)
+    - [Meles 测试报告](https://matrix.ruyisdk.org/reports/Meles-RevyOS-README/)
+    - 实习生在甲辰计划展位服务一天，为观众提供了甲辰计划相关信息的介绍。
+- [RV Infra Slide](https://github.com/KevinMX/PLCT-Works/tree/main/reports/month28/RVInfra/)
+- ruyisdk上周报
+  - https://github.com/ruyisdk/wechat-articles/pull/176
+  - https://github.com/ruyisdk/wechat-articles/pull/174
+
+### 3. SAIL和ACT
+
+#### 3.1 SAIL和ACT开发
+
+- SAIL
+  - <https://github.com/riscv/sail-riscv/pull/538> Make \{m,s\}status\[VS\] read-only zero when Ext_V not supported
+New activity
+  - <https://github.com/riscv/sail-riscv/pull/1251> Add basic syscall support
+  - <https://github.com/riscv/sail-riscv/pull/538> Add Zicbop extension
+  - <https://github.com/riscv/sail-riscv/pull/1099> Move RVFI to C
+  - [#1203](https://github.com/riscv/sail-riscv/pull/1203) : 简化Sail-RISCV 代码函数` riscv_insts_vext_mem`签名, 使代码更简洁易读
+  - [#1229](https://github.com/riscv/sail-riscv/pull/1229) : 删除不必要函数`vlenwidth_bytesnumber`, 减少运行时函数调用, 提高运行效率
+  - [#1243](https://github.com/riscv/sail-riscv/pull/1243) : 修复Sail-RISCV代码逻辑, 保证V扩展指令在提前退出时也能将vstart寄存器设为0
+  - [#1431](https://github.com/rems-project/sail/pull/1431) : 删除在当前实现中不被调用的函数`fast_update_subrange`
+  - [#792](https://github.com/riscv/sail-riscv/pull/792) : 重新rebase, 并决定在删除相关函数签名后合入
+  - [#654](https://github.com/riscv/sail-riscv/pull/654) : 由于当前主线尚无需此功能遂关闭
+  - [sail_config.c: Add cJSON error message output.](https://github.com/rems-project/sail/pull/1388)
+  - [config: add template rvd.json.in to generate config](https://github.com/riscv/sail-riscv/pull/1151)
+  - [Validate JSON config file with schema](https://github.com/riscv/sail-riscv/pull/1161)
+  - [Add DYN (Position-Independent Executable file) support](https://github.com/riscv/sail-riscv/pull/1171)
+  - [riscv_sim.cpp: add SIGINT processor.](https://github.com/riscv/sail-riscv/pull/1172)
+  - [valijson](https://github.com/riscv/sail-riscv/pull/1173)
+  - [Bump cJSON version.](https://github.com/rems-project/sail/pull/1389)
+
+- Pydrofoil
+  - [Pydrofoil difftest workload](https://github.com/OpenXiangShan/XiangShan/pull/4926)
+    Basic functionalities (e.g. difftest_regcpy, difftest_csrcpy, difftest_skip_one) are available yet need further test to ensure correctness.
+  - [Documenting Pydrofoil Building with Nix](https://github.com/pydrofoil/pydrofoil/pull/140), and [Out-of-tree Nix support](https://github.com/definfo/pydrofoil/tree/nix-support)
+
+- [AUR sail-model](https://aur.archlinux.org/packages/sail-model)
+  
+- ACT
+  - 提交了一个修复缺失的压缩非法指令缺失覆盖的问题[#695](https://github.com/riscv-non-isa/riscv-arch-test/pull/695)
+  - 更新了readme说明文档并成功合入[#676](https://github.com/riscv-non-isa/riscv-arch-test/pull/676)
+  - 更新了修复Zdinx ISA错误的bug并成功合入[#651](https://github.com/riscv-non-isa/riscv-arch-test/pull/651)
+
+  | 测试用例名 | 所属拓展 | 更新测试用例数 | 地址                                                         |
+  | ---------- | -------- | -------------- | ------------------------------------------------------------ |
+  | cadd       | C        | 2              | [github](https://github.com/riscv-non-isa/riscv-arch-test/tree/dev/riscv-test-suite/rv32i_m/Zfinx/src) |
+  | caddi      | C        | 2              | [github](https://github.com/riscv-non-isa/riscv-arch-test/tree/dev/riscv-test-suite/rv32i_m/Zfinx/src) |
+  | caddi16sp  | C        | 2              | [github](https://github.com/riscv-non-isa/riscv-arch-test/tree/dev/riscv-test-suite/rv32i_m/Zfinx/src) |
+  | caddi4spn  | C        | 2              | [github](https://github.com/riscv-non-isa/riscv-arch-test/tree/dev/riscv-test-suite/rv32i_m/Zfinx/src) |
+  | cand       | C        | 2              | [github](https://github.com/riscv-non-isa/riscv-arch-test/tree/dev/riscv-test-suite/rv32i_m/Zfinx/src) |
+  | candi      | C        | 2              | [github](https://github.com/riscv-non-isa/riscv-arch-test/tree/dev/riscv-test-suite/rv32i_m/Zfinx/src) |
+  | cbeqz      | C        | 2              | [github](https://github.com/riscv-non-isa/riscv-arch-test/tree/dev/riscv-test-suite/rv32i_m/Zfinx/src) |
+  | cbnez      | C        | 2              | [github](https://github.com/riscv-non-isa/riscv-arch-test/tree/dev/riscv-test-suite/rv32i_m/Zfinx/src) |
+  | cj         | C        | 2              | [github](https://github.com/riscv-non-isa/riscv-arch-test/tree/dev/riscv-test-suite/rv32i_m/Zfinx/src) |
+  | cjal       | C        | 2              | [github](https://github.com/riscv-non-isa/riscv-arch-test/tree/dev/riscv-test-suite/rv32i_m/Zfinx/src) |
+  | cjalr      | C        | 2              | [github](https://github.com/riscv-non-isa/riscv-arch-test/tree/dev/riscv-test-suite/rv32i_m/Zfinx/src) |
+  | cjr        | C        | 2              | [github](https://github.com/riscv-non-isa/riscv-arch-test/tree/dev/riscv-test-suite/rv32i_m/Zfinx/src) |
+  | cli        | C        | 2              | [github](https://github.com/riscv-non-isa/riscv-arch-test/tree/dev/riscv-test-suite/rv32i_m/Zfinx/src) |
+  | clui       | C        | 2              | [github](https://github.com/riscv-non-isa/riscv-arch-test/tree/dev/riscv-test-suite/rv32i_m/Zfinx/src) |
+  | clw        | C        | 2              | [github](https://github.com/riscv-non-isa/riscv-arch-test/tree/dev/riscv-test-suite/rv32i_m/Zfinx/src) |
+  | clwsp      | C        | 2              | [github](https://github.com/riscv-non-isa/riscv-arch-test/tree/dev/riscv-test-suite/rv32i_m/Zfinx/src) |
+  | cmv        | C        | 2              | [github](https://github.com/riscv-non-isa/riscv-arch-test/tree/dev/riscv-test-suite/rv32i_m/Zfinx/src) |
+  | cor        | C        | 2              | [github](https://github.com/riscv-non-isa/riscv-arch-test/tree/dev/riscv-test-suite/rv32i_m/Zfinx/src) |
+  | cslli      | C        | 2              | [github](https://github.com/riscv-non-isa/riscv-arch-test/tree/dev/riscv-test-suite/rv32i_m/Zfinx/src) |
+  | csrai      | C        | 2              | [github](https://github.com/riscv-non-isa/riscv-arch-test/tree/dev/riscv-test-suite/rv32i_m/Zfinx/src) |
+  | csrli      | C        | 2              | [github](https://github.com/riscv-non-isa/riscv-arch-test/tree/dev/riscv-test-suite/rv32i_m/Zfinx/src) |
+  | csub       | C        | 2              | [github](https://github.com/riscv-non-isa/riscv-arch-test/tree/dev/riscv-test-suite/rv32i_m/Zfinx/src) |
+  | csw        | C        | 2              | [github](https://github.com/riscv-non-isa/riscv-arch-test/tree/dev/riscv-test-suite/rv32i_m/Zfinx/src) |
+  | cswsp      | C        | 2              | [github](https://github.com/riscv-non-isa/riscv-arch-test/tree/dev/riscv-test-suite/rv32i_m/Zfinx/src) |
+  | cxor       | C        | 2              | [github](https://github.com/riscv-non-isa/riscv-arch-test/tree/dev/riscv-test-suite/rv32i_m/Zfinx/src) |
+
+- Issues
+  - <https://github.com/riscv/sail-riscv/pull/1250> Add syscall support
+  - [#1428](https://github.com/rems-project/sail/issues/1428) : 明确Sail配置无法动态检查配置合法性的问题
+  - [#1204](https://github.com/riscv/sail-riscv/issues/1204) : 参与对`fprintf`替代方案讨论
+  - [#1239](https://github.com/riscv/sail-riscv/issues/1239) : 明确Sail-RISCV 存在`sc`时不会检查pmp的bug
+  - [sail cannot be removed](https://github.com/rems-project/sail/issues/1401)
+  - [Is there a good reason why some of our external libs are fetched dynamically and some are just part of the repo? We have softfloat and are about to add CLI11 as well now as part of the repo.](https://github.com/riscv/sail-riscv/issues/1164)
+  - [Add AUR package for sail bin](https://github.com/rems-project/sail/issues/1381)
+  - [where does this binnary c_emulator/reset_vec.bin came from?](https://github.com/riscv/sail-riscv/issues/1154)
+  - [openSBI with sail-riscv](https://github.com/riscv/sail-riscv/issues/886)
+  - [Fix Pydrofoil build on rpypkgs](https://github.com/rpypkgs/rpypkgs/issues/1)
+    Current Makefile-based build procedure is fragile with unstable deps, such as sail-riscv, isla.
+    [rpypkgs](https://github.com/rpypkgs/rpypkgs) maintains RPython/PyPy projects (including pydrofoil-riscv), and is working on Pydrofoil scripting API support.
+    Note that Pydrofoil scripting API isn't supported.
+  - [Discussion about refactoring Pydrofoil build targets](https://github.com/pydrofoil/pydrofoil/issues/142)
+    Pydrofoil highly depends on PyPy2/RPython infrastructure, which is somehow fragile in case of out-of-tree maintenanace.
+  
+#### 3.2 SAIL技术分享
+  
+- 8.23 RISC-V 研讨会：SAIL-RISCV 如何攻克 RISC-V 可配置性 [PPT](https://github.com/trdthg/plct/blob/main/doc/sail/json-config/main.pdf)
+- Pydrofoil技术分享
+- [Document for Pydrofoil difftest workload](https://github.com/definfo/pydrofoil/blob/a5d158f9eb0322d0ca27d0820a7c160a057c966a/README_difftest.md)
+
+#### 3.3 SAIL会议
+
+- tech-golden-model meeting [`08.18`, `08.25`](https://docs.google.com/document/d/1f9ihMT8vcmgijmvebMiHttwSbw9eY_MKkR9ea3CNFCg)
+  - PLCT建议创建预发布版本或测试版本，并加入 CI 自动发布预发布版本。
+  - Json 验证方案
+    - PLCT 选择了 valijson + nlohmann/json, 已经提交了两种方案, 分别使用 FetchContent 和直接 push 库源代码, Tim 建议直接推源代码, 认为会更简洁, 尽管可能导致难以审查.
+    - 结论, 最终目标是 sail 自动生成 C 代码的验证函数, 但当前的折中方案是用 Boon
+  - PLCT 建议 CLI 改进, 需要修复 --trace 选项
+  - PLCT 提到 ELF 文件动态加载, 目前难以确定偏移量, 需要检查 ELF 是否位置无关
+    - Tim 建议使用 Elfio 库代替 sail 目前的 elf 处理代码.
+  - PLCT 提到 cJSON 版本老旧, Alasdair 解释为了实现任意精度整数, sail 的 cJSON 代码被修改过, 将所有的数字都视为字符串解析
+  - PLCT 建议用看板或者里程碑等工具跟踪发布进度. Prashanth 后续研究
+- 8.21 东亚双周会 [PPT](https://docs.google.com/presentation/d/1wFh9WXinsaQhMQgQBXODzm8KRUB_JeGJuWgfOXwNeiA/edit?slide=id.g327cde8f41c_0_68#slide=id.g327cde8f41c_0_68)
+- 8.8 北京 World RISC-V Days 2025 参会和演示 [文章](https://mp.weixin.qq.com/s/OW8OAXUPN-kWurjVjk2VsQ)
+- 8.26-8.28 深圳 Elexcon 2025，PLCT Lab 展位 [文章](https://mp.weixin.qq.com/s/HqU26th_RpWFhKcK4IQLmQ)
+
+### 4. 独立项目/应用软件生态观测
+
+#### 4.1 北京 World RISC-V Days 2025
+
+- 展示物准备
+- 展示RuyiSDK 在 南湖笔记上的应用
+
+#### 4.2 深圳 Elexcon 2025 
+
+- 主导 PLCT Lab和RuyiSDK站台
+  - 展示物准备
+  - 海报准备
+  - 现场布展
+  - 展出服务
+- 参与 RevyOS和甲辰计划站台
+  - 展出服务
+
+#### 4.3 RuyiSDK GNU Tests
+
+- [curl 的新版本修复了导致测试失败的 bug](https://github.com/QA-Team-lo/ruyisdk-gnu-tests/commit/ddfa3f91e3441e8ec0d3be45bd87881c36511c8b)
+
+#### 4.4 玄铁课程
+
+-  提交玄铁课程《在Licheepi4A运行Deepseek》
+
+#### 4.5 英麒 RISC-V Lab
+
+-  [实习生成长手册](https://github.com/DuoQilai/PLCT-Works/blob/main/Notes/RISCVLab/yq_Get_started.md)
+
+#### 4.6 eweOS
+
+- [完成软件包移植 `radeontop`](https://os.ewe.moe/pkginfo/main/radeontop/riscv64)
+
+#### 4.7 Litmus-Tests
+
+- [litmus-tests-riscv on sg2042测试报告](https://github.com/QA-Team-lo/litmus-tests/tree/main/SG2042)
+
+#### 4.8 FluidX3D on riscv
+
+- 编译 PoCL(rv64gc)和安装到 opencl-icd 
+- 在 `-march=rv64gc -mabi=lp64d` 运行异常,benchmark 结果异常的高,在在修改代码调试后为 LBM 构造函数静默失败
+- 通过对代码仓库多步调试最终发现为 opencl kernel LBM 函数部分存在异常,加入对 kernel.cpp 相关探针 进行二分调试,将可能和平台相关的函数换为和平台无关的函数
+- 发现将代码部分注释后,opencl kernel 可成功运行,得分在 490-550 左右,符合预期
+- 初步判断是 llvm 编译器后端问题,尝试修改代码逻辑,降低编译器优化难度后问题依然没有解决
+
+### 5. RISC-V教育和短视频
+
+#### 5.1 短视频课程设计
+
+- 项目迭代计划
+https://github.com/DuoQilai/PLCT-Works/tree/main/RISC-V_short_video/Plan_Document
+- 项目迭代回溯
+https://github.com/DuoQilai/PLCT-Works/tree/main/RISC-V_short_video/Review_Document
+- 新人手册
+https://github.com/DuoQilai/PLCT-Works/blob/main/RISC-V_short_video/baby_book.md
+  
+#### 5.2 短视频设计和实现
+
+- [RuyiSDK案例-学习使用qemu、llvm和cmake](https://www.bilibili.com/video/BV1mjefzLEL6/)
+
+#### 5.3 短视频剧本和文档、素材
+- [口播稿（RuyiSDK使用 qemu llvm cmake）](https://github.com/jason-hue/plct/blob/main/%E5%8F%A3%E6%92%AD%E7%A8%BF/%E5%8F%A3%E6%92%AD%E7%A8%BF%EF%BC%88RuyiSDK%E4%BD%BF%E7%94%A8%20qemu%20llvm%20cmake%EF%BC%89.md)
+
+- [RuyiSDK文档-Taisei 交叉编译测试结果](https://github.com/jason-hue/plct/blob/main/%E6%B5%8B%E8%AF%95%E6%96%87%E6%A1%A3/RuyiSDK%E6%96%87%E6%A1%A3-Taisei%20%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91%E6%B5%8B%E8%AF%95%E7%BB%93%E6%9E%9C.md)
+
+#### 5.4 短视频技术分享
+
+- [RISC-V教育和南京合作伙伴RISC-V Lab协同建设ppt](https://github.com/DuoQilai/PLCT-Works/blob/main/Notes/RISC-V%E6%95%99%E8%82%B2%E5%92%8C%E5%8D%97%E4%BA%AC%E5%90%88%E4%BD%9C%E4%BC%99%E4%BC%B4RISC-V%20Lab%E5%8D%8F%E5%90%8C%E5%BB%BA%E8%AE%BE.pptx)
+
+### 6. 职工
+
+#### 6.1 蔡玮霖
+
+1. 指导 Web 实习生重新设计了官网的数据统计页面，更新博客和双周报，同时有一些其他零散的更新
+2. 在 ruyi-packaging 仓库完善打包工具，并使用打包工具生成配置，向 packages-index 提交 pr
+3. 将文档、 packages-index 之前已知问题同步到 issue
+4. 提交对 Ruyi 的新功能请求
+5. 整理已有的 Ruyi 的 deb 包打包到新的仓库
+
+- Ruyi v0.39.0 测试完成 [pr](https://gitee.com/yunxiangluo/ruyisdk-test/pulls/78)
+- ruyi 仓库提交两个 Feature Request
+  - [[Feature Request] check mounted partition before ruyi device provision dd block device #345](https://github.com/ruyisdk/ruyi/issues/345)
+  - [[Feature Request] a command line interface as an alternative to device provision wizard #346](https://github.com/ruyisdk/ruyi/issues/346)
+- ruyisdk-website 仓库审核 18 个 pr
+  - [docs: update case1 English version #189](https://github.com/ruyisdk/ruyisdk-website/pull/189)
+  - [Optimize the copy button showing strategy and fix the code highlight cutoff #190](https://github.com/ruyisdk/ruyisdk-website/pull/190)（修复长代码行，灰底只渲染一次导致滚动后没有底色的问题，但测试感觉没有解决问题）
+  - [Update RuyiInLive for more data and a clear indicator to stats page #192](https://github.com/ruyisdk/ruyisdk-website/pull/192)
+  - [Feat/newscase auto switch #193](https://github.com/ruyisdk/ruyisdk-website/pull/193)
+  - [NewsShowcase with better visuals #194](https://github.com/ruyisdk/ruyisdk-website/pull/194) 优化了鼠标移上去时的图片放大圆角
+  - [Improved image spacing for popups #195](https://github.com/ruyisdk/ruyisdk-website/pull/195)
+  - [deleted some code #198](https://github.com/ruyisdk/ruyisdk-website/pull/198)
+  - [Synchronize ruyisdk biweekly #202](https://github.com/ruyisdk/ruyisdk-website/pull/202)
+  - [Update/blogs #203](https://github.com/ruyisdk/ruyisdk-website/pull/203)
+  - [docs: Shorten titles to improve typography #206](https://github.com/ruyisdk/ruyisdk-website/pull/206)
+  - [Feat/bar chart #199](https://github.com/ruyisdk/ruyisdk-website/pull/199)
+  - [Feat/newscase auto switch #200](https://github.com/ruyisdk/ruyisdk-website/pull/200)
+  - [Re-patch for codeblock update #201](https://github.com/ruyisdk/ruyisdk-website/pull/201)
+  - [feat: add UnoCSS integration #208](https://github.com/ruyisdk/ruyisdk-website/pull/208)
+  - [Feat/add slide #209](https://github.com/ruyisdk/ruyisdk-website/pull/209)
+  - [Update/newscase #210](https://github.com/ruyisdk/ruyisdk-website/pull/210)
+  - [Optimize stats page colouring #211](https://github.com/ruyisdk/ruyisdk-website/pull/211)
+  - [Update stats page's colouring to ensure visibility #212](https://github.com/ruyisdk/ruyisdk-website/pull/212)
+- ruyisdk-website 仓库提交 1 个 pr
+  - [pages: modify statistical data page text #196](https://github.com/ruyisdk/ruyisdk-website/pull/196)
+- ruyi-packaging 仓库提交 10 个 pr
+  - [riko: subcommand manifests to generate new tomls #26](https://github.com/ruyisdk/ruyi-packaging/pull/26)
+  - [riko: fix unexpected behaviour when generating buildroot-sdk-sipeed-licheervnano tomls #27](https://github.com/ruyisdk/ruyi-packaging/pull/27)
+  - [riko: raise exception when provisionable strategy not supported #28](https://github.com/ruyisdk/ruyi-packaging/pull/28)
+  - [riko: add armbian riko.py #29](https://github.com/ruyisdk/ruyi-packaging/pull/29)
+  - [riko: skip armbian #30](https://github.com/ruyisdk/ruyi-packaging/pull/30)
+  - [riko: add support for nvchecker source regex and new policies config #31](https://github.com/ruyisdk/ruyi-packaging/pull/31)
+  - [riko: better regex source support for new package revyos-lpi4a #32](https://github.com/ruyisdk/ruyi-packaging/pull/32)
+  - [ruyi_packaging: new packages revyos-{meles,lcon4a} #33](https://github.com/ruyisdk/ruyi-packaging/pull/33)
+  - [riko: allow generating downgrade manifests #34](https://github.com/ruyisdk/ruyi-packaging/pull/34)
+  - [New package mars-buildroot-sdk and make riko easier to use #35](https://github.com/ruyisdk/ruyi-packaging/pull/35)
+- packages-index 仓库提交 2 个 issue
+  - [BananaPi BPI-F3 eMMC storage variant did not refer to any combo #101](https://github.com/ruyisdk/packages-index/issues/101)
+  - [Jupiter and Megrez missing for MilkV product line support #104](https://github.com/ruyisdk/packages-index/issues/104)
+- packages-index 仓库提交 8 个 pr
+  - [board-image/buildroot-sdk-sipeed-licheervnano: add missing versions #95](https://github.com/ruyisdk/packages-index/pull/95)
+  - [board-image/revyos-sipeed-lpi4a: new version 0.20250729.0 #96](https://github.com/ruyisdk/packages-index/pull/96)
+  - [board-image/revyos-sipeed-lcon4a: new versions 0.20240720.0 and 0.20250729.0 #97](https://github.com/ruyisdk/packages-index/pull/97)
+  - [board-image/revyos-milkv-meles: new version 1.20250729.0 #98](https://github.com/ruyisdk/packages-index/pull/98)
+  - [Fix broken bianbu-bpi-f3 manifest and unify bianbu upstream_version format #99](https://github.com/ruyisdk/packages-index/pull/99)
+  - [board-image/bianbu-{desktop,minimal}-spacemit-k1-sd: new versions from v2.0.0 to v3.0.0 #100](https://github.com/ruyisdk/packages-index/pull/100)
+  - [Update board-image/bianbu-{desktop,minimal}-spacemit-k1-sd manifests #102](https://github.com/ruyisdk/packages-index/pull/102)
+  - [board-image/debian-desktop-sdk-milkv-mars-cm-sd: add old version 1.0.5+3.6.1 #103](https://github.com/ruyisdk/packages-index/pull/103)
+- support-matrix 仓库提交 1 个 issue
+  - [[Image Check] Pine64 Star64 images disappeared on armbian community release #353](https://github.com/ruyisdk/support-matrix/issues/353)
+- docs 仓库提交 4 个 issue
+  - [文档代码块格式不统一 #93](https://github.com/ruyisdk/docs/issues/93)
+  - [链接中的 RuyiSDK 大小写问题 #94](https://github.com/ruyisdk/docs/issues/94)
+  - [关于 fastboot 的文档提示 #95](https://github.com/ruyisdk/docs/issues/95)
+  - [关于使用 pip 安装 ruyi 的文档提示 #96](https://github.com/ruyisdk/docs/issues/96)
+- 08/08 北京 World RISC-V Days 2025 参会和演示
+- 08/26 深圳 Elexcon 参展
+- 新的 ruyi deb 包下载源 [launchpad.net](https://launchpad.net/~ruyisdk-test/+archive/ubuntu/ruyi)
+- 实习生面试考核题 [J162](https://gitlab.inuyasha.love/weilinfox/plct-working/-/blob/master/Done/Month26/jy.md)
+
+#### 6.2 郑景坤
+
+##### 6.2.1 操作系统支持矩阵
+
+- PR Review (对测试团队操作系统支持矩阵产出的review审核，以下内容同测试团队产出，此处为review)
+  - [Add new boards, support status,test reports,documents and CI updates ](https://github.com/ruyisdk/support-matrix/pull/350)
+  - [docs(treewide): unify case of distro names & fix typo](https://github.com/ruyisdk/support-matrix/pull/351)
+  - [LiP3A: Add irradium test report (good).](https://github.com/ruyisdk/support-matrix/pull/352)
+  - [OrangePi RV2: Add BredOS test report (good).](https://github.com/ruyisdk/support-matrix/pull/354)
+  - [LiP4A: Bump Fedora Version to 42](https://github.com/ruyisdk/support-matrix/pull/356)
+  - [OrangePi RV2: Add Debian Trixie test report (basic).](https://github.com/ruyisdk/support-matrix/pull/357)
+  - [docs: Replace device names with placeholders](https://github.com/ruyisdk/support-matrix/pull/359)
+  - [docs: Correct sys_ver in LicheePi4A RevyOS README](https://github.com/ruyisdk/support-matrix/pull/360)
+  - [Duo: Bump Buildroot to v2.0.1](https://github.com/ruyisdk/support-matrix/pull/363)
+  - [EIC7700X Board information supplement](https://github.com/ruyisdk/support-matrix/pull/364)
+  - 网页前端 Review：https://github.com/QA-Team-lo/support-matrix-frontend
+- New PR（独立完成）
+  - [Update for LPi3A & MUSE Pi Pro](https://github.com/ruyisdk/support-matrix/pull/355)
+  - [VF2: fix link typo](https://github.com/ruyisdk/support-matrix/pull/361)
+
+##### 6.2.2 双周报
+
+- https://github.com/ruyisdk/wechat-articles/pull/176
+- https://github.com/ruyisdk/wechat-articles/pull/174
+
+##### 6.2.3 深圳 Elexcon 2025（主要是 RuyiSDK 展台）
+- https://mp.weixin.qq.com/s/XvIFFTCuAGyKHVP8irzIXw
+- 展出物：Milk-V Meles + [RuyiSDK 介绍视频](https://www.bilibili.com/video/av664932287/) + PPSSPP / 洞窟物语 Demo
+- [展品部署](https://github.com/user-attachments/assets/af21fc0c-e17e-45cb-9260-4512900f00c2)
+- Meles 测试报告见 https://matrix.ruyisdk.org/reports/Meles-RevyOS-README/
+- [RV Infra Slide](https://github.com/KevinMX/PLCT-Works/tree/main/reports/month28/RVInfra/)
+
+#### 6.3 阎明铸
+
+##### 6.3.1 sail/act
+- 提交 PR
+  - <https://github.com/riscv/sail-riscv/pull/538> Make \{m,s\}status\[VS\] read-only zero when Ext_V not supported
+  New activity
+  - <https://github.com/riscv/sail-riscv/pull/1251> Add basic syscall support
+- 推进 PR
+  - <https://github.com/riscv/sail-riscv/pull/538> Add Zicbop extension
+  - <https://github.com/riscv/sail-riscv/pull/1099> Move RVFI to C
+- Issue
+  - <https://github.com/riscv/sail-riscv/pull/1250> Add syscall support
+
+##### 6.3.2 会议和技术分享
+
+- 8.23 RISC-V 研讨会：SAIL-RISCV 如何攻克 RISC-V 可配置性 [PPT](https://github.com/trdthg/plct/blob/main/doc/sail/json-config/main.pdf)
+- tech-golden-model meeting [`08.18`, `08.25`](https://docs.google.com/document/d/1f9ihMT8vcmgijmvebMiHttwSbw9eY_MKkR9ea3CNFCg)
+- 8.21 东亚双周会 [PPT](https://docs.google.com/presentation/d/1wFh9WXinsaQhMQgQBXODzm8KRUB_JeGJuWgfOXwNeiA/edit?slide=id.g327cde8f41c_0_68#slide=id.g327cde8f41c_0_68)
+- 8.8 北京 World RISC-V Days 2025 参会和演示 [文章](https://mp.weixin.qq.com/s/OW8OAXUPN-kWurjVjk2VsQ)
+- 8.26-8.28 深圳 Elexcon 2025，PLCT Lab 展位 [文章](https://mp.weixin.qq.com/s/HqU26th_RpWFhKcK4IQLmQ)
+
+#### 6.4 张馥媛
+
+##### 6.4.1 视频
+
+- [RuyiSDK案例-学习使用qemu、llvm和cmake](https://www.bilibili.com/video/BV1mjefzLEL6/)
+
+##### 6.4.2 RISC-V short video项目文档
+
+-  [新人手册](https://github.com/DuoQilai/PLCT-Works/blob/main/RISC-V_short_video/baby_book.md)
+
+##### 6.4.3 玄铁课程
+
+-  提交玄铁课程《在Licheepi4A运行Deepseek》
+
+##### 6.4.4 英麒RISC-V Lab
+
+-  [实习生成长手册](https://github.com/DuoQilai/PLCT-Works/blob/main/Notes/RISCVLab/yq_Get_started.md)
+
+##### 6.4.5 第17次RISC-V研讨会演讲
+
+-  [RISC-V教育和南京合作伙伴RISC-V Lab协同建设ppt](https://github.com/DuoQilai/PLCT-Works/blob/main/Notes/RISC-V%E6%95%99%E8%82%B2%E5%92%8C%E5%8D%97%E4%BA%AC%E5%90%88%E4%BD%9C%E4%BC%99%E4%BC%B4RISC-V%20Lab%E5%8D%8F%E5%90%8C%E5%BB%BA%E8%AE%BE.pptx)
+
+##### 6.4.6 深圳电子展
+
+- 展品准备（k230 ai识别）
+- 展区服务
+
+#### 6.5 朱旭昌
+
+- ACT PR
+  - 提交了一个修复缺失的压缩非法指令缺失覆盖的问题[#695](https://github.com/riscv-non-isa/riscv-arch-test/pull/695)
+  - 更新了readme说明文档并成功合入[#676](https://github.com/riscv-non-isa/riscv-arch-test/pull/676)
+  - 更新了修复Zdinx ISA错误的bug并成功合入[#651](https://github.com/riscv-non-isa/riscv-arch-test/pull/651)
+
+  | 测试用例名 | 所属拓展 | 更新测试用例数 | 地址                                                         |
+  | ---------- | -------- | -------------- | ------------------------------------------------------------ |
+  | cadd       | C        | 2              | [github](https://github.com/riscv-non-isa/riscv-arch-test/tree/dev/riscv-test-suite/rv32i_m/Zfinx/src) |
+  | caddi      | C        | 2              | [github](https://github.com/riscv-non-isa/riscv-arch-test/tree/dev/riscv-test-suite/rv32i_m/Zfinx/src) |
+  | caddi16sp  | C        | 2              | [github](https://github.com/riscv-non-isa/riscv-arch-test/tree/dev/riscv-test-suite/rv32i_m/Zfinx/src) |
+  | caddi4spn  | C        | 2              | [github](https://github.com/riscv-non-isa/riscv-arch-test/tree/dev/riscv-test-suite/rv32i_m/Zfinx/src) |
+  | cand       | C        | 2              | [github](https://github.com/riscv-non-isa/riscv-arch-test/tree/dev/riscv-test-suite/rv32i_m/Zfinx/src) |
+  | candi      | C        | 2              | [github](https://github.com/riscv-non-isa/riscv-arch-test/tree/dev/riscv-test-suite/rv32i_m/Zfinx/src) |
+  | cbeqz      | C        | 2              | [github](https://github.com/riscv-non-isa/riscv-arch-test/tree/dev/riscv-test-suite/rv32i_m/Zfinx/src) |
+  | cbnez      | C        | 2              | [github](https://github.com/riscv-non-isa/riscv-arch-test/tree/dev/riscv-test-suite/rv32i_m/Zfinx/src) |
+  | cj         | C        | 2              | [github](https://github.com/riscv-non-isa/riscv-arch-test/tree/dev/riscv-test-suite/rv32i_m/Zfinx/src) |
+  | cjal       | C        | 2              | [github](https://github.com/riscv-non-isa/riscv-arch-test/tree/dev/riscv-test-suite/rv32i_m/Zfinx/src) |
+  | cjalr      | C        | 2              | [github](https://github.com/riscv-non-isa/riscv-arch-test/tree/dev/riscv-test-suite/rv32i_m/Zfinx/src) |
+  | cjr        | C        | 2              | [github](https://github.com/riscv-non-isa/riscv-arch-test/tree/dev/riscv-test-suite/rv32i_m/Zfinx/src) |
+  | cli        | C        | 2              | [github](https://github.com/riscv-non-isa/riscv-arch-test/tree/dev/riscv-test-suite/rv32i_m/Zfinx/src) |
+  | clui       | C        | 2              | [github](https://github.com/riscv-non-isa/riscv-arch-test/tree/dev/riscv-test-suite/rv32i_m/Zfinx/src) |
+  | clw        | C        | 2              | [github](https://github.com/riscv-non-isa/riscv-arch-test/tree/dev/riscv-test-suite/rv32i_m/Zfinx/src) |
+  | clwsp      | C        | 2              | [github](https://github.com/riscv-non-isa/riscv-arch-test/tree/dev/riscv-test-suite/rv32i_m/Zfinx/src) |
+  | cmv        | C        | 2              | [github](https://github.com/riscv-non-isa/riscv-arch-test/tree/dev/riscv-test-suite/rv32i_m/Zfinx/src) |
+  | cor        | C        | 2              | [github](https://github.com/riscv-non-isa/riscv-arch-test/tree/dev/riscv-test-suite/rv32i_m/Zfinx/src) |
+  | cslli      | C        | 2              | [github](https://github.com/riscv-non-isa/riscv-arch-test/tree/dev/riscv-test-suite/rv32i_m/Zfinx/src) |
+  | csrai      | C        | 2              | [github](https://github.com/riscv-non-isa/riscv-arch-test/tree/dev/riscv-test-suite/rv32i_m/Zfinx/src) |
+  | csrli      | C        | 2              | [github](https://github.com/riscv-non-isa/riscv-arch-test/tree/dev/riscv-test-suite/rv32i_m/Zfinx/src) |
+  | csub       | C        | 2              | [github](https://github.com/riscv-non-isa/riscv-arch-test/tree/dev/riscv-test-suite/rv32i_m/Zfinx/src) |
+  | csw        | C        | 2              | [github](https://github.com/riscv-non-isa/riscv-arch-test/tree/dev/riscv-test-suite/rv32i_m/Zfinx/src) |
+  | cswsp      | C        | 2              | [github](https://github.com/riscv-non-isa/riscv-arch-test/tree/dev/riscv-test-suite/rv32i_m/Zfinx/src) |
+  | cxor       | C        | 2              | [github](https://github.com/riscv-non-isa/riscv-arch-test/tree/dev/riscv-test-suite/rv32i_m/Zfinx/src) |
+
+- 深圳展会deepseek展品准备，PLCT Lab展位服务
+
 ## SG2042/SG2044 Upstream
 
 - [[PATCH 0/4] Add SPI NOR DTS node for SG2042 SoC and boards using it][lk-sg204x-1]
