@@ -253,6 +253,15 @@ Merged PRs:
 
 ## llama.cpp
 
+Highlights:
+
+解决性能瓶颈问题，采取特定量化方式的 LLM 模型推理速度可在原有向量化实现的基础上提升大约 80%。
+
+Merged PRs:
+
+1. [ggml-cpu : add basic RVV support for vector f32 ops](https://github.com/ggml-org/llama.cpp/pull/15057)
+2. [ggml-cpu : optimize RVV kernels](https://github.com/ggml-org/llama.cpp/pull/15720)
+
 ## coreboot for riscv
 
 本期没有新的进展。
