@@ -311,6 +311,27 @@ Merged PRs:
 ## RevyOS (Debian for Xuantie)
 
 ### Debian
+本月主要维护 Debian riscv64 构建、测试的稳定： Debian 13 发布后，unstable 累计了大量的更新， 同时， debci team 反馈需要注意个别包引起的测试 worker 奔溃问题;
+例行的包 upload 及 维护。
+
+* https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=1110520#19 [jpeg-xl build]
+* https://salsa.debian.org/lintian/lintian/-/merge_requests/596 [MR update]
+* https://tracker.debian.org/news/1653227/accepted-strace-616ds-1-source-into-experimental/ [6.16 experimental]
+* https://tracker.debian.org/news/1653477/accepted-strace-616ds-2-source-into-unstable/ [strace 6.16 unstable]
+* https://fast-mirror.isrc.ac.cn/redleafos/dev/redleafos-base/ [redleados-base udate]
+* https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=1111438 [ruyi ITP]
+* https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=1102620 [construct RC done]
+* https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=1112166 [golang-1.24 FTBFS]
+* http://vimer.7766.org:63015/chromium/139/ [chromium 139]
+* https://www.eclipse.org/lists/epp-dev/msg07018.html [eclipse +1]
+* https://github.com/ptitSeb/gl4es/issues/489 [gl4es issue]
+* https://github.com/HardySimpson/zlog/issues/304 [zlog issue]
+
+### Redleafos
+Redleafos 本月主要有2个方面的更新：v2 kernel 的更新以及 v3 启动固件的更新。
+
+* http://vimer.7766.org:63015/nanhu/packages/kernel/testing/  [验证后合并到 iscas mirror]
+
 
 ## RT-Thread
 
