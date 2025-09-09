@@ -78,6 +78,30 @@ PLCT实验室的亮点产出通过「RuyiSDK」微信公众号（ID：RuyiSDK）
 
 ## Go
 
+1. Authored/Co-authored Go-mainline CLs:
+647596: runtime: unify C -> Go ABI transitions on riscv64 | https://go-review.googlesource.com/c/go/+/647596
+all: add race support for riscv64 | https://github.com/mengzhuo/go/commit/a1b9b0d4faae07a31c599e00ee73aa6b4f882068 
+https://github.com/golang/go/issues/64345
+659175: cmd/link: generate proper attributes for riscv profile | https://go-review.googlesource.com/c/go/+/659175
+657036: internal/bytealg: vector implementation of count 1 byte for riscv64 | https://go-review.googlesource.com/c/go/+/657036 
+663778: cmd/asm, cmd/internal/obj: add zvbb/zvbc/zvkb for riscv64 | https://go-review.googlesource.com/c/go/+/663778
+664155: cmd/asm, cmd/internal/obj: add crypto algorithm suites for riscv64 | https://go-review.googlesource.com/c/go/+/664155
+664375: cpu: add crypto extensions detection for riscv64 | https://go-review.googlesource.com/c/sys/+/664375
+663675: cmd/internal/obj: add crypto extension for riscv64 | https://go-review.googlesource.com/c/go/+/663675
+696655: MinimumRequirements: update minimum requirements for riscv64 | https://go-review.googlesource.com/c/wiki/+/696655 
+697615: cmd/compile: simplify zerorange on riscv64 | https://go-review.googlesource.com/c/go/+/697615
+
+2. Reviewed Go-mainline CLs:
+652717: doc, cmd/internal/obj/riscv: document the riscv64 assembler | https://go-review.googlesource.com/c/go/+/652717 
+646736: internal/bytealg: vector implementation of equal for riscv64 | https://go-review.googlesource.com/c/go/+/646736
+646737: internal/bytealg: vector implementation of compare for riscv64 | https://go-review.googlesource.com/c/go/+/646737
+670876: riscv64: add support for RVV 1.0 instructions | https://go-review.googlesource.com/c/arch/+/670876
+670875: riscv64: fix the path to the RISC-V extensions in spec.go | https://go-review.googlesource.com/c/arch/+/670875
+cmd/compile: line number debug info regression in go1.25 around literal rewriting | https://github.com/golang/go/issues/74576
+348389: cmd/compile: emit classify instructions for infinity tests on riscv64 | https://go-review.googlesource.com/c/go/+/348389
+670875: riscv64: fix the path to the RISC-V extensions in spec.go | https://go-review.googlesource.com/c/arch/+/670875
+
+
 ## OpenCV
 
 ## GNU Toolchain
