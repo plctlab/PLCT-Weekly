@@ -22,6 +22,27 @@ PLCT实验室的亮点产出通过「RuyiSDK」微信公众号（ID：RuyiSDK）
 
 ## OpenJDK
 
+1. Authored/Co-authored JDK-mainline PRs:
+- https://github.com/openjdk/jdk/pull/26495 (8364150: RISC-V: Leftover for JDK-8343430 removing old trampoline call)
+
+2. Reviewed JDK-mainline PRs:
+- https://github.com/openjdk/jdk/pull/26101 (8360000: RISC-V: implement aot)
+- https://github.com/openjdk/jdk/pull/26161 (8361504: RISC-V: Make C1 clone intrinsic platform guard more specific)
+- https://github.com/openjdk/jdk/pull/26150 (8361449: RISC-V: Code cleanup for native call)
+- https://github.com/openjdk/jdk/pull/26178 (8361532: RISC-V: Several vector tests fail after JDK-8354383)
+- https://github.com/openjdk/jdk/pull/26238 ([TESTBUG] RISC-V: compiler/vectorization/runner/BasicIntOpTest.java fails with RVV but not Zvbb)
+- https://github.com/openjdk/jdk/pull/26239 (8361836: RISC-V: Relax min vector length to 32-bit for short vectors)
+- https://github.com/openjdk/jdk/pull/26328 (8362284: RISC-V: cleanup NativeMovRegMem)
+- https://github.com/openjdk/jdk/pull/26370 (8362515: RISC-V: cleanup NativeFarCall)
+- https://github.com/openjdk/jdk/pull/26318 (8362838: RISC-V: Incorrect matching rule leading to improper oop instruction encoding)
+- https://github.com/openjdk/jdk/pull/26408 (8357694: RISC-V: Several IR verification tests fail when vlen=128)
+- https://github.com/openjdk/jdk/pull/26409 (8362596: RISC-V: Improve _vectorizedHashCode intrinsic)
+- https://github.com/openjdk/jdk/pull/26437 (8363898: RISC-V: TestRangeCheckHoistingScaledIV.java fails after JDK-8355293 when running without RVV)
+- https://github.com/openjdk/jdk/pull/26481 (8364120: RISC-V: unify the usage of MacroAssembler::instruction_size)
+- https://github.com/openjdk/jdk/pull/26719 (8365200: RISC-V: compiler/loopopts/superword/TestGeneralizedReductions.java fails with Zvbb and vlen=128)
+- https://github.com/openjdk/jdk/pull/26738 (8365302: RISC-V: compiler/loopopts/superword/TestAlignVector.java fails when vlen=128)
+- https://github.com/openjdk/jdk/pull/17413 (8322174: RISC-V: C2 VectorizedHashCode RVV Version)
+
 ## Go
 
 ## OpenCV
