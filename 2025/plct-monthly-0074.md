@@ -79,9 +79,58 @@ PLCT实验室的亮点产出通过「RuyiSDK」微信公众号（ID：RuyiSDK）
 
 ## RT-Thread
 
+- [doxygen: align code for kenerl object doc][rtt-10662]
+- [utest/utest: intergare testcases into utest framework ][rtt-10665]
+- [doxygen: updated doc for thread management subsystem][rtt-10666]
+- [doxygen: fixed duplicated comments for cpu APIs][rtt-10674]
+- [doxygen: fixed duplicated comments for scheduler APIs][rtt-10677]
+- [doxygen: update doc for env to latest][rtt-10683]
+- [utest: unify utest name][rtt-10698]
+- [bsp/qemu-virt64-riscv: disable RT_USING_UTEST][rtt-10721]
+- [bsp/cvitek: Increase the value of RT_NAME_MAX][rtt-10740]
+- [utest: remove RT_UTEST_USING_ALL_CASES][rtt-10741]
+- [utest: move core utest cases to under src/utest][rtt-10742]
+- [utest: move driver related case under to drivers][rtt-10750]
+- [doxygen: fixed build warning for RT_CAN_FILTER_ITEM_INIT][rtt-10758]
+- [doxygen: cleanup code for group_object_management][rtt-10759]
+- [doxygen: cleanup code for group_thread_management][rtt-10760]
+- [bsp: k230: add rtc driver][rtt-10709]
+
+技术文章：
+- [[K230学习笔记 01] RTC](https://www.cnblogs.com/Ze-Hou/p/19115269)
+
+[rtt-10662]:https://github.com/RT-Thread/rt-thread/pull/10662
+[rtt-10665]:https://github.com/RT-Thread/rt-thread/pull/10665
+[rtt-10666]:https://github.com/RT-Thread/rt-thread/pull/10666
+[rtt-10674]:https://github.com/RT-Thread/rt-thread/pull/10674
+[rtt-10677]:https://github.com/RT-Thread/rt-thread/pull/10677
+[rtt-10683]:https://github.com/RT-Thread/rt-thread/pull/10683
+[rtt-10698]:https://github.com/RT-Thread/rt-thread/pull/10698
+[rtt-10721]:https://github.com/RT-Thread/rt-thread/pull/10721
+[rtt-10740]:https://github.com/RT-Thread/rt-thread/pull/10740
+[rtt-10741]:https://github.com/RT-Thread/rt-thread/pull/10741
+[rtt-10742]:https://github.com/RT-Thread/rt-thread/pull/10742
+[rtt-10750]:https://github.com/RT-Thread/rt-thread/pull/10750
+[rtt-10758]:https://github.com/RT-Thread/rt-thread/pull/10758
+[rtt-10759]:https://github.com/RT-Thread/rt-thread/pull/10759
+[rtt-10760]:https://github.com/RT-Thread/rt-thread/pull/10760
+[rtt-10709]:https://github.com/RT-Thread/rt-thread/pull/10709
+
 ## PLCT罗云翔测试团队
 
 ## SG2042/SG2044 Upstream
+
+- [[PATCH] dts: sophgo: sg2042: added numa id description][lk-sg2042-1]
+- [[PATCH v2 0/7] Add PCIe support to Sophgo SG2042 SoC][lk-sg2042-2]
+- [[PATCH v3 0/7] Add PCIe support to Sophgo SG2042 SoC][lk-sg2042-3]
+- [[PATCH v2 0/4] Add SPI NOR DTS node for SG2042 SoC and boards using it][lk-sg2042-4]
+- [[PATCH v3 0/3] irqchip/sg2042-msi: Set irq type according to DT configuration][lk-sg2042-5]
+
+[lk-sg2042-1]:https://lore.kernel.org/linux-riscv/20250910105531.519897-1-rabenda.cn@gmail.com/
+[lk-sg2042-2]:https://lore.kernel.org/linux-riscv/cover.1757467895.git.unicorn_wang@outlook.com/
+[lk-sg2042-3]:https://lore.kernel.org/linux-riscv/cover.1757643388.git.unicorn_wang@outlook.com/
+[lk-sg2042-4]:https://lore.kernel.org/linux-riscv/20250916-sfg-spidts-v2-0-b5d9024fe1c8@gmail.com/
+[lk-sg2042-5]:https://lore.kernel.org/linux-riscv/cover.1756953919.git.unicorn_wang@outlook.com/
 
 ## Milk-V Duo Upstream
 
