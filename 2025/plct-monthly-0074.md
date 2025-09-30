@@ -96,6 +96,32 @@ PLCT实验室的亮点产出通过「RuyiSDK」微信公众号（ID：RuyiSDK）
 
 ## opensbi
 
+## The Aya Theorem Prover
+
+[Watch Aya Prover](https://github.com/aya-prover/aya-dev)
+
+近期改动中文总结：
+
+* 为 let 定义做准备。这一特性的实现和 IR 相关的代码耦合，但 IR 目前还没做好
+* 在代码中引入注解，标记 De Bruijn 编号的 open/closed 并借此发现了几个 bug（理想情况下可以借此做数据流分析，并且自动查找不一致之处，但在 Java 源码上做数据流分析太复杂了）
+* 完全重写 normalizer，彻底解决之前 normalize 不完全导致的各种问题。这应该性能也会更好，因为遍历次数更少了，代价是代码更复杂、复用的逻辑更少（但精神上是更简单的）
+* 一些面向用户的小改动，比如上下文为空时 holes 直接不显示 `Context:` 这一栏
+* 重写 `IApplyConfl`，之前的实现有 bug 但是不容易触发。我们现在让 normalizer 拒绝化简 De Bruijn-open 的 term，因为这不安全（破坏了一些 invariance），然后发现 `IApplyConfl` 正好触发了这样的 normalization。原因是 pattern 里面存的类型都是 De Bruijn index，需要用前面的变量去 inst，而之前的代码组织方式使得这件事很困难。新的实现完全没有这个问题，抄了一些 `PatUnify` 的代码，并且生成排列组合的代码也更紧凑
+
+争取短期内能搞定 let 定义。这个工作对语言特性也不影响，但对编译优化很重要，因为 let 是古希腊掌管求值顺序的神，如果能在表层语言有这个机制，那么在表层语言就能做一些有保证的优化，利好元编程等还没做的特性。
+
+具体 PR：
+
++ [v0.39](https://github.com/aya-prover/aya-dev/milestone/31) Let-term cherry pick on annotations [PR-1379](https://github.com/aya-prover/aya-dev/pull/1379) opened by [ice1000](https://github.com/ice1000)
++ [v0.39](https://github.com/aya-prover/aya-dev/milestone/31) Dependency upgrades [PR-1378](https://github.com/aya-prover/aya-dev/pull/1378) opened by [ice1000](https://github.com/ice1000)
++ [v0.39](https://github.com/aya-prover/aya-dev/milestone/31) docs: make `Term.bindAllFrom` documentation more concrete. [PR-1367](https://github.com/aya-prover/aya-dev/pull/1367) opened by [illusory0x0](https://github.com/illusory0x0)
++ [v0.39](https://github.com/aya-prover/aya-dev/milestone/31) CI [PR-1376](https://github.com/aya-prover/aya-dev/pull/1376) opened by [ice1000](https://github.com/ice1000)
++ [v0.39](https://github.com/aya-prover/aya-dev/milestone/31) Let term cp [PR-1375](https://github.com/aya-prover/aya-dev/pull/1375) opened by [ice1000](https://github.com/ice1000)
++ [v0.39](https://github.com/aya-prover/aya-dev/milestone/31) Normaliser rework [PR-1373](https://github.com/aya-prover/aya-dev/pull/1373) opened by [ice1000](https://github.com/ice1000)
++ Clean up tests with `tools-test` [PR-1350](https://github.com/aya-prover/aya-dev/pull/1350) opened by [linxuanm](https://github.com/linxuanm)
++ [v0.39](https://github.com/aya-prover/aya-dev/milestone/31) Some user interaction changes [PR-1372](https://github.com/aya-prover/aya-dev/pull/1372) opened by [ice1000](https://github.com/ice1000)
++ [v0.39](https://github.com/aya-prover/aya-dev/milestone/31) Fix something and make `Expr.Lambda` `WithTerm` so that we can provide inlay hint for them [PR-1369](https://github.com/aya-prover/aya-dev/pull/1369) opened by [HoshinoTented](https://github.com/HoshinoTented)
+  
 ## u-boot
 
 ## RevyOS (Debian for Xuantie)
