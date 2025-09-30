@@ -50,6 +50,31 @@ PLCT实验室的亮点产出通过「RuyiSDK」微信公众号（ID：RuyiSDK）
 ## GNU Toolchain
 
 ## LLVM Team
+- 1. Upstream llvm-project 合并的patch:
+  - [RISC-V] Add P-ext MC Support for Remaining Pair Operations  https://github.com/llvm/llvm-project/pull/159247
+  - [VectorCombine] Support pattern bitop(bitcast(x), C) -> bitcast(bitop(x, InvC)): https://github.com/llvm/llvm-project/pull/155216 
+  - [FuncSpec] Invalidate analysis by setting MadeChanges explicitly: https://github.com/llvm/llvm-project/pull/155833
+  - [X86] Fold vpmadd52h/l for pattern X * 0 + Y --> Y: https://github.com/llvm/llvm-project/pull/156086
+  - [X86] Fold X * Y + Z --> C + Z for vpmadd52l/vpmadd52h: https://github.com/llvm/llvm-project/pull/156293
+  - [llvm-reduce] Treat CallBrInst as Branch: https://github.com/llvm/llvm-project/pull/156366
+  - [X86] Compute the known bits for VPMADD52L/VPMADD52H in SimplifyDemandedBitsForTargetNode: https://github.com/llvm/llvm-project/pull/156847
+  - [VectorCombine] Relax vector type constraint on bitop(bitcast, bitcast): https://github.com/llvm/llvm-project/pull/157245
+  - [VectorCombine] Relax vector type constraint on bitop(bitcast, constant): https://github.com/llvm/llvm-project/pull/157246
+  - [InstCombine] Preserve nneg in foldLogicCastConstant: https://github.com/llvm/llvm-project/pull/157865
+  - [RISCV] Extend zvqdot matching to handle disjoint or: https://github.com/llvm/llvm-project/pull/157901
+  - [VectorCombine] Add Ext and Trunc support in foldBitOpOfCastConstant: https://github.com/llvm/llvm-project/pull/157822
+  - [X86] Handle undef/zero/ones cases after modifying Ops and Masks: https://github.com/llvm/llvm-project/pull/158428
+  - [X86] Fold X * 1 + Z --> X + Z for VPMADD52L: https://github.com/llvm/llvm-project/pull/158516
+  - [AArch64] Unfold adds when eliminating frame index with scalable offset: https://github.com/llvm/llvm-project/pull/158597
+  - [AArch64] Fold uaddv(a) to a if the all lanes except the 0th are zeros: https://github.com/llvm/llvm-project/pull/159086
+  - [RISCV] Disable slideup optimization on the inconsistent element type of EVec and ContainerVT: https://github.com/llvm/llvm-project/pull/159373
+  - [Docs][RISCV]Remove experimental from Smctr, Ssctr,Sdext and Sdtrig https://github.com/llvm/llvm-project/pull/161058
+
+- 2. plctlab llvm-project合并的patch:
+  - fix bitrev C intrinsic test error https://github.com/plctlab/llvm-project/pull/75
+
+- 3. ruyisdk llvm-project合并的patch:
+  - [LLVM][XTHeadVector] fix vwcvt, vwcvtu https://github.com/ruyisdk/llvm-project/pull/163
 
 ## MLIR
 
