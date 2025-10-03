@@ -92,9 +92,24 @@ PLCT实验室的亮点产出通过「RuyiSDK」微信公众号（ID：RuyiSDK）
 
 ## coreboot for riscv
 
+本期没有新的进展。
+
 ## openocd
 
+本期没有新的进展。
+
 ## opensbi
+
+- ipi驱动添加rating，来标识驱动的优先级，通过rating自动选择ipi设备。移除sbi\_platform\_operations中的ipi初始化操作，通过fdt\_early\_drivers初始化ipi。[1](https://lists.infradead.org/pipermail/opensbi/2025-September/008807.html)
+- 在首次调用sbi\_domain\_context\_enter添加hart context初始化并阻止目标domain和当前domain相同。[1](https://lists.infradead.org/pipermail/opensbi/2025-September/008814.html)
+- 在修改PMP后刷新tlb缓存。[1](https://lists.infradead.org/pipermail/opensbi/2025-September/008841.html)
+- 添加VisionFive 2 Lite。[1](https://lists.infradead.org/pipermail/opensbi/2025-September/008855.html)
+- 在挂起恢复时添加mideleg保存恢复。[1](https://lists.infradead.org/pipermail/opensbi/2025-September/008857.html) [2](https://lists.infradead.org/pipermail/opensbi/2025-September/008858.html)
+- 添加spacemit k1支持。[1](https://lists.infradead.org/pipermail/opensbi/2025-September/008916.html)
+- 添加SiFive Clint v2支持，和v0的区别支持Zicntr。[1](https://lists.infradead.org/pipermail/opensbi/2025-September/008891.html)
+- 在休眠后唤醒后添加代码恢复性能计数器。[1](https://lists.infradead.org/pipermail/opensbi/2025-September/008896.html)
+- 添加代码检测Zkr扩展。[1](https://lists.infradead.org/pipermail/opensbi/2025-September/008919.html)
+- 允许访问自定义CSR，isa spec预留了自定义的CSR，添加代码允许csr\_read\_num/csr\_write\_num访问，避免特定平台添加csr访问的代码。[1](https://lists.infradead.org/pipermail/opensbi/2025-September/008926.html)
 
 ## The Aya Theorem Prover
 
