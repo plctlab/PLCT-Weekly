@@ -136,6 +136,23 @@ PLCT实验室的亮点产出通过「RuyiSDK」微信公众号（ID：RuyiSDK）
 + Clean up tests with `tools-test` [PR-1350](https://github.com/aya-prover/aya-dev/pull/1350) opened by [linxuanm](https://github.com/linxuanm)
 + [v0.39](https://github.com/aya-prover/aya-dev/milestone/31) Some user interaction changes [PR-1372](https://github.com/aya-prover/aya-dev/pull/1372) opened by [ice1000](https://github.com/ice1000)
 + [v0.39](https://github.com/aya-prover/aya-dev/milestone/31) Fix something and make `Expr.Lambda` `WithTerm` so that we can provide inlay hint for them [PR-1369](https://github.com/aya-prover/aya-dev/pull/1369) opened by [HoshinoTented](https://github.com/HoshinoTented)
+
+## eunomia-bpf
+
+- AgentSight: System-Level Observability for AI Agents Using eBPF <https://dl.acm.org/doi/10.1145/3766882.3767169>
+- MCP for Linux scheduler <https://arxiv.org/html/2509.01245v4> is accepted to MLforsystem'24 workshop
+- eBPF for GPU is accepted by Linux Plumber, bpftime again: <https://lpc.events/event/19/contributions/2168/>
+- [**gpu: fix memtrace example**](https://github.com/eunomia-bpf/bpftime/pull/455)
+- [**example: add cpu and gpu together**](https://github.com/eunomia-bpf/bpftime/pull/454)
+- [**enhances the CUDA benchmarking and add memtrace**](https://github.com/eunomia-bpf/bpftime/pull/453)
+- [**fix: Resolve compilation failure when BPFTIME_ENABLE_CUDA_ATTACH=1**](https://github.com/eunomia-bpf/bpftime/pull/452)
+- [**Reorder examples and add documents**](https://github.com/eunomia-bpf/bpftime/pull/451)
+- [**[+] New CI for testing bpftime under gcc-13**](https://github.com/eunomia-bpf/bpftime/pull/446)
+- [**[WIP] Fix new maps example test in new bpftool & libbpf version**](https://github.com/eunomia-bpf/bpftime/pull/445)
+- Add SPIRV support in llvmbpf: <https://github.com/eunomia-bpf/llvmbpf/>
+- Update docs page: <https://eunomia.dev/GPTtrace/>
+- Update main page: <https://eunomia.dev/>
+- Add tutorial and fix bugs in tutorial
   
 ## u-boot
 
