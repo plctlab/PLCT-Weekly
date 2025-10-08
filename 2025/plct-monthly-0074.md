@@ -1110,6 +1110,23 @@ Rephrase
 
 全实习生小队，独立宣传渠道。
 
+## Songsong Zhang
+
+- [博客双周报合并为新闻](https://github.com/ruyisdk/ruyisdk-website/issues/145)
+  - https://github.com/ruyisdk/ruyisdk-website/pull/230
+  - https://github.com/ruyisdk/ruyisdk-website/pull/231
+  - https://github.com/ruyisdk/ruyisdk-website/pull/240
+  - https://github.com/ruyisdk/ruyisdk-website/pull/241
+  - https://github.com/ruyisdk/ruyisdk-website/pull/249
+  - https://github.com/ruyisdk/ruyisdk-website/pull/250
+
+- [Ruyi包管理器已经进入Fedora主线仓库](https://bugzilla.redhat.com/show_bug.cgi?id=2399640)
+  - https://koji.fedoraproject.org/koji/buildinfo?buildID=2836524
+  - https://koji.fedoraproject.org/koji/buildinfo?buildID=2836525
+
+- Fedora
+  - [libepoxy - Add riscv64 support](https://src.fedoraproject.org/rpms/libepoxy/pull-request/2)
+
 ## 参考链接
 
 - [PLCT 实验室的开放职位（实习生）](https://github.com/plctlab/weloveinterns/blob/master/open-internships.md)
