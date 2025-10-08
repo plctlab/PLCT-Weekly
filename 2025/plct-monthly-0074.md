@@ -80,9 +80,21 @@ PLCT实验室的亮点产出通过「RuyiSDK」微信公众号（ID：RuyiSDK）
 
 ### Buddy Compiler
 
+- Buddy Compiler 主页地址 - https://buddy-compiler.github.io/
+- Buddy Compiler As A Service (Buddy CAAS) - https://buddy.isrc.ac.cn/
+- Buddy Compiler 开源之夏 2025 - https://summer-ospp.ac.cn/org/orgdetail/8d995d4c-b188-4690-9a53-c022dc7c19e3?lang=zh
+
 **buddy-mlir**
 
-**buddy-benchmark**
+- [tests] Adding LeNet model tests to the test module.
+- [examples] Reorder MLIR pass pipeline and remove redundant conversions.
+- [examples] Update evaluations for DeepSeek R1.
+- [examples] Fix GPU all-reduce-and target.
+- [examples] Add support for RISC-V.
+- [examples] Add matmul case for gpu-vector and tensor core.
+- [examples] Modify context size of DeepSeekR1 from 40 to 1024.
+- [midend] Add unrolling strategy to matmul vectorization.
+- [examples] Add no-reshape and no-transpose target.
 
 ## Box64
 
