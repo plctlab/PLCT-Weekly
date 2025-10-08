@@ -159,6 +159,29 @@ PLCT实验室的亮点产出通过「RuyiSDK」微信公众号（ID：RuyiSDK）
 ## RevyOS (Debian for Xuantie)
 
 ### Debian
+#### yubo(vimer)
+本月继续协助维护 Debian riscv64 的一些基础设施，同时修复一些构建问题.
+
+* https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=1113855#10 [review justbuild upload]
+* http://vimer.7766.org:63015/chromium/140/ [chromium 140]
+* https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=1106256#31  [upload package]
+* https://chromium-review.googlesource.com/c/chromium/third_party/ffmpeg/+/5054185/comments/72ecb31a_56bf277d [confirm patch]
+* https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=1115251 [cuneiform fix riscv64 ftbfs]
+* https://salsa.debian.org/pkg-llvm-team/llvm-toolchain/-/merge_requests/183 [llvm multi-path]
+* https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=1113855#24 [close the bug]
+* https://fast-mirror.isrc.ac.cn/redleafos/dev/redleafos-addons/pool/main/c/chromium/ [chromium 129 for redleados]
+* https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=1117144 [python-tornado upload]
+
+#### zerokaze
+* https://github.com/zerokaze420/build_image_script [OrangePi RV2 Debian image]
+
+### Redleafos
+V2: 新出 2 版镜像， 主要更新如下:
+
+* https://fast-mirror.isrc.ac.cn/redleafos/extra/images/20250922/ [基于 Debian Trixie 基准仓库构建]
+* https://fast-mirror.isrc.ac.cn/redleafos/extra/images/20250927/ [集成 ruyi 包管理器 0.39 版本]
+
+V3: 在多核的基础上， boot on nvme 依旧 WIP, boot on usb 可以工作.
 
 ## RT-Thread
 
