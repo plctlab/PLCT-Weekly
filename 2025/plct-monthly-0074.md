@@ -98,6 +98,39 @@ PLCT实验室的亮点产出通过「RuyiSDK」微信公众号（ID：RuyiSDK）
 
 ## Box64
 
+Highlights:
+
+更多标量实现 AVX 指令；稳定性提升。
+
+Merged PRs:
+
+1. [\[RV64_DYNAREC\] Added more scalar avx opcodes](https://github.com/ptitSeb/box64/pull/3037) 
+1. [\[WRAPPER\] Wrapped a few more crypto3 symbols](https://github.com/ptitSeb/box64/pull/3034) 
+1. [\[RV64_DYNAREC\] Fixed a scratch register confliction](https://github.com/ptitSeb/box64/pull/3033) 
+1. [\[RV64_DYNAREC\] Added more avx scalar opcodes](https://github.com/ptitSeb/box64/pull/3029) 
+1. [\[RV64_DYNAREC\] Added more avx scalar opcodes](https://github.com/ptitSeb/box64/pull/3028) 
+1. [\[LA64_DYNAREC\] Fixed AVX 0F 17 VMOVHPS opcode](https://github.com/ptitSeb/box64/pull/3025) 
+1. [\[LA64_DYNAREC\] Fixed AVX 66 0F 67 PACKUSWB opcode](https://github.com/ptitSeb/box64/pull/3024) 
+1. [\[LA64_DYNAREC\] Fixed avx infra](https://github.com/ptitSeb/box64/pull/3023) 
+1. [\[BOX32\]\[TRACE\] Fixed chdir tracing](https://github.com/ptitSeb/box64/pull/3021) 
+1. [\[RV64_DYNAREC\] Added more scalar avx cmp opcodes](https://github.com/ptitSeb/box64/pull/3016) 
+1. [\[RV64_DYNAREC\] Added more scalar avx opcodes](https://github.com/ptitSeb/box64/pull/3010) 
+1. [\[RV64_DYNAREC\] Added more scalar avx opcodes and fixed a typo](https://github.com/ptitSeb/box64/pull/3009) 
+1. [\[BOX32\] Fixed dirname](https://github.com/ptitSeb/box64/pull/3007) 
+1. [\[BOX32\] Fixed some strange XErrorEvent case](https://github.com/ptitSeb/box64/pull/3006) 
+1. [\[RV64_DYNAREC\] Added more scalar avx opcodes](https://github.com/ptitSeb/box64/pull/3005) 
+1. [Removed a useless file](https://github.com/ptitSeb/box64/pull/3001) 
+1. [Minor updates to README.md](https://github.com/ptitSeb/box64/pull/3000)
+1. [\[BASH\] Use custom PS1 prefix to make box64-bash more distinguishable](https://github.com/ptitSeb/box64/pull/2998) 
+1. [\[WRAPPER\] Wrapped a bunch of symbols](https://github.com/ptitSeb/box64/pull/2997) 
+1. [\[WRAPPERHELPER\] Added legacy __attribute support](https://github.com/ptitSeb/box64/pull/2996) 
+1. [\[RV64_DYNAREC\] Added 1 more scalar avx 0F opcode](https://github.com/ptitSeb/box64/pull/2994) 
+1. [\[CI\] Speedup CI by skipping uncessary jobs when possible](https://github.com/ptitSeb/box64/pull/2993) 
+1. [\[RV64_DYNAREC\] Added more scalar avx 0F opcodes](https://github.com/ptitSeb/box64/pull/2992) 
+1. [\[LA64_DYNAREC\] Fixed a typo in 0F 53 RCPPS opcode](https://github.com/ptitSeb/box64/pull/2991) 
+1. [\[RV64_DYNAREC\] Fixed/refined !fastnan handling of some 0F opcodes](https://github.com/ptitSeb/box64/pull/2990) 
+1. [\[INTERP\]\[DYNAREC\] Aligned !fastnan handling of 0F 51/52 opcodes](https://github.com/ptitSeb/box64/pull/2989) 
+
 ## DynamoRIO
 
 ## llama.cpp
