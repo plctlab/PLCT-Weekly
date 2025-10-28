@@ -45,6 +45,37 @@ PLCT实验室的亮点产出通过「RuyiSDK」微信公众号（ID：RuyiSDK）
 
 ## Go
 
+1. Authored/Co-authored Go-mainline CLs:
+
+- runtime: unify C -> Go ABI transitions on riscv64 | https://go-review.googlesource.com/c/go/+/647596
+- cmd/link: generate proper attributes for riscv profile | https://go-review.googlesource.com/c/go/+/659175
+- internal/bytealg: vector implementation of count 1 byte for riscv64 | https://go-review.googlesource.com/c/go/+/657036 
+- cmd/asm, cmd/internal/obj: add zvbb/zvbc/zvkb for riscv64 | https://go-review.googlesource.com/c/go/+/663778
+- cmd/asm, cmd/internal/obj: add crypto algorithm suites for riscv64 | https://go-review.googlesource.com/c/go/+/664155
+- cpu: add crypto extensions detection for riscv64 | https://go-review.googlesource.com/c/sys/+/664375
+- cmd/internal/obj: add crypto extension for riscv64 | https://go-review.googlesource.com/c/go/+/663675
+- cmd/compile: Const64F by MOVD with const on riscv64 | https://go-review.googlesource.com/c/go/+/703215
+- cmd/asm: add double precision comparision testcases for riscv64 | https://go-review.googlesource.com/c/go/+/702136 【merged】
+- cmd/compile: combine doubling with shift on riscv64 | https://go-review.googlesource.com/c/go/+/702697 【merged】
+- test/codegen: check zerobase for newobject on 0-sized types | https://go-review.googlesource.com/c/go/+/703716 【merged】
+- cmd/internal/obj: add zfh extensions for riscv64 | https://go-review.googlesource.com/c/go/+/702695
+- internal/chacha8rand: improve block by vector for riscv64 | https://go-review.googlesource.com/c/go/+/710035
+- chacha20: improve performance for riscv64 | https://go-review.googlesource.com/c/crypto/+/711075 
+
+3. Reviewed Go-mainline CLs:
+- doc, cmd/internal/obj/riscv: document the riscv64 assembler | https://go-review.googlesource.com/c/go/+/652717 
+- internal/bytealg: vector implementation of equal for riscv64 | https://go-review.googlesource.com/c/go/+/646736
+- internal/bytealg: vector implementation of compare for riscv64 | https://go-review.googlesource.com/c/go/+/646737
+- riscv64: add support for RVV 1.0 instructions | https://go-review.googlesource.com/c/arch/+/670876 [merged]
+- riscv64: fix the path to the RISC-V extensions in spec.go | https://go-review.googlesource.com/c/arch/+/670875
+- cmd/compile: line number debug info regression in go1.25 around literal rewriting | https://github.com/golang/go/issues/74576
+- cmd/compile: emit classify instructions for infinity tests on riscv64 | https://go-review.googlesource.com/c/go/+/348389
+- riscv64: fix the path to the RISC-V extensions in spec.go | https://go-review.googlesource.com/c/arch/+/670875
+- runtime: identify virtual memory layout for riscv64 | https://go-review.googlesource.com/c/go/+/690495
+- cmd/internal/obj/riscv: add support for Zicond instructions | https://go-review.googlesource.com/c/go/+/702677 【merged】
+- cmd/compile/internal/ssa: add codegen for Zicond extension on riscv64 | https://go-review.googlesource.com/c/go/+/703715 
+- riscv64: add support for Zicond  instructions | https://go-review.googlesource.com/c/arch/+/707015 [merged]
+
 ## OpenCV
 
 ## GNU Toolchain
