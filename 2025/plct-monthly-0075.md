@@ -21,6 +21,28 @@ PLCT实验室的亮点产出通过「RuyiSDK」微信公众号（ID：RuyiSDK）
 一般都是风平浪静。欢迎对 Firefox 开发感兴趣的同学来实习。
 
 ## OpenJDK
+1. Authored/Co-authored JDK-mainline PRs:
+- https://github.com/openjdk/jdk/pull/26139 (8358696: Assert with extreme values for -XX:BciProfileWidth)
+- https://github.com/openjdk/jdk/pull/27512 (8368732: RISC-V: Detect support for misaligned vector access via hwprobe)
+
+2. Reviewed JDK-mainline PRs:
+- https://github.com/openjdk/jdk/pull/26658 (8364570: Remove LockingMode related code from riscv64)
+- https://github.com/openjdk/jdk/pull/26678 (8365047: Remove exception handler stub code in C2)
+- https://github.com/openjdk/jdk/pull/26838 (8365206: RISC-V: compiler/c2/irTests/TestFloat16ScalarOperations.java is failing on riscv64)
+- https://github.com/openjdk/jdk/pull/26854 (8365841: RISC-V: Several IR verification tests fail after JDK-8350960 without Zvfh)
+- https://github.com/openjdk/jdk/pull/26855 (8365844: RISC-V: TestBadFormat.java fails when running without RVV)
+- https://github.com/openjdk/jdk/pull/26883 (8365772: RISC-V: correctly prereserve NaN payload when converting from float to float16 in vector way)
+- https://github.com/openjdk/jdk/pull/26935 (8366127: RISC-V: compiler/intrinsics/TestVerifyIntrinsicChecks.java fails when running without RVV)
+- https://github.com/openjdk/jdk/pull/26944 (8365926: RISC-V: Performance regression in renaissance (chi-square))
+- https://github.com/openjdk/jdk/pull/27047 (8363966: GHA: Switch cross-compiling sysroots to Debian trixie)
+- https://github.com/openjdk/jdk/pull/26999 (8364936: Shenandoah: Switch nmethod entry barriers to conc_instruction_and_data_patch)
+- https://github.com/openjdk/jdk/pull/26938 (8366747: RISC-V: Improve VerifyMethodHandles for method handle linkers)
+- https://github.com/openjdk/jdk/pull/27510 (8368724: RISC-V: Remove AvoidUnalignedAccesses Flag)
+- https://github.com/openjdk/jdk/pull/27506 (8368722: RISC-V: Several vector load/store tests fail without support for misaligned vector access)
+
+3. Reviewed JDK-21u/25u mainline PRs:
+- https://github.com/openjdk/jdk25u/pull/207 (8365926: RISC-V: Performance regression in renaissance (chi-square))
+- https://github.com/openjdk/jdk21u-dev/pull/2121 (8362838: RISC-V: Incorrect matching rule leading to improper oop instruction encoding)
 
 ## Go
 
