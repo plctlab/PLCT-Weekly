@@ -68,11 +68,24 @@ PLCT实验室的亮点产出通过「RuyiSDK」微信公众号（ID：RuyiSDK）
 
 ## coreboot for riscv
 
+本期没有新的进展。
+
 ## openocd
+
+本期没有新的进展。
 
 ## opensbi
 
+- 通过Zkr初始化stack guard。[1](https://lists.infradead.org/pipermail/opensbi/2025-October/008930.html)
+- 添加P8700 aclint支持。[1](https://lists.infradead.org/pipermail/opensbi/2025-October/009005.html)
+- RPMI添加电压、设备功率和性能服务。[1](https://lists.infradead.org/pipermail/opensbi/2025-October/008950.html)
+- 添加一个unknown nmi的sse event用于在内核发生消息触发panic。[1](https://lists.infradead.org/pipermail/opensbi/2025-October/008954.html)
+- 把ariane的代码移动到通用平台。[1](https://lists.infradead.org/pipermail/opensbi/2025-October/008982.html)
+- 添加指令模拟（Zba、 Zbb、 Zbc、 Zbs、 Zicbom、 Zicboz、 Zfhmin、 Zicond、 Zimop、 Zcmop、 Zcb、 Zfa、 Zawrs、 Zvbb、 Supm)。[1](https://lists.infradead.org/pipermail/opensbi/2025-October/008992.html)
+
 ## u-boot
+
+本期没有新的进展。
 
 ## RevyOS (Debian for Xuantie)
 
