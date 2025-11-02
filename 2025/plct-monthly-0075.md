@@ -51,6 +51,22 @@ PLCT实验室的亮点产出通过「RuyiSDK」微信公众号（ID：RuyiSDK）
 ## GNU Toolchain
 
 ## LLVM Team
+- 1. Upstream llvm-project 合并的patch:
+  - [DFAJumpThreading] Unfold select to the incoming block of phi user: https://github.com/llvm/llvm-project/pull/160987
+  - [SDAG] Constant fold frexp in signed way: https://github.com/llvm/llvm-project/pull/161015
+  - [ConstantFold] Fold inttoptr, ptrtoaddr to bitcast: https://github.com/llvm/llvm-project/pull/161087
+  - [VectorCombine] Preserve cast flags in foldBitOpOfCastConstant: https://github.com/llvm/llvm-project/pull/161237
+  - [GlobalOpt] Check if users are CallBase when changing CC:  https://github.com/llvm/llvm-project/pull/161399
+  - [DFAJumpThreading] Constraint the number of cloned instructions: https://github.com/llvm/llvm-project/pull/161632
+  - [DFAJumpThreading] Update domtree lazily: https://github.com/llvm/llvm-project/pull/162240
+  - [DFAJumpThreading] Set MadeChanges only if threading happened: https://github.com/llvm/llvm-project/pull/162241
+  - [DFAJumpThreading] Unify equivalent states: https://github.com/llvm/llvm-project/pull/162447
+  - [DFAJumpThreading] Pretty print anonymous blocks: https://github.com/llvm/llvm-project/pull/162607
+  - [RegisterCoalescer] Prune live range of early-clobber from live-in: https://github.com/llvm/llvm-project/pull/157628
+  - [DFAJumpThreading] Use a single lazy DTU: https://github.com/llvm/llvm-project/pull/162802
+  - [DFAJumpThreading] Precompute value => successor mapping: https://github.com/llvm/llvm-project/pull/162824
+  - [DFAJumpThreading] Verify dominator tree by option: https://github.com/llvm/llvm-project/pull/163334
+  - [DFAJumpThreading] Add MaxOuterUseBlocks threshold: https://github.com/llvm/llvm-project/pull/163428
 
 ## MLIR
 
