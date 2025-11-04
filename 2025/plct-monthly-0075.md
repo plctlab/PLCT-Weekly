@@ -770,6 +770,17 @@ RuyiSDK 工具链测试工作,产出验证后的20测试用例报告。
 
 ## Milk-V Duo Upstream
 
+## eunomia-bpf
+
+See the Monthly Org Report for detail links: <https://github.com/eunomia-bpf/eunomia.dev/issues/50>
+
+- Shipped major bpftime GPU work: independent PTX transform passes, direct-run GPU examples (gemm/vec_add), new GPU maps, microbench, and multi-PTX fatbin patching. Also exploring offload eBPF to RISC-V GPU options such as Vortex and Tenstorrent accelerators.
+- Agentsight matured: new PID tracker/filtering, timestamp normalization, better logging/CLI, Docker image, CI, and docs.
+- bpf-developer-tutorial expanded heavily (GPU/NPU driver tracing, wall-clock profiling, HID-BPF, BPF Arena, workqueues) and improved automation/publishing.
+- xpu-perf added CUPTI improvements, larger buffers, CUDA graph tracking, CPU/GPU trace merge tooling, and example workloads (incl. LLM inference).
+- schedcp advanced with benchmarks (vLLM/llama.cpp), profiling guides, token tracking, and README/tests cleanup.
+- Infra/ops got tighter: add org report workflows, error handling, publishing pipelines, and templates were refactored and stabilized.
+
 ## TPU-MLIR （甲辰计划 J123）
 
 默认无更新。本项目 RISC-V 支持由实习生提供。
