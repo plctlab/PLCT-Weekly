@@ -109,6 +109,11 @@ PLCT实验室的亮点产出通过「RuyiSDK」微信公众号（ID：RuyiSDK）
 
 ## RT-Thread
 
+* 整理V5.2.1版本到V5.2.2版本的日志。[https://github.com/RT-Thread/rt-thread/pull/10877](https://github.com/RT-Thread/rt-thread/pull/10877)
+* 推动clang-format-ignore机制。[https://github.com/RT-Thread/rt-thread/pull/10860](https://github.com/RT-Thread/rt-thread/pull/10860)
+* 为GD32F5实现非阻塞发送 [https://github.com/RT-Thread/rt-thread/pull/10796](https://github.com/RT-Thread/rt-thread/pull/10796)
+* 为GitHub Actions添加concurrency机制。[https://github.com/RT-Thread/rt-thread/pull/10761](https://github.com/RT-Thread/rt-thread/pull/10761)
+
 ## PLCT罗云翔测试团队
 
 （包含 SAIL 和 ACT 测试部分）
