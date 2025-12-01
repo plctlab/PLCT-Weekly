@@ -64,6 +64,21 @@ PLCT实验室的亮点产出通过「RuyiSDK」微信公众号（ID：RuyiSDK）
 
 ## Milk-V Duo Upstream
 
+## [BLDClock](https://github.com/BrokenClient/BLDClock.md) (甲辰计划 J156)
+
+### 完成内容
+
+- 移植 `RT-Thread`, `LVGL`, `SimpleFOC`
+- 完成表盘与编码器的协同
+- 完成编码器与USB设备的协同
+- 完成衍生作品 `LCD2004_Clock` 的电路和测试程序设计
+
+### 目前效果
+
+- 电机定力矩运动，角度闭环运动
+- 旋转电机，屏幕表盘计时点移动
+- 插入USB电脑时，转动电机，电脑屏幕丝滑滑动
+
 ## TPU-MLIR （甲辰计划 J123）
 
 默认无更新。本项目 RISC-V 支持由实习生提供。
