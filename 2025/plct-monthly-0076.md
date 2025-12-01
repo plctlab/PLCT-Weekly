@@ -22,6 +22,26 @@ PLCT实验室的亮点产出通过「RuyiSDK」微信公众号（ID：RuyiSDK）
 
 ## OpenJDK
 
+1. Authored/Co-authored JDK-mainline PRs:
+- https://github.com/openjdk/jdk/pull/27445 (8368366: RISC-V: AlignVector is mistakenly set to AvoidUnalignedAccesses)
+- https://github.com/openjdk/loom/pull/222 (RISC-V: Allow virtual thread preemption on some common class initialization paths)
+
+2. Reviewed JDK-mainline PRs:
+- https://github.com/openjdk/jdk/pull/27138 (8367066: RISC-V: refine register selection in MacroAssembler::decode_klass_not_null)
+- https://github.com/openjdk/jdk/pull/27134 (8367048: RISC-V: Correct pipeline descriptions of the architecture)
+- https://github.com/openjdk/jdk/pull/27142 (8367098: RISC-V: sync CPU features with related JVM flags for dependant ones)
+- https://github.com/openjdk/jdk/pull/27155 (8367137: RISC-V: Detect Zicboz block size via hwprobe)
+- https://github.com/openjdk/jdk/pull/27181 (8367293: RISC-V: enable vectorapi test for VectorMask.laneIsSet)
+- https://github.com/openjdk/jdk/pull/27152 (8367103: RISC-V: store cpu features in a bitmap)
+- https://github.com/openjdk/jdk/pull/27277 (8367616: RISC-V: Auto-enable Zicboz extension for debug builds)
+- https://github.com/openjdk/jdk/pull/27228 (8367532: Declare all stubgen stub entries including internal cross-stub entries)
+- https://github.com/openjdk/jdk/pull/27409 (8368180: RISC-V: Remove redundant ext_Zicboz.enable_feature())
+- https://github.com/openjdk/jdk/pull/27414 (8368206: RISC-V: compiler/vectorapi/VectorMaskCompareNotTest.java fails when running without RVV)
+- https://github.com/openjdk/jdk/pull/27420 (8368247: RISC-V: enable vectorapi test for expand operation)
+- https://github.com/openjdk/jdk/pull/27448 (8365191: Cleanup after removing LockingMode related code)
+- https://github.com/openjdk/jdk/pull/27467 (8367692: RISC-V: Align post call nop)
+- https://github.com/openjdk/jdk/pull/27171 (8367253: RISC-V: refactor dependent cpu extensions)
+
 ## Go
 
 ## OpenCV
