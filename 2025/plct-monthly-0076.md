@@ -29,6 +29,18 @@ PLCT实验室的亮点产出通过「RuyiSDK」微信公众号（ID：RuyiSDK）
 ## GNU Toolchain
 
 ## LLVM Team
+- Upstream llvm-project 合并的patch:
+  - [[DAG] Update canCreateUndefOrPoison to handle ISD::VECTOR_COMPRESS](https://github.com/llvm/llvm-project/pull/168010)
+  - [[DAG] Add generic m_TernaryOp() / m_c_TernaryOp() matchers](https://github.com/llvm/llvm-project/pull/165520)
+  - [[LLDB][DWARF] Use the same qualified name computation for Rust](https://github.com/llvm/llvm-project/pull/165840)
+  - [[LLDB][Editline] empty current line before el_wgets](https://github.com/llvm/llvm-project/pull/165830)
+  - [RISCV] Intrinsic Support for XCVelw: https://github.com/llvm/llvm-project/pull/129168
+  - [DAGCombiner] Bail out if BitWidthDiff > BitWidth when folding cltz(and) - BitWidthDiff: https://github.com/llvm/llvm-project/pull/166607
+  - [WebAssembly][FastISel] Bail out on meeting non-integer type in selectTrunc: https://github.com/llvm/llvm-project/pull/167165
+  - [WebAssembly] Truncate extra bits of large elements in BUILD_VECTOR: https://github.com/llvm/llvm-project/pull/167223
+  - [GISel][RISCV] Compute CTPOP of small odd-sized integer correctly: https://github.com/llvm/llvm-project/pull/168559
+  - [DAGCombiner] Don't optimize insert_vector_elt into shuffle if implicit truncation exists: https://github.com/llvm/llvm-project/pull/169022
+  - [Clang] Generalize interp__builtin_ia32_shuffle_generic to handle single op permute shuffles. https://github.com/llvm/llvm-project/pull/167236
 
 ## MLIR
 
