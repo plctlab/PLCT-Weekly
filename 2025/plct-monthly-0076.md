@@ -78,11 +78,37 @@ PLCT实验室的亮点产出通过「RuyiSDK」微信公众号（ID：RuyiSDK）
 
 ## coreboot for riscv
 
+本期没有新的进展。
+
 ## openocd
+
+本期没有新的进展。
 
 ## opensbi
 
+- 修正拼写错误。[1](https://lists.infradead.org/pipermail/opensbi/2025-November/009041.html)
+- 修正lib/utils/irqchip/plic.c中从plic\_data结构体中获取context\_id的类型问题。[1](https://lists.infradead.org/pipermail/opensbi/2025-November/009042.html)
+- fdt预留空间，防止u-boot崩溃。[1](https://lists.infradead.org/pipermail/opensbi/2025-November/009043.html)
+- ariane/openpiton修改硬编码的代码改为从dt获取初始化信息。[1](https://lists.infradead.org/pipermail/opensbi/2025-November/009053.html)[2](https://lists.infradead.org/pipermail/opensbi/2025-November/009054.html)
+- 修正sbi_pmu抑制标志的配置。[1](https://lists.infradead.org/pipermail/opensbi/2025-November/009068.html)
+- 修正Makefile只在V=1时打印移除section信息。[1](https://lists.infradead.org/pipermail/opensbi/2025-November/009071.html)
+- 添加EIC7700支持。[1](https://lists.infradead.org/pipermail/opensbi/2025-November/009074.html)
+- 添加SiFive的cache驱动。[1](https://lists.infradead.org/pipermail/opensbi/2025-November/009091.html)
+- 添加运行时栈overrun检测。[1](https://lists.infradead.org/pipermail/opensbi/2025-November/009130.html)
+- 修正S模式MMIO的权限检测。[1](https://lists.infradead.org/pipermail/opensbi/2025-November/009137.html)
+- 修正K1的Makefile修正丢失的目标文件。[1](https://lists.infradead.org/pipermail/opensbi/2025-November/009144.html)
+- 在异常处理访问低特权等级内存时有一个异常处理程序记录异常信息，添加代码清除MPRV。[1](https://lists.infradead.org/pipermail/opensbi/2025-November/009146.html)
+- HART保护抽象，为将来添加更多保护机制做准备。[1](https://lists.infradead.org/pipermail/opensbi/2025-November/009154.html)
+
+# edk2
+
+- 修正RISC-V PlatformSecLib缺少库。[1](https://github.com/tianocore/edk2-platforms/pull/909)
+- 修正RISC-V下一些平台的代码，适配库的变化。[1](https://github.com/tianocore/edk2-platforms/pull/910)
+- RISC-V下非对齐内存访问支持。[1](https://github.com/tianocore/edk2/pull/11809)
+
 ## u-boot
+
+本期没有新的进展。
 
 ## RevyOS (Debian for Xuantie)
 
