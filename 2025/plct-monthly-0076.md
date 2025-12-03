@@ -597,6 +597,16 @@ PLCT实验室的亮点产出通过「RuyiSDK」微信公众号（ID：RuyiSDK）
 
 全实习生小队，独立宣传渠道。
 
+## Jeandle
+
+### 实习生
+
+#### 邓冲之
+
+- \[PR\] <https://github.com/jeandle/jeandle-jdk/pull/216> enhance: Support stack overflow check for jeandle-compiled functions
+- \[PR\] <https://github.com/jeandle/jeandle-jdk/pull/218> enhance: Add Dockerfile build instructions to getting started guide
+- \[PR\] <https://github.com/jeandle/jeandle-jdk/pull/219> fix: Correct typos and improve comments
+
 ## 参考链接
 
 - [PLCT 实验室的开放职位（实习生）](https://github.com/plctlab/weloveinterns/blob/master/open-internships.md)
