@@ -571,10 +571,14 @@ PLCT实验室的亮点产出通过「RuyiSDK」微信公众号（ID：RuyiSDK）
 
 全实习生小队，独立宣传渠道。
 
-## Jeandle 小队
+## Jeandle 
 
-- [feat: add iabs/labs intrinsics](https://github.com/jeandle/jeandle-jdk/pull/159)
-- [feat: support dispatch by exception class type](https://github.com/jeandle/jeandle-jdk/pull/184)
+### 实习生
+
+#### 王鸿宇
+
+- \[PR\]<https://github.com/jeandle/jeandle-jdk/pull/159> feat: add iabs/labs intrinsics
+- \[PR\]<https://github.com/jeandle/jeandle-jdk/pull/184> feat: support dispatch by exception class type
 
 ## 参考链接
 
