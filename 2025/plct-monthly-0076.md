@@ -608,9 +608,15 @@ Report: <https://github.com/eunomia-bpf/eunomia.dev/issues/57>
 * Stars growth: 286 new GitHub stars across the org in November. Major gainers include `bpf-developer-tutorial` (+91), `bpftime` (+59), `schedcp` (+22), `agentsight` (+17), `eunomia.dev` (+16), plus steady growth for `eGPU`, `xpu-perf`, `GPUtrace`, `UVM_benchmark`, etc.
 * New repositories created in November: `bam`, `opentelemetry-ebpf-profiler`, `UVM_benchmark`, `xsched`, `faiss` (fork/customization), `llama.cpp` (fork/customization), `gpu_ext_policy`, and `vllm`. These clearly align with GPU observability, UVM benchmarking, schedulers, and LLM infra.
 * PR activity: a large batch of PRs opened and many merged, mostly around strengthening bpftime’s GPU tracing/runtime, better CI and build tooling, and polishing schedcp and docs sites (eunomia.dev, MCPtrace, tutorials).
+
 ## Jeandle
 
 ### 实习生
+
+#### 王鸿宇
+
+- \[PR\]<https://github.com/jeandle/jeandle-jdk/pull/159> feat: add iabs/labs intrinsics
+- \[PR\]<https://github.com/jeandle/jeandle-jdk/pull/184> feat: support dispatch by exception class type
 
 #### 邓冲之
 
