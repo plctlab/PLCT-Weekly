@@ -116,6 +116,17 @@ PLCT实验室的亮点产出通过「RuyiSDK」微信公众号（ID：RuyiSDK）
 
 ## RT-Thread
 
+### 实习生
+
+#### 吴艺彬
+
+* \[PR\][RT-Thread/rt-thread/#10902](https://github.com/RT-Thread/rt-thread/pull/10902):修复serialv2开启dfs posix支持后串口乱码
+* \[PR\][RT-Thread/rt-thread/#10909](https://github.com/RT-Thread/rt-thread/pull/10909):fix:stm32 can build error 
+* \[PR\][#10920](https://github.com/RT-Thread/rt-thread/pull/10920)[#10931](https://github.com/RT-Thread/rt-thread/pull/10931)[#10932](https://github.com/RT-Thread/rt-thread/pull/10932)[#10933](https://github.com/RT-Thread/rt-thread/pull/10933):为serial_v2、slab_tc、object_tc、mem_tc、memheap_tc utest添加测试用例功能性注释
+* \[PR\][RT-Thread/rt-thread/#10952](https://github.com/RT-Thread/rt-thread/pull/10952):改进 copilot 审核指南
+* \[PR\][RT-Thread/rt-thread/#10982](https://github.com/RT-Thread/rt-thread/pull/10982):修复HPM 工程打包编译失败
+* \[review\]：[RT-Thread/rt-thread/#10977](https://github.com/RT-Thread/rt-thread/pull/10977)、[RT-Thread/rt-thread/#10896](https://github.com/RT-Thread/rt-thread/pull/10896)
+
 ## PLCT罗云翔测试团队
 
 （包含 SAIL 和 ACT 测试部分）
