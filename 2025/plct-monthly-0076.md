@@ -78,11 +78,37 @@ PLCT实验室的亮点产出通过「RuyiSDK」微信公众号（ID：RuyiSDK）
 
 ## coreboot for riscv
 
+本期没有新的进展。
+
 ## openocd
+
+本期没有新的进展。
 
 ## opensbi
 
+- 修正拼写错误。[1](https://lists.infradead.org/pipermail/opensbi/2025-November/009041.html)
+- 修正lib/utils/irqchip/plic.c中从plic\_data结构体中获取context\_id的类型问题。[1](https://lists.infradead.org/pipermail/opensbi/2025-November/009042.html)
+- fdt预留空间，防止u-boot崩溃。[1](https://lists.infradead.org/pipermail/opensbi/2025-November/009043.html)
+- ariane/openpiton修改硬编码的代码改为从dt获取初始化信息。[1](https://lists.infradead.org/pipermail/opensbi/2025-November/009053.html)[2](https://lists.infradead.org/pipermail/opensbi/2025-November/009054.html)
+- 修正sbi_pmu抑制标志的配置。[1](https://lists.infradead.org/pipermail/opensbi/2025-November/009068.html)
+- 修正Makefile只在V=1时打印移除section信息。[1](https://lists.infradead.org/pipermail/opensbi/2025-November/009071.html)
+- 添加EIC7700支持。[1](https://lists.infradead.org/pipermail/opensbi/2025-November/009074.html)
+- 添加SiFive的cache驱动。[1](https://lists.infradead.org/pipermail/opensbi/2025-November/009091.html)
+- 添加运行时栈overrun检测。[1](https://lists.infradead.org/pipermail/opensbi/2025-November/009130.html)
+- 修正S模式MMIO的权限检测。[1](https://lists.infradead.org/pipermail/opensbi/2025-November/009137.html)
+- 修正K1的Makefile修正丢失的目标文件。[1](https://lists.infradead.org/pipermail/opensbi/2025-November/009144.html)
+- 在异常处理访问低特权等级内存时有一个异常处理程序记录异常信息，添加代码清除MPRV。[1](https://lists.infradead.org/pipermail/opensbi/2025-November/009146.html)
+- HART保护抽象，为将来添加更多保护机制做准备。[1](https://lists.infradead.org/pipermail/opensbi/2025-November/009154.html)
+
+# edk2
+
+- 修正RISC-V PlatformSecLib缺少库。[1](https://github.com/tianocore/edk2-platforms/pull/909)
+- 修正RISC-V下一些平台的代码，适配库的变化。[1](https://github.com/tianocore/edk2-platforms/pull/910)
+- RISC-V下非对齐内存访问支持。[1](https://github.com/tianocore/edk2/pull/11809)
+
 ## u-boot
+
+本期没有新的进展。
 
 ## RevyOS (Debian for Xuantie)
 
@@ -575,7 +601,6 @@ PLCT实验室的亮点产出通过「RuyiSDK」微信公众号（ID：RuyiSDK）
 
 Report: <https://github.com/eunomia-bpf/eunomia.dev/issues/57>
 
-
 * Key technical work (issues/PRs):
   * Multiple new GPU features and fixes in `bpftime` (e.g., automatic `BPFTIME_SM_ARCH` detection, high-performance maps via gdrcopy, GPU HashMap support, multi-device support, improving `cudaHostRegister` overhead, CUDA kernel tracing kprobes, faiss example, cutlass support, fixes for PTX regex and GPU–CPU map consistency, CUDA IPC mapping, etc.).
   * Agentsight improvements and bug fixes (Docker deployment not picking up logs, SSL probe verifier issue, MCP/local capture, Windows/macOS support, better gzip handling).
@@ -583,6 +608,15 @@ Report: <https://github.com/eunomia-bpf/eunomia.dev/issues/57>
 * Stars growth: 286 new GitHub stars across the org in November. Major gainers include `bpf-developer-tutorial` (+91), `bpftime` (+59), `schedcp` (+22), `agentsight` (+17), `eunomia.dev` (+16), plus steady growth for `eGPU`, `xpu-perf`, `GPUtrace`, `UVM_benchmark`, etc.
 * New repositories created in November: `bam`, `opentelemetry-ebpf-profiler`, `UVM_benchmark`, `xsched`, `faiss` (fork/customization), `llama.cpp` (fork/customization), `gpu_ext_policy`, and `vllm`. These clearly align with GPU observability, UVM benchmarking, schedulers, and LLM infra.
 * PR activity: a large batch of PRs opened and many merged, mostly around strengthening bpftime’s GPU tracing/runtime, better CI and build tooling, and polishing schedcp and docs sites (eunomia.dev, MCPtrace, tutorials).
+## Jeandle
+
+### 实习生
+
+#### 邓冲之
+
+- \[PR\] <https://github.com/jeandle/jeandle-jdk/pull/216> enhance: Support stack overflow check for jeandle-compiled functions
+- \[PR\] <https://github.com/jeandle/jeandle-jdk/pull/218> enhance: Add Dockerfile build instructions to getting started guide
+- \[PR\] <https://github.com/jeandle/jeandle-jdk/pull/219> fix: Correct typos and improve comments
 
 ## 参考链接
 
