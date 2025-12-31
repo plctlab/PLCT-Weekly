@@ -46,6 +46,36 @@ PLCT实验室的亮点产出通过「RuyiSDK」微信公众号（ID：RuyiSDK）
 
 ## Go
 
+1. Authored/Co-authored Go-mainline CLs:
+- 647596: runtime: unify C -> Go ABI transitions on riscv64 | https://go-review.googlesource.com/c/go/+/647596
+- 659175: cmd/link: generate proper attributes for riscv profile | https://go-review.googlesource.com/c/go/+/659175
+- 657036: internal/bytealg: vector implementation of count 1 byte for riscv64 | https://go-review.googlesource.com/c/go/+/657036 
+- 663778: cmd/asm, cmd/internal/obj: add zvbb/zvbc/zvkb for riscv64 | https://go-review.googlesource.com/c/go/+/663778
+- 664155: cmd/asm, cmd/internal/obj: add crypto algorithm suites for riscv64 | https://go-review.googlesource.com/c/go/+/664155
+- 664375: cpu: add crypto extensions detection for riscv64 | https://go-review.googlesource.com/c/sys/+/664375
+- 663675: cmd/internal/obj: add crypto extension for riscv64 | https://go-review.googlesource.com/c/go/+/663675
+- 703215: cmd/compile: Const64F by MOVD with const on riscv64 | https://go-review.googlesource.com/c/go/+/703215 [merged]
+- 702695: cmd/internal/obj: add zfh extensions for riscv64 | https://go-review.googlesource.com/c/go/+/702695
+- 710035: internal/chacha8rand: improve block by vector for riscv64 | https://go-review.googlesource.com/c/go/+/710035 [merged]
+- 711075: chacha20: improve performance for riscv64 | https://go-review.googlesource.com/c/crypto/+/711075 
+- 715960: cmd/compile: add ConstantTimeSelect intrinsics for riscv64 | https://go-review.googlesource.com/c/go/+/715960
+
+2. Reviewed Go-mainline CLs:
+- 652717: doc, cmd/internal/obj/riscv: document the riscv64 assembler | https://go-review.googlesource.com/c/go/+/652717 
+- 646736: internal/bytealg: vector implementation of equal for riscv64 | https://go-review.googlesource.com/c/go/+/646736
+- 646737: internal/bytealg: vector implementation of compare for riscv64 | https://go-review.googlesource.com/c/go/+/646737
+- 670876: riscv64: add support for RVV 1.0 instructions | https://go-review.googlesource.com/c/arch/+/670876 [merged]
+- 670875: riscv64: fix the path to the RISC-V extensions in spec.go | https://go-review.googlesource.com/c/arch/+/670875
+- 348389: cmd/compile: emit classify instructions for infinity tests on riscv64 | https://go-review.googlesource.com/c/go/+/348389
+- 670875: riscv64: fix the path to the RISC-V extensions in spec.go | https://go-review.googlesource.com/c/arch/+/670875
+- 690495: runtime: identify virtual memory layout for riscv64 | https://go-review.googlesource.com/c/go/+/690495
+- 702677: cmd/internal/obj/riscv: add support for Zicond instructions | https://go-review.googlesource.com/c/go/+/702677 [merged]
+- 703715: cmd/compile/internal/ssa: add codegen for Zicond extension on riscv64 | https://go-review.googlesource.com/c/go/+/703715 
+- 707015: riscv64: add support for Zicond  instructions | https://go-review.googlesource.com/c/arch/+/707015 [merged]
+- 713560: internal/releasetargets: update list for Go 1.26 | https://go-review.googlesource.com/c/build/+/713560
+- 670595: main.star: annotate missing riscv64 builders with tracking issues | https://go-review.googlesource.com/c/build/+/670595
+- 715180: runtime: avoid bound check in freebsd binuptime | https://go-review.googlesource.com/c/go/+/715180 [merged]
+
 ## OpenCV
 
 ## GNU Toolchain
