@@ -34,4 +34,13 @@
 
 ## LuaJIT
 
+## Jeandle
+
+### 实习生
+
+#### 邓冲之
+
+- \[PR\] <https://github.com/jeandle/jeandle-jdk/pull/265> enhancement: Add LLVM fatal error handler
+- \[PR\] <https://github.com/jeandle/jeandle-jdk/pull/268> Fix compiler debugging assertion macro spelling case error and correct some typos
+
 ## 参考链接
