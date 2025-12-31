@@ -15,6 +15,24 @@ PLCT实验室的亮点产出通过「RuyiSDK」微信公众号（ID：RuyiSDK）
 ## RuyiSDK 包管理器
 
 ## V8 / Chromium
+- 7155968: [maglev][riscv] Replace the DataViewElementOperand with StoreDataViewElement/LoadDataViewElement | https://chromium-review.googlesource.com/c/v8/v8/+/7155968
+- 7165988: [riscv] Encode AccessMode with kMemoryAccessProtectedNullDereference in visitAtomicLoad | https://chromium-review.googlesource.com/c/v8/v8/+/7165988
+优化指令选择, 对add+slli的指令对,优先考虑使用shXadd指令替代
+- 7155850: [riscv] Optimize Word64Add with shxadd instruction on RISC-V | https://chromium-review.googlesource.com/c/v8/v8/+/7155850
+- 7155768: [riscv] Make the index as a immediate whenever possible | https://chromium-review.googlesource.com/c/v8/v8/+/7155768
+修复maglev编译器判断smi overflow不正确的问题
+- 7202584: [riscv][maglev] Fix  an issue where SMI values do not overflow correctly | https://chromium-review.googlesource.com/c/v8/v8/+/7202584
+- 7202304: [riscv][wasmfx] Implement tag parameters and returns | https://chromium-review.googlesource.com/c/v8/v8/+/7202304
+- 7123119: [riscv][wasm][liftoff][growable-stacks] Do not change cache state in branch | https://chromium-review.googlesource.com/c/v8/v8/+/7123119
+- 7123484: [riscv][cctest] Make max_heap_size larger in cctest/SetStackLimitInThreadAndStackOverflow | https://chromium-review.googlesource.com/c/v8/v8/+/7123484
+Optimize mutex usage in simulator:
+- 7116238: [riscv][simulator] Only use read/write mutexes if we're multithreaded | https://chromium-review.googlesource.com/c/v8/v8/+/7116238
+- 7129740: [riscv][maglev] Cache the DataView's byteLength for the bounds check | https://chromium-review.googlesource.com/c/v8/v8/+/7129740
+- 7130358: [riscv] Use normal fp semantics in JSEntry | https://chromium-review.googlesource.com/c/v8/v8/+/7130358
+- 7138845: [riscv] Use amo* instr in codegen | https://chromium-review.googlesource.com/c/v8/v8/+/7138845
+- 7090433: [riscv] Fix native build failed | https://chromium-review.googlesource.com/c/v8/v8/+/7090433
+
+
 
 ## Spidermonkey / Firefox
 
