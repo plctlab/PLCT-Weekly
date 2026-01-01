@@ -45,6 +45,27 @@ Review:
 一般都是风平浪静。欢迎对 Firefox 开发感兴趣的同学来实习。
 
 ## OpenJDK
+1. Authored/Co-authored JDK-mainline PRs:
+- https://github.com/openjdk/jdk/pull/27676 (8369296: Add fast class init checks in interpreter for resolving ConstantPool entries for static field)
+- https://github.com/openjdk/jdk/pull/27728 (8369505: jhsdb jstack --mixed cannot handle continuation stub on Linux)
+- https://github.com/openjdk/jdk/pull/27885 (8370176: Mixed mode jhsdb jstack cannot unwind call stack with -Xcomp)
+- https://github.com/openjdk/jdk/pull/27802 (8369238: Allow virtual thread preemption on some common class initialization paths)
+
+2. Reviewed JDK-mainline PRs:
+- https://github.com/openjdk/jdk/pull/27557 (8368893: RISC-V: crash after JDK-8352673 on fastdebug version)
+- https://github.com/openjdk/jdk/pull/27562 (8368897: RISC-V: Cleanup RV_EXT_FEATURE_FLAGS & RV_NON_EXT_FEATURE_FLAGS)
+- https://github.com/openjdk/jdk/pull/27570 (8367601: Remove held_monitor_count)
+- https://github.com/openjdk/jdk/pull/27757 (8369616: JavaFrameAnchor on RISC-V has unnecessary barriers and wrong store order in MacroAssembler)
+- https://github.com/openjdk/jdk/pull/27572 (8368950: RISC-V: fail to catch out of order declarations among dependent cpu extensions/flags)
+- https://github.com/openjdk/jdk/pull/27771 (8369685: RISC-V: refactor code related to RVFeatureValue::enabled)
+- https://github.com/openjdk/jdk/pull/27850 (8369947: Bytecode rewriting causes Java heap corruption on RISC-V)
+- https://github.com/openjdk/jdk/pull/27894 (8370225: RISC-V: move verify_frame_setup into ASSERT)
+- https://github.com/openjdk/jdk/pull/27915 (8367982: Unify ObjectSynchronizer and LightweightSynchronizer)
+- https://github.com/openjdk/jdk/pull/28005 (8370708: RISC-V: Add VerifyStackAtCalls)
+
+3. Reviewed JDK-21u/25u mainline PRs:
+- https://github.com/openjdk/jdk25u/pull/252 (8368732: RISC-V: Detect support for misaligned vector access via hwprobe)
+- https://github.com/openjdk/jdk21u-dev/pull/2417 (8369947: Bytecode rewriting causes Java heap corruption on RISC-V)
 
 ## Go
 
