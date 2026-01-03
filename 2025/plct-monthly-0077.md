@@ -104,6 +104,29 @@ Fixing https://github.com/golang/go/issues/76816 for RVA22U64 builder
 
 ## MLIR / Buddy Compiler
 
+- Buddy Compiler 主页地址 - https://buddy-compiler.github.io/
+- Buddy Compiler As A Service (Buddy CAAS) - https://buddy.isrc.ac.cn/
+
+**buddy-mlir**
+
+- [examples] Add instructions to build DeepSeekR1 on RISC-V.
+- [Frontend] Eliminate weight transpose node.
+- [midend] Add assume tight memref layout pass.
+- [midend] Add matmul vectorization for decode phase.
+- [Midend] Optimize BatchMatMul TransposeB Vectorization.
+- [midend] Add batch matmul vectorization and simplification passes.
+- [Frontend] Fuse Transpose into Reshape to Remove Redundant Operations.
+- [Frontend] Add KV cache for DeepSeekR1 f16 model.
+- [examples] Add metrics and streaming CLI in DeepSeekR1 example.
+- [examples] Add shift context mechanism for handling token overflow.
+- [examples] Update README for DeepSeek on RVV.
+- [examples] Remove affine parallel pass for decode phase.
+- [Frontend] Apply FlashAttention for DeepSeekR1 Prefill Phase.
+- [LLVM] Integrate LLVM at llvmorg-22-init
+- [Frontend] Implement GQA–Attention Fusion and Integrate into DeepSeek Decode Phase
+- [examples] Add MLIR files to analyze performance.
+- [midend] Add pass to staticize memref layout.
+
 ## opensbi
 
 ## RT-Thread
