@@ -101,6 +101,18 @@ Fixing https://github.com/golang/go/issues/76816 for RVA22U64 builder
 ## GNU Toolchain
 
 ## LLVM Team
+- Upstream llvm-project 合并的patch:
+  - [MachineBasicBlock] Don't split loop header successor if the terminator is unanalyzable: https://github.com/llvm/llvm-project/pull/170146
+  - [OpenCL][NVPTX] Don't set calling convention for OpenCL kernel: https://github.com/llvm/llvm-project/pull/170170
+  - [DAGCombiner] Don't peek through bitcast when checking isMulAddWithConstProfitable: https://github.com/llvm/llvm-project/pull/171056
+  - [RISCV] Use legally typed splat during vmv_v_v splat(x) -> vmv_v_x: https://github.com/llvm/llvm-project/pull/173154
+  - [InstCombine] Bail out on type mismatch in foldICmpBinOpWithConstantViaTruthTable: https://github.com/llvm/llvm-project/pull/173179
+  - [LoopVectorize] Support vectorization of frexp intrinsic ： https://github.com/llvm/llvm-project/pull/172957
+  - [AArch64] Fix assertion failure during promotion of EXTEND_VECTOR_INREG ： https://github.com/llvm/llvm-project/pull/171619
+
+- RuyiSDK llvm-project 合并的patch:
+  - [LLVM][XTHeadVector] Implement th.vwcvt{u}.x.x.v ： https://github.com/ruyisdk/llvm-project/pull/165
+  - [LLVM][XTHeadVector] fix vadd, vsub, vrsub masked intrinsics ： https://github.com/ruyisdk/llvm-project/pull/166
 
 ## MLIR / Buddy Compiler
 
