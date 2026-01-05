@@ -143,6 +143,19 @@ Fixing https://github.com/golang/go/issues/76816 for RVA22U64 builder
 
 ## RT-Thread
 
+### 实习生
+
+#### 吴艺彬
+
+* \[PR\][RT-Thread/rt-thread/pull/11042](https://github.com/RT-Thread/rt-thread/pull/11042):增加内核对象名字严格检查
+* \[PR\][RT-Thread/rt-thread/pull/10999](https://github.com/RT-Thread/rt-thread/pull/10999):移除重复定义
+* \[PR\][RT-Thread/rt-thread/pull/11082](https://github.com/RT-Thread/rt-thread/pull/11082):添加mcxa346 can驱动
+* \[PR\][RT-Thread/rt-thread/pull/11113](https://github.com/RT-Thread/rt-thread/pull/11113):修复ci 编译报错
+* \[PR\][RT-Thread-Studio/sdk-index/pull/797](https://github.com/RT-Thread-Studio/sdk-index/pull/797)：增加RT-Studio 内核版本索引V5.2.0 5.2.1 5.2.2
+* \[PR\][RT-Thread-Studio/sdk-index/pull/798](https://github.com/RT-Thread-Studio/sdk-index/pull/798):增加stm32 sdk-csp-stm32** 索引
+* \[PR\][sdk-rt-thread-source-code/pull/22](https://github.com/RT-Thread-Studio/sdk-rt-thread-source-code/pull/22)[sdk-rt-thread-source-code/pull/21](https://github.com/RT-Thread-Studio/sdk-rt-thread-source-code/pull/21)[sdk-rt-thread-source-code/pull/17](https://github.com/RT-Thread-Studio/sdk-rt-thread-source-code/pull/17)：为RT-Thread Studio发布内核V5.2.2 V5.2.1 V5.2.0版本
+* \[review\]审核RT-Thread-Studio下sdk-csp-stm32**系列的代码，适配内核版本V5.2.x以上版本。
+
 ## [BLDClock](https://github.com/BrokenCLient/BLDClock) (甲辰计划 J156)
 
 ### 完成内容
@@ -395,11 +408,11 @@ Fixing https://github.com/golang/go/issues/76816 for RVA22U64 builder
 ### 2. RISC-V 工具链测试
 
 设计自动化测试方法，并测试开发板 20 个
-  
+
   - 测试脚本 https://gitee.com/yan-mingzhu/yanshou
   
   - 为 asciinema-automation 自动化工具支持了标记点 https://github.com/trdthg/asciinema_automation/commit/8d51d104b54795ffa400fbba9d9b4de2395625cc
-  
+
 ### 3. SAIL和ACT
 
 #### 3.1 SAIL和ACT开发
@@ -542,7 +555,7 @@ Fixing https://github.com/golang/go/issues/76816 for RVA22U64 builder
     - [虚拟环境建立的 quirks 过滤问题 #87](https://github.com/ruyisdk/ruyisdk-eclipse-plugins/issues/87)
     - [虚拟环境建立的 ruyi update 错误处理问题 #88](https://github.com/ruyisdk/ruyisdk-eclipse-plugins/issues/88)
     - [虚拟环境建立的 profile 排序问题 #89](https://github.com/ruyisdk/ruyisdk-eclipse-plugins/issues/89)
-  
+
 ##### 5.2.2 RuyiSDK 新实习生面试
 - [P119_yxi.md](https://gitlab.inuyasha.love/weilinfox/plct-working/-/blob/master/Done/Month30/P119_yxi.md)
 - [P119_jxy.md](https://gitlab.inuyasha.love/weilinfox/plct-working/-/blob/master/Done/Month30/P119_jxy.md)
