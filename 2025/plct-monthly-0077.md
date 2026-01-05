@@ -143,6 +143,17 @@ Fixing https://github.com/golang/go/issues/76816 for RVA22U64 builder
 
 ## RT-Thread
 
+## [BLDClock](https://github.com/BrokenCLient/BLDClock) (甲辰计划 J156)
+
+### 完成内容
+
+- PCB设计及验证, 基于 CH32V307RCT6 RT-Thread
+- 传感器软件适配, TMC6300, MT6701QT
+- 业务逻辑验证, 快速闹钟, 闹钟预设
+- 上位机通讯验证, 自动校时, 状态监控
+
+
+## 罗云翔测试团队
 ## PLCT罗云翔测试团队
 
 （包含 SAIL 和 ACT 测试部分）
