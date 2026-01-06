@@ -10,6 +10,33 @@
 
 ## RuyiSDK 网站更新
 
+页面更新
+
++ 公开新的“贡献者”页面 <https://ruyisdk.org/Community/contributors/>
++ 公开重新设计的“关于”页面 <https://ruyisdk.org/about>
++ 应用新的 ``<CodeBlock>`` 代码块，区分代码块中的用户输入和输出
++ 修复首页部分板块在移动端宽度不一致的问题
++ 将首页新闻和“新闻”页面（未公开）统一管理
++ 设计新的“下载”页面和“感谢下载”页面（未公开）
++ 更新“文档”和“双周报”页面，同步 Ruyi 包管理器新闻到“博客”页面
+
+PR 列表
+
++ [Unify homepage sizing #283](https://github.com/ruyisdk/ruyisdk-website/pull/283)
++ [Code block v3: Fixed the code highlighting issue and removed the filename attribute. #294](https://github.com/ruyisdk/ruyisdk-website/pull/294)
++ [Unify page width #303](https://github.com/ruyisdk/ruyisdk-website/pull/303)
++ [Optimize /about page #304](https://github.com/ruyisdk/ruyisdk-website/pull/304)
++ [Optimize news #305](https://github.com/ruyisdk/ruyisdk-website/pull/305)
++ [ci: deploy with build-noupdate and check with build #308](https://github.com/ruyisdk/ruyisdk-website/pull/308)
++ [pages: release /Community/contributors #309](https://github.com/ruyisdk/ruyisdk-website/pull/309)
++ [New /downloads page #311](https://github.com/ruyisdk/ruyisdk-website/pull/311)
++ [pages: update blogs and biweekly #313](https://github.com/ruyisdk/ruyisdk-website/pull/313)
++ [Improve hints and text on /downloads page #314](https://github.com/ruyisdk/ruyisdk-website/pull/314)
++ [docs: update pipx installation venv issue #316](https://github.com/ruyisdk/ruyisdk-website/pull/316)
++ [docs: update English version #317](https://github.com/ruyisdk/ruyisdk-website/pull/317)
++ [Homepage NewsShowcase logics finetune #318](https://github.com/ruyisdk/ruyisdk-website/pull/318)
++ [docs: update IDE docs #319](https://github.com/ruyisdk/ruyisdk-website/pull/319)
+
 ## V8 / Chromium
 
 Update by PLCT（Lu Yahan): 
