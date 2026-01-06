@@ -168,6 +168,16 @@ Fixing https://github.com/golang/go/issues/76816 for RVA22U64 builder
 
 ## opensbi
 
+- 刷新tlb缓存在设置ADUE后。[1](https://lists.infradead.org/pipermail/opensbi/2025-November/009162.html)
+- 通过-fuse-ld选项合并obj文件，避免默认链接器是mold的错误。[1](https://lists.infradead.org/pipermail/opensbi/2025-December/009185.html)
+- suspend时备份恢复平台csr。[1](https://lists.infradead.org/pipermail/opensbi/2025-December/009186.html)
+- 平台添加cva6支持。[1](https://lists.infradead.org/pipermail/opensbi/2025-December/009189.html)
+- 在启动停止固件计数器前检测状态。[1](https://lists.infradead.org/pipermail/opensbi/2025-December/009236.html)
+- 优化csr_xyz，添加register关键字阻止堆栈占用，防止在调试模式下的堆栈溢出。[1](https://lists.infradead.org/pipermail/opensbi/2025-December/009243.html)
+- p8700不支持amo指令，通过在makefile中修改PLATFORM_RISCV_ISA。[1](https://lists.infradead.org/pipermail/opensbi/2025-December/009268.html)
+- 给AE350添加HSM和suspend支持。[1](https://lists.infradead.org/pipermail/opensbi/2025-December/009294.html)
+- OpenSBI v1.8发布。[1](https://lists.infradead.org/pipermail/opensbi/2025-December/009300.html)
+
 ## RT-Thread
 
 ### 实习生
@@ -448,7 +458,7 @@ Fixing https://github.com/golang/go/issues/76816 for RVA22U64 builder
 - [refactor(venv): split switch command and implement centralized state management](https://github.com/ruyisdk/ruyisdk-vscode-extension/pull/93)
 
 Release [0.1.0](https://marketplace.visualstudio.com/items?itemName=RuyiSDK.ruyisdk-vscode-extension)
-  
+
 ### 2. RISC-V 工具链测试
 
 设计自动化测试方法，并测试开发板 20 个
