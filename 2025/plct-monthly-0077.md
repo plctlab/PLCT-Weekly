@@ -404,6 +404,23 @@ Fixing https://github.com/golang/go/issues/76816 for RVA22U64 builder
 #### 1.5 RuyiSDK会议和技术分享
 
 - RuyiSDK双周报
+
+#### 1.6 RuyiSDK VSCode Extension
+
+已合入 PR
+- [feat(package): change the package module loading logic to lazy loading](https://github.com/ruyisdk/ruyisdk-vscode-extension/pull/79)
+- [fix: move RuyiSDK status to the left of venv status](https://github.com/ruyisdk/ruyisdk-vscode-extension/pull/80)
+- [fix(packages): improve extract command filtering and cancellation handling](https://github.com/ruyisdk/ruyisdk-vscode-extension/pull/81)
+- [ci: publish to GitHub Releases on tag](https://github.com/ruyisdk/ruyisdk-vscode-extension/pull/83)
+- [docs: add README.md](https://github.com/ruyisdk/ruyisdk-vscode-extension/pull/84)
+- [fix(venv): block creation without workspace](https://github.com/ruyisdk/ruyisdk-vscode-extension/pull/85)
+- [ci: trigger release on any tag push](https://github.com/ruyisdk/ruyisdk-vscode-extension/pull/86)
+- [fix: remove duplicate registration of ruyi.setup.manage command](https://github.com/ruyisdk/ruyisdk-vscode-extension/pull/90)
+- [fix: improve toolchain and emulator installation](https://github.com/ruyisdk/ruyisdk-vscode-extension/pull/91)
+- [fix: enhance venv detection and management](https://github.com/ruyisdk/ruyisdk-vscode-extension/pull/92)
+- [refactor(venv): split switch command and implement centralized state management](https://github.com/ruyisdk/ruyisdk-vscode-extension/pull/93)
+
+Release [0.1.0](https://marketplace.visualstudio.com/items?itemName=RuyiSDK.ruyisdk-vscode-extension)
   
 ### 2. RISC-V 工具链测试
 
