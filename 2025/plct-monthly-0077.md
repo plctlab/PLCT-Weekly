@@ -672,6 +672,16 @@ Release [0.1.0](https://marketplace.visualstudio.com/items?itemName=RuyiSDK.ruyi
 
 ## LuaJIT
 
+## eunomia-bpf
+
+New arxiv paper and OSDI submission: <https://arxiv.org/abs/2512.12615>
+
+Presented in Linux Plumbers Conference: <https://lpc.events/event/19/contributions/2168/>
+
+Github: In December 2025, the eunomia-bpf organization closed all 15 active issues and pull requests while garnering 258 new stars. Development activity was heavily concentrated on high-performance GPU and AI infrastructure; the team made extensive contributions to `gpu_ext` and `schedcp`, focusing on advanced memory management policies (such as PID-based prefetch and eviction) and UVM benchmarking for vLLM workloads. `bpftime` saw significant technical upgrades, including support for CUDA Graphs, built-in GPU hashmaps, and automatic GPU SM architecture detection. Parallel efforts in `agentsight` improved observability for Dockerized Python environments and added ARM64 build support.
+
+See <https://github.com/eunomia-bpf/eunomia.dev/issues/62> for a detail summary list.
+
 ## Jeandle
 
 ### 实习生
