@@ -6,6 +6,17 @@
 
 ## RuyiSDK IDE / VSCode Plugin
 
+Reviewed PRs:
+- [fix: sync read status with ruyi CLI using porcelain mode](https://github.com/ruyisdk/ruyisdk-vscode-extension/pull/112)
+- [docs: add VSCode Marketplace links; adjust screenshot to correct preview](https://github.com/ruyisdk/ruyisdk-vscode-extension/pull/111)
+- [refactor(venv): streamline venv creation and detection by removing unnecessary prompts and simplifying name handling](https://github.com/ruyisdk/ruyisdk-vscode-extension/pull/101)
+- [fix: improve extraction folder selection logic to use suggested direc…](https://github.com/ruyisdk/ruyisdk-vscode-extension/pull/98)
+- [refactor(venv): split switch command and implement centralized state management](https://github.com/ruyisdk/ruyisdk-vscode-extension/pull/93)
+
+Authored PRs:
+- [feat(extract): add current folder option in extract picker](https://github.com/ruyisdk/ruyisdk-vscode-extension/pull/103)
+- [fix: use local screenshot files to avoid external links](https://github.com/ruyisdk/ruyisdk-vscode-extension/pull/102)
+
 ## RuyiSDK 包管理器
 
 ## RuyiSDK 网站更新
