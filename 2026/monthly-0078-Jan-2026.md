@@ -21,6 +21,14 @@
 ## GNU Toolchain
 
 ## LLVM Team
+ ## LLVM Team
+- Upstream llvm-project 合并的patch:
+  - [RISCV]Remove experimental from Zalasr  https://github.com/llvm/llvm-project/pull/177120 
+  - [DAG]Add ISD::SPLAT_VECTOR to TargetLowering::getNegatedExpression https://github.com/llvm/llvm-project/pull/173967
+  - [RISCV] Fold (fma (splat (fneg X)), Y, Z) -> (fma (fneg (splat X)), Y, Z) https://github.com/llvm/llvm-project/pull/173808
+
+- ruyisdk llvm-project
+  - [LLVM][Clang][MC][XTHeadVector] add missing vncvt.x.x.w ：https://github.com/ruyisdk/llvm-project/pull/167
 
 ## MLIR / Buddy Compiler
 
