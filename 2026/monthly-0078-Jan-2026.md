@@ -44,6 +44,14 @@
 ## Go
 
 ## GNU Toolchain
+- 添加了Zalasr扩展支持：
+  https://patchwork.sourceware.org/project/gcc/patch/20260128075607.343141-1-jiawei@iscas.ac.cn/
+  https://patchwork.sourceware.org/project/binutils/patch/20260121162309.3466952-1-jiawei@iscas.ac.cn/
+- 发布了p扩展spec 012版本，同步更新了p扩展仓库版本信息
+  https://github.com/riscv/riscv-p-spec/blob/master/P-ext-proposal%3Dv0.12.adoc
+  https://github.com/riscv/riscv-p-spec/commit/5f24f2a0b2e5afae343b0f9851263509c8a0a0c2
+- 协助review了xsmtvdot扩展的binutils实现
+  https://sourceware.org/pipermail/binutils/2026-January/148006.html
 
 ## LLVM Team
  ## LLVM Team
