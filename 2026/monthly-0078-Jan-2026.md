@@ -10,6 +10,51 @@
 
 ## RuyiSDK 网站更新
 
+项目更新
+
++ 重构用于“贡献者”和“数据统计”页面数据获取的 cjs 脚本
++ 新增 /data/api 路由，作为站外 api 不可用时的后备
++ 规范项目结构，其中本应在 src/components 下的源码从 src/pages 移出、 CommonJS 源码从 js 后缀重命名为 cjs
++ 规范模块命名，其中 /StatisticalDataPages 页面改为 /dashboard、 /community/contributors 页面改为 /contributors 一级
++ 规范模块化设计，拆分功能模块（进行中）
++ 修复 /docs 中不规范的站内 URL
++ 修复 submodule 的自动更新 workflow
++ 修复 packages.json 中缺失的依赖和可能发生的依赖版本不一致问题
++ 依赖管理工具从 npm 改为 pnpm
+
+页面更新
+
++ 修复文档页面侧栏带底色的箭头图标
++ 修复不同分辨率下“新闻”页面（未公开）的新闻头图显示问题
++ 更新的“下载”页面和“感谢下载”页面（未公开）
++ 更新“文档”和“双周报”页面，同步 Ruyi 包管理器新闻到“博客”页面
++ “数据统计”页面增加 IDE 相关统计数据
+
+PR 列表
+
++ [fix docs menu-list arrow's bug #315](https://github.com/ruyisdk/ruyisdk-website/pull/315)
++ [docs: add English section content for RuyiSDK VSCode extension #320](https://github.com/ruyisdk/ruyisdk-website/pull/320)
++ [pages: modify some words and i18n #322](https://github.com/ruyisdk/ruyisdk-website/pull/322)
++ [pages: update news #323](https://github.com/ruyisdk/ruyisdk-website/pull/323)
++ [Fix layout issue for pictures in different H-W ratio in news page #326](https://github.com/ruyisdk/ruyisdk-website/pull/326)
++ [pages(about): fix about page RuyiSDK toolchain #328](https://github.com/ruyisdk/ruyisdk-website/pull/328)
++ [Optimize mobile news page #329](https://github.com/ruyisdk/ruyisdk-website/pull/329)
++ [Improve subscribe button #330](https://github.com/ruyisdk/ruyisdk-website/pull/330)
++ [CI behaviour fix for contributor json file #331](https://github.com/ruyisdk/ruyisdk-website/pull/331)
++ [pages: update statistical page labels #332](https://github.com/ruyisdk/ruyisdk-website/pull/332)
++ [docs: fix broken img links #333](https://github.com/ruyisdk/ruyisdk-website/pull/333)
++ [pages(StatisticalDataPages): update ruyi download count text #334](https://github.com/ruyisdk/ruyisdk-website/pull/334)
++ [misc: modify project structure #335](https://github.com/ruyisdk/ruyisdk-website/pull/335)
++ [New vscode plugin download data #336](https://github.com/ruyisdk/ruyisdk-website/pull/336)
++ [pages(dashboard): modify overview data order #337](https://github.com/ruyisdk/ruyisdk-website/pull/337)
++ [pages(dashboard): fix crash #338](https://github.com/ruyisdk/ruyisdk-website/pull/338)
++ [pages(dashboard): really fix mobile crash #340](https://github.com/ruyisdk/ruyisdk-website/pull/340)
++ [Download page direct link and thank-you page #341](https://github.com/ruyisdk/ruyisdk-website/pull/341)
++ [misc: use tailwind instead of unocss #342](https://github.com/ruyisdk/ruyisdk-website/pull/342)（Draft）
++ [Split common components & New downloads page #343](https://github.com/ruyisdk/ruyisdk-website/pull/343)（Reverted）
++ [misc: fix dependency issue and move json files to static/data #345](https://github.com/ruyisdk/ruyisdk-website/pull/345)
++ [misc: auto api data update scripts #346](https://github.com/ruyisdk/ruyisdk-website/pull/346)
+
 ## V8 / Chromium
 
 ## Spidermonkey / Firefox
