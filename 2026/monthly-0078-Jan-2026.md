@@ -57,6 +57,21 @@
 
 ## MLIR / Buddy Compiler
 
+- Buddy Compiler 主页地址 - https://buddy-compiler.github.io/
+- Buddy Compiler As A Service (Buddy CAAS) - https://buddy.isrc.ac.cn/
+
+**buddy-mlir**
+
+- [midend] Add eliminate-memref-copy pass to eliminate redundant memref.copy operations.
+- [frontend/tests] Add aten ops coverage.
+- [midend] Fix MatMulParallelVectorization tail detection.
+- [examples] Optimize allocation liveness.
+- [Frontend] Optimize GQA attention operator for the decode phase.
+- [Frontend] Vectorize index_put_ operations for KV cache updates.
+- [examples] Add tiered kv cache prefill for DeepSeek-R1.
+- [examples] Add Qwen3-0.6B E2E Inference.
+
+
 ## opensbi
 
 ## 罗云翔测试团队
