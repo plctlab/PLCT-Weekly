@@ -46,7 +46,33 @@
 
 ## LLVM Team
 
-## MLIR / Buddy Compiler
+## RuyiAI 系统软件栈
+
+### Ruyi Buddy Compiler
+
+- [examples] Add Qwen3-0.6B E2E Inference.
+- [Example] Enable gqa attention for Qwen3-0.6B
+- [Frontend] Enhance parent tracking for nested container arguments and add flexible shape handling in reshape_op
+- [examples] Add features to support Gemmini examples E2E deployments on FPGA.
+- [frontend] Add MLIR result checking and JIT encapsulation.
+- [Frontend] restore operator index input to previous implementation due to performance regression.
+- [Frontend] Add quantisation pass.
+- [Frontend] correct parameter data packing order in eliminate_weight_transpose.
+- [examples] Fix DeepSeek fp16 pipeline.
+- [frontend] Restore index_put broadcast semantics without redundant alloc/copy.
+- [examples] Add yolo26n e2e model support.
+
+### triton-riscv
+
+- 知乎文章：让 Triton 跑在 RISC-V 平台上 - [Link](https://zhuanlan.zhihu.com/p/2010281222484554437)
+- [backend] Remove Nvidia and AMD requirement.
+- [setup] Avoid Nvidia and AMD environment download.
+- [cmake] Add riscv64 CodeGen and AsmParser configuration.
+- [proton] Set TRITON_BUILD_PROTON=OFF
+- [compiler] Add -mattr configuration for RISC-V.
+- [compiler] Add platform package.
+- [driver] Append libgcc_s to provide soft-float runtime helpers.
+- [examples] Resolve pytest warnings.
 
 ## opensbi
 
