@@ -39,6 +39,24 @@
 ## Spidermonkey / Firefox
 
 ## OpenJDK
+1. Reviewed JDK-mainline PRs:
+- https://github.com/openjdk/jdk/pull/28548 (8373069: RISC-V: implement GHASH intrinsic)
+- https://github.com/openjdk/jdk/pull/28702 (8371920: [TEST] Enable CMove tests on other platforms)
+- https://github.com/openjdk/jdk/pull/28896 (8373998: RISC-V: simple optimization of ConvHF2F)
+- https://github.com/openjdk/jdk/pull/28886 (8374056: RISC-V: Fix argument passing for the RiscvFlushIcache::flush)
+- https://github.com/openjdk/jdk/pull/28830 (8372591: assert(!current->cont_fastpath() || freeze.check_valid_fast_path()) failed)
+- https://github.com/openjdk/jdk/pull/28894 (8374184: RISC-V: implement GCM intrinsic with Zvkg and Zvkned extension)
+- https://github.com/openjdk/jdk/pull/28988 (8374351: RISC-V: Small refactoring for crypto macro-assembler routines)
+- https://github.com/openjdk/jdk/pull/29035 (8374525: RISC-V: Several masked float16 vector operations are not supported)
+- https://github.com/openjdk/jdk/pull/28002 (8370691: Add new Float16Vector type and enable intrinsification of vector operations supported by auto-vectorizer)
+- https://github.com/openjdk/jdk/pull/29182 (8375094: RISC-V: Fix client builds after JDK-8368732)
+- https://github.com/openjdk/jdk/pull/29293 (8370112: Remove VM_Version::supports_fast_class_init_checks() in platform-specific code)
+- https://github.com/openjdk/jdk/pull/29307 (8375657: RISC-V: Need to check size in SharedRuntime::is_wide_vector)
+- https://github.com/openjdk/jdk/pull/29336 (8375787: compiler/vectorapi/TestCastShapeBadOpc.java fails with release VMs)
+
+2. Proposed JDK-25u backport PRs:
+- https://github.com/openjdk/jdk25u-dev/pull/82 (8371385: compiler/escapeAnalysis/TestRematerializeObjects.java fails in case of -XX:-UseUnalignedAccesses)
+- https://github.com/openjdk/jdk25u-dev/pull/116 (8373998: RISC-V: simple optimization of ConvHF2F)
 
 ## Go
 
