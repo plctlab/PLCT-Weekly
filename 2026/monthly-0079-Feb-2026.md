@@ -63,6 +63,10 @@
 ## GNU Toolchain
 
 ## LLVM Team
+#### Upstream 合并的patch:
+- [DAGCombiner] Fold trunc(build_vector(ext(x), ext(x)) -> build_vector(x,x)#179857  https://github.com/llvm/llvm-project/pull/179857
+#### ruyisdk llvm 合并的patch:
+- [Clang][MC][XTHeadVector] add missing vncvt.x.x.w ：https://github.com/ruyisdk/llvm-project/pull/167
 
 ## RuyiAI 系统软件栈
 
