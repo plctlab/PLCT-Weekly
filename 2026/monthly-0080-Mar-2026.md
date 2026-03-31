@@ -11,6 +11,24 @@
 ## RuyiSDK 网站更新
 
 ## V8 / Chromium
+#### Update:
+1. 在liftoff中独立分配simd registers而不是绑定浮点寄存的分配  
+   7658971: [riscv][liftoff] Separate floating-point and simd registers | https://chromium-review.googlesource.com/c/v8/v8/+/7658971
+3. 7699576: [riscv] Fix build for cross compile | https://chromium-review.googlesource.com/c/v8/v8/+/7699576
+4. 7695091: [riscv] Add simd in LiftoffAssembler::Push/Pop | https://chromium-review.googlesource.com/c/v8/v8/+/7695091
+5. 7695806: [riscv] Fix SIMD lane load source register | https://chromium-review.googlesource.com/c/v8/v8/+/7695806
+6. 重构cpu 文件  
+   7683553: [base] Refactor CPU detection code into architecture-specific files | https://chromium-review.googlesource.com/c/v8/v8/+/7683553
+8. 7669710: [riscv] Fix vector lmul calculation for RVV | https://chromium-review.googlesource.com/c/v8/v8/+/7669710
+9. 7669917: [riscv] Optimize memory access for allocatable double registers in DeoptimizationEntry | https://chromium-review.googlesource.com/c/v8/v8/+/7669917
+
+#### Port:
+1. 7707695: [riscv][base] Refactor EmbeddedVector: decouple from Vector | https://chromium-review.googlesource.com/c/v8/v8/+/7707695   
+2. 7699360: [riscv][wasm][wasmfx] Implement switch instruction | https://chromium-review.googlesource.com/c/v8/v8/+/7699360
+3. 7695807: [riscv][turboshaft] Direct call for known functions | https://chromium-review.googlesource.com/c/v8/v8/+/7695807  
+4. 7687330: [riscv][maps] Prepare for splitting MAP_TYPE into multiple values | https://chromium-review.googlesource.com/c/v8/v8/+/7687330
+5. 7685620: [riscv][wasmfx] Trap on null for resume_throw_ref | https://chromium-review.googlesource.com/c/v8/v8/+/7685620
+6. 7683933: Reland "[riscv][superspread] port to riscv" | https://chromium-review.googlesource.com/c/v8/v8/+/7683933
 
 ## Spidermonkey / Firefox
 
