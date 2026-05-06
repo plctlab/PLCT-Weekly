@@ -10,6 +10,32 @@
 
 ## RuyiSDK 网站更新
 
+项目更新
+
++ 构建产物部署到 gh-pages 分支，解决触发构建时网站不可用的问题
++ submodule 和 /data 下数据的自动更新 action
+
+页面更新
+
++ 释放 /news 页面
+
+PR 列表
+
++ [ci: fix audo submodule update #347](https://github.com/ruyisdk/ruyisdk-website/pull/347)
++ [ci: submodule update action will create PR #351](https://github.com/ruyisdk/ruyisdk-website/pull/351)
++ [ci: add automat label for ci audo PR #352](https://github.com/ruyisdk/ruyisdk-website/pull/352)
++ [ci: check trigger for auto PRs #355](https://github.com/ruyisdk/ruyisdk-website/pull/355)
++ [ci: check pnpm build after auto submodule update PR #357](https://github.com/ruyisdk/ruyisdk-website/pull/357)
++ [ci: add action run url in auto PRs body #359](https://github.com/ruyisdk/ruyisdk-website/pull/359)
++ [ci: deploy gh page on gh-pages branch #360](https://github.com/ruyisdk/ruyisdk-website/pull/360)
++ [ci: audo update api data #362](https://github.com/ruyisdk/ruyisdk-website/pull/362)
++ [pages: release /news page #366](https://github.com/ruyisdk/ruyisdk-website/pull/366)
++ [pages(dashboard): remove github status p #367](https://github.com/ruyisdk/ruyisdk-website/pull/367)
++ [docs: update README to pnpm version #374](https://github.com/ruyisdk/ruyisdk-website/pull/374)
++ [ci: retry on 202 for stats/contributors #375](https://github.com/ruyisdk/ruyisdk-website/pull/375)
++ [ci: fix runtime error #376](https://github.com/ruyisdk/ruyisdk-website/pull/376)
++ [ci: fix runtime error #377](https://github.com/ruyisdk/ruyisdk-website/pull/377)
+
 ## V8 / Chromium
 #### Update：
 - 7508964: [riscv] Eliminate -Wexit-time-destructors warnings | https://chromium-review.googlesource.com/c/v8/v8/+/7508964

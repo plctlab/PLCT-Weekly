@@ -10,6 +10,46 @@
 
 ## RuyiSDK 网站更新
 
+项目更新
+
++ 一些代码整理
++ 重做多语言外站链接获取逻辑
+
+页面更新
+
++ 文档页面添加 mermaid 支持
++ 统一所有页面内容的宽度
++ 统一大部分页面的字体控制
++ 修复顶栏下拉框选中选项的底纹
++ 优化贡献者页面的头像加载
++ 新的移动端页面面包按钮和边栏动画
+
+PR 列表
+
++ [misc: add mermaid support #385](https://github.com/ruyisdk/ruyisdk-website/pull/385)
++ [misc: add mermaid support #385](https://github.com/ruyisdk/ruyisdk-website/pull/385)
++ [pages: fix index background #388](https://github.com/ruyisdk/ruyisdk-website/pull/388)
++ [pages(index): adjust main display width #389](https://github.com/ruyisdk/ruyisdk-website/pull/389)
++ [pages: fix navbar dropdown shadow #390](https://github.com/ruyisdk/ruyisdk-website/pull/390)
++ [pages: replace icon with tabler icon #391](https://github.com/ruyisdk/ruyisdk-website/pull/391)
++ [pages: better homepage hero, footer, and community sections with locale-aware links and updated calls-to-action #397](https://github.com/ruyisdk/ruyisdk-website/pull/397)
++ [pages(index): better ruyiinlive component #399](https://github.com/ruyisdk/ruyisdk-website/pull/399)
++ [pages(index): new content for cardnews #400](https://github.com/ruyisdk/ruyisdk-website/pull/400)
++ [pages(index): replace cardnews images #401](https://github.com/ruyisdk/ruyisdk-website/pull/401)
++ [pages(index): refactor CardNews #403](https://github.com/ruyisdk/ruyisdk-website/pull/403)
++ [pages(about): fix image loading failure #404](https://github.com/ruyisdk/ruyisdk-website/pull/404)
++ [pages(index): better CardNews color #409](https://github.com/ruyisdk/ruyisdk-website/pull/409)
++ [pages(index): add border between MainDisplay and RuyiInLive #410](https://github.com/ruyisdk/ruyisdk-website/pull/410)
++ [pages(index): add partner section and better section gap #411](https://github.com/ruyisdk/ruyisdk-website/pull/411)
++ [pages(news): text size fine-tune #413](https://github.com/ruyisdk/ruyisdk-website/pull/413)
++ [misc: remove --site-container-width #414](https://github.com/ruyisdk/ruyisdk-website/pull/414)
++ [pages(contributors): better image loading effect #415](https://github.com/ruyisdk/ruyisdk-website/pull/415)
++ [pages(navbar): better navbar #422](https://github.com/ruyisdk/ruyisdk-website/pull/422)
++ [pages(navbar): adjust navbar sidebar width and color #423](https://github.com/ruyisdk/ruyisdk-website/pull/423)
++ [pages(navbar): navbar sidebar hamburger button animation #424](https://github.com/ruyisdk/ruyisdk-website/pull/424)
++ [pages(navbar): navbar sidebar wipe effect #425](https://github.com/ruyisdk/ruyisdk-website/pull/425)
++ [pages(index): terminal components hide scrollbar #427](https://github.com/ruyisdk/ruyisdk-website/pull/427)
+
 ## V8 / Chromium
 #### Update:
 1. 在liftoff中独立分配simd registers而不是绑定浮点寄存的分配  

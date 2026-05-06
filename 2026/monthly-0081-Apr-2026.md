@@ -10,6 +10,19 @@
 
 ## RuyiSDK 网站更新
 
+页面更新
+
++ 修复首页终端组件的滚动条和滑动问题
++ 顶栏下拉列表动画
++ 添加新的合作伙伴到相应板块
+
+PR 列表
+
++ [pages(index): better terminal scroll #428](https://github.com/ruyisdk/ruyisdk-website/pull/428)
++ [pages(navbar): better dropdown menu transform #430](https://github.com/ruyisdk/ruyisdk-website/pull/430)
++ [pages(footer): add openRuyi projects to ecosystem section #439](https://github.com/ruyisdk/ruyisdk-website/pull/439)
++ [pages(index): add jeandle to partner section and better xuantie logo #440](https://github.com/ruyisdk/ruyisdk-website/pull/440)
+
 ## V8 / Chromium
 
 ## Spidermonkey / Firefox
