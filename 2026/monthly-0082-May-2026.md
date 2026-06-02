@@ -10,6 +10,59 @@
 
 ## RuyiSDK 网站更新
 
+页面更新
+
++ 重新设计 [/dashboard](https://ruyisdk.org/dashboard/) 数据统计页面，旧数据统计页面移动到 [/dashboard_old](https://ruyisdk.org/dashboard_old/)
++ 修复已知的 CodeBlock 代码块逻辑 bug
++ 新增 [中科院软件所2026年“软件定义未来”公众科学日](https://ruyisdk.org/news/events/202605-cas-public-science-day-2026/) 页面和首页板块
++ 公众科学日结束后将对应的首页板块改为常驻的“快速了解 RuyiSDK”板块
++ 重新设计新闻页面的数据传递逻辑，获得更好的加载体验
++ 将所有 png、 jpeg 图片转换为 webp，获得更好的图片加载体验
++ 整理旧的 meetup page、 /blog 和 /biweekly 内容，删除 /blog 和 /biweekly 路由
+    + 设计与旧的 /blog 页面 metadata 兼容的页面，用于承载 4 个需要保留的博客，页面在 /news/blogs 下，由新闻页面引用
+    + 将旧的 meetup 内容补充到新闻页面
++ 为新闻页面添加标题，优化新闻页面的内容管理，将旧的首页新闻补充到新闻页面。当前新闻页面有从 2024 年至今的共 22 个新闻
++ 新增开发板应用示例板块板块，不久后将发布在首页
++ 新增 [/riscv-specs](https://ruyisdk.org/riscv-specs/) 页面 @shenghailing00-stack
++ ruyi 一键安装脚本 @Glavo
+
+PR 列表
+
++ [Enhance installation process and update related documentation #443](https://github.com/ruyisdk/ruyisdk-website/pull/443)
++ [misc: remove /blog /biweekly route from sitemap #445](https://github.com/ruyisdk/ruyisdk-website/pull/445)
++ [Auto-update: API data to latest #448](https://github.com/ruyisdk/ruyisdk-website/pull/448)
++ [ci: wait longer on 202 to reduse api using rate #450](https://github.com/ruyisdk/ruyisdk-website/pull/450)
++ [Auto-update: API data to latest #452](https://github.com/ruyisdk/ruyisdk-website/pull/452)
++ [pages(dashboard): new testing dashboard page /dashboard_thin #453](https://github.com/ruyisdk/ruyisdk-website/pull/453)
++ [pages(dashboard): add data update time to dashboard_thin #454](https://github.com/ruyisdk/ruyisdk-website/pull/454)
++ [pages(dashboard): better api data update animation for dashboard_thin #455](https://github.com/ruyisdk/ruyisdk-website/pull/455)
++ [pages(about): use docusaurus mdx render #456](https://github.com/ruyisdk/ruyisdk-website/pull/456)
++ [pages(dashboard): add stats detail doc to dashboard_thin #457](https://github.com/ruyisdk/ruyisdk-website/pull/457)
++ [docs(CodeBlock): better codeblock #458](https://github.com/ruyisdk/ruyisdk-website/pull/458)
++ [docs(CodeBlock): move docs_utils to Docs and fix docs import #459](https://github.com/ruyisdk/ruyisdk-website/pull/459)
++ [Add RISC-V ratified specs guide page #460](https://github.com/ruyisdk/ruyisdk-website/pull/460)
++ [pages(DashBoard): dashboard_thin data animation 5 times max #463](https://github.com/ruyisdk/ruyisdk-website/pull/463)
++ [pages(DashBoard): dashboard_thin data animation 30 times max #464](https://github.com/ruyisdk/ruyisdk-website/pull/464)
++ [pages(dashboard): add translation for dashboard_thin #465](https://github.com/ruyisdk/ruyisdk-website/pull/465)
++ [Release new dashboard page #466](https://github.com/ruyisdk/ruyisdk-website/pull/466)
++ [pages(news/events): new event 202605-cas-public-science-day-2026 #467](https://github.com/ruyisdk/ruyisdk-website/pull/467)
++ [pages(news/events/202605-cas-public-science-day-2026): fallback on pdf preview failed #468](https://github.com/ruyisdk/ruyisdk-website/pull/468)
++ [pages(index): add 202605-cas-public-science-day-2026 card #469](https://github.com/ruyisdk/ruyisdk-website/pull/469)
++ [pages(news/events/202605-cas-public-science-day-2026): modify more registration option link #470](https://github.com/ruyisdk/ruyisdk-website/pull/470)
++ [pages(news/events): fix wechat triger download pdf before hydration #471](https://github.com/ruyisdk/ruyisdk-website/pull/471)
++ [pages(footer): add /riscv-specs #477](https://github.com/ruyisdk/ruyisdk-website/pull/477)
++ [pages(index): remove 202605-cas-public-science-day-2026 index card #478](https://github.com/ruyisdk/ruyisdk-website/pull/478)
++ [pages(news): use loadContent/loadContent instead of news.json #481](https://github.com/ruyisdk/ruyisdk-website/pull/481)
++ [Merge old blogs to /news page and remove duplicate blogs #482](https://github.com/ruyisdk/ruyisdk-website/pull/482)
++ [pages(news): restore old meetup news and NewsShowcase news to /news #483](https://github.com/ruyisdk/ruyisdk-website/pull/483)
++ [pages(index): add cas-public-science-day-2026 to news #484](https://github.com/ruyisdk/ruyisdk-website/pull/484)
++ [static(img): convert all imgs to webp #485](https://github.com/ruyisdk/ruyisdk-website/pull/485)
++ [pages(news): add news page title #486](https://github.com/ruyisdk/ruyisdk-website/pull/486)
++ [pages(news): restore missing old NewsShowcase news #487](https://github.com/ruyisdk/ruyisdk-website/pull/487)
++ [pages(biweekly): remove all biweekly pages #488](https://github.com/ruyisdk/ruyisdk-website/pull/488)
++ [pages(index): restore index VideoIntro #492](https://github.com/ruyisdk/ruyisdk-website/pull/492)
++ [pages(index): new component DevBoards #494](https://github.com/ruyisdk/ruyisdk-website/pull/494)
+
 ## V8 / Chromium
 
 ## Spidermonkey / Firefox
