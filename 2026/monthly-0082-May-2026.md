@@ -64,6 +64,24 @@ PR 列表
 + [pages(index): new component DevBoards #494](https://github.com/ruyisdk/ruyisdk-website/pull/494)
 
 ## V8 / Chromium
+#### Update:
+- 在select IR中支持浮点比较  
+7870950: [riscv][wasm] Support FP comparison condition in ArchSelect | https://chromium-review.googlesource.com/c/v8/v8/+/7870950  
+- 修复archopcode中判断条件错误的问题  
+7870367: [riscv] Fix condition inversion in kArchLoadTrustedPointer | https://chromium-review.googlesource.com/c/v8/v8/+/7870367
+- 实现wasm 宽运算
+- 7862260: [riscv]Wide multiplication implementation in liftoff | https://chromium-review.googlesource.com/c/v8/v8/+/7862260  
+- 7847572: [riscv][wasm-wide-arith] Implement Add128/Sub128 for riscv64 | https://chromium-review.googlesource.com/c/v8/v8/+/7847572  
+- 7834018: [riscv] Detect RVC in cpu-riscv and rename SIMD flag to RVV | https://chromium-review.googlesource.com/c/v8/v8/+/7834018
+- 7839765: [riscv] Delete zero_extend after fcvtmod_w_d in TruncateDoubleToInt32 | https://chromium-review.googlesource.com/c/v8/v8/+/7839765 
+- 7831421: [riscv] Enable zba/zbb/zbs/zicond when enable rva23u64 | https://chromium-review.googlesource.com/c/v8/v8/+/7831421
+
+#### Uptream  Port: 
+- 7870730: [riscv]Follow established InstructionCode layout for LoadTrustedPointer | https://chromium-review.googlesource.com/c/v8/v8/+/7870730  
+- 7866844: [riscv]Lower LoadTrustedPointer in the code generators | https://chromium-review.googlesource.com/c/v8/v8/+/7866844
+- 7862178: [riscv][wasm][fuzzer] Optimize CheckMaxSteps with platform-specific code | https://chromium-review.googlesource.com/c/v8/v8/+/7862178  
+- 7819100: [riscv][turboshaft][wasm] Decouple SIMD from WebAssembly | https://chromium-review.googlesource.com/c/v8/v8/+/7819100
+- 7804857: [riscv]Reland [wasm][shared] Fix write barrier DCHECK for unshared cmpxchg of tagged | https://chromium-review.googlesource.com/c/v8/v8/+/7804857
 
 ## Spidermonkey / Firefox
 
