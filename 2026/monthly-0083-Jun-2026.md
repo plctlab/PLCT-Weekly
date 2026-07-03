@@ -11,6 +11,28 @@
 ## RuyiSDK 网站更新
 
 ## V8 / Chromium
+#### Update:
+实现 fp16 的 vfadd/vfsub/vfmul/vfdiv；新增 ZVFH 扩展 CPU feature；Simulator 中实现 ZFH  
+- 7897892: [riscv]Implement ZFH in Simulator | https://chromium-review.googlesource.com/c/v8/v8/+/7897892
+- 7980710: [riscv] Enable ZVFH support for Liftoff WebAssembly SIMD | https://chromium-review.googlesource.com/c/v8/v8/+/7980710  
+- 7953190: [riscv] Implement vfadd/vfsub/vfmul/vfdiv for fp16 | https://chromium-review.googlesource.com/c/v8/v8/+/7953190  
+- 7953184: [riscv] Implement CompareSmiAndAssert | https://chromium-review.googlesource.com/c/v8/v8/+/7953184  
+#### 错误修复
+- 7917370: [riscv] Fix Debug check failed: !L->is_bound() | https://chromium-review.googlesource.com/c/v8/v8/+/7917370
+- 7908311: [riscv] Fix error that use of undeclared identifier | https://chromium-review.googlesource.com/c/v8/v8/+/7908311
+- 7889597: [riscv] Disable float16 due to RVV don't support Zvfh now. | https://chromium-review.googlesource.com/c/v8/v8/+/7889597
+- 7882462: [riscv] Support i16 in liftoff | https://chromium-review.googlesource.com/c/v8/v8/+/7882462
+- 7884915: [riscv] Use unsigned comparison in JSToWasmWrapperHelper | https://chromium-review.googlesource.com/c/v8/v8/+/7884915
+
+
+####  Uptream  Port:
+- 7992037: Reland [riscv][maglev] Sign extend index register in DataView bounds check | https://chromium-review.googlesource.com/c/v8/v8/+/7992037  
+- 7983344: [riscv]sandbox: Replace CPT with TPT | https://chromium-review.googlesource.com/c/v8/v8/+/7983344  
+- 7953185: [riscv][debug] Move DebugInfo to trusted space | https://chromium-review.googlesource.com/c/v8/v8/+/7953185  
+- 7901154: [riscv][wasmfx] Avoid code cache lookup on suspend | https://chromium-review.googlesource.com/c/v8/v8/+/7901154
+- 7888915: [riscv]Add SmiUntagUnsigned helpers and adjust maglev debug condition | https://chromium-review.googlesource.com/c/v8/v8/+/7888915
+- 7888915: [riscv]Add SmiUntagUnsigned helpers and adjust maglev debug condition | https://chromium-review.googlesource.com/c/v8/v8/+/7888915
+
 
 ## Spidermonkey / Firefox
 
